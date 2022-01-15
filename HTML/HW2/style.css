@@ -1,0 +1,24 @@
+.container {
+    font-family: Montserrat, "Courier New", serif;
+}
+.menu {
+    color: #FF0000;
+    display: inline;
+    text-transform: uppercase;
+ }
+.home {
+    padding: 25.5px 1573.5px 882px 330px;
+    text-decoration: none;
+ }
+.photoapp {
+    padding: 25.5px 1573.5px 579px 470px;
+    text-decoration: none;
+}
+.design {
+    padding: 25.5px 1573.5px 520px 673px;
+    text-decoration: none;
+}
+.download {
+    padding: 25.5px 1573.5px 330px 810px;
+    text-decoration: none;
+}
