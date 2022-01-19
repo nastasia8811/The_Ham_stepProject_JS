@@ -12,55 +12,62 @@ a {
     text-decoration: none;
 }
 /*header style*/
-.page-menu{
+.nav-list{
     list-style: none;
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-
 }
-.nav-link {
+
+.nav-list-item {
     font-weight: bold;
     font-size: 18px;
     line-height: 18px;
     color: #FF0000;
     letter-spacing: 2.7px;
+    margin-right: 72px;
 }
+/*main style*/
 .imagine-section {
     width: 100%;
 }
-.text-section {
-    padding: 868px 108px 0px 0px;
-    background: rgba(0, 0, 0, 0.0001);
+.text {
+    text-align: center;
 }
 .text-title {
+    margin: 49px 253px 38px 253px;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 22px;
     line-height: 27px;
-    display: flex;
-    align-items: flex-end;
     letter-spacing: 3.3px;
     color: #373737;
 }
 .text-part-one {
+    margin: 38px 67.5px 28px 67.5px;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
-    text-align: center;
     letter-spacing: 2.4px;
     color: #373737;
 }
 .text-part-two {
+    margin: 28px 67.5px 66px 67.5px;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
-    text-align: center;
     letter-spacing: 2.4px;
     color: #373737;
 }
+/*button style*/
+.button-red {
+    margin: 66px 544.5px 42px 544.5px;
+    padding: 18px 43.5px 17px 42.5px;
+    background: #FF0000;
+    border-radius: 4px;
+    border: none;
+}
 .button-link {
-    margin: 18px 17px 43.5px 42.5px;
     font-weight: bold;
     font-size: 12px;
     line-height: 12px;
@@ -68,9 +75,17 @@ a {
     text-transform: uppercase;
     color: #FFFFFF;
 }
-.button {
-    background: #FF0000;
-    border-radius: 4px;
+/*footer style*/
+.footer {
+    margin: 40px 105px 29px 713px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    letter-spacing: 2.4px;
+    color: #373737;
+    text-align: right;
 }
 
 
