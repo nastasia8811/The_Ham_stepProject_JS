@@ -5,21 +5,20 @@
     background: rgba(0, 0, 0, 0.0001);
 }
 .container {
-    max-width: 1145px;
+    max-width: 100%;
     margin: 0 auto;
 }
-a {
-    text-decoration: none;
+.nav-list {
+    margin: 25.5px 330px;
 }
-/*header style*/
-.nav-list{
+.nav-list-item {
     list-style: none;
-    display: flex;
     justify-content: center;
     text-transform: uppercase;
+    display: inline-block;
 }
-
-.nav-list-item {
+.nav-list-link {
+    text-decoration: none;
     font-weight: bold;
     font-size: 18px;
     line-height: 18px;
@@ -74,6 +73,7 @@ a {
     letter-spacing: 1.8px;
     text-transform: uppercase;
     color: #FFFFFF;
+    text-decoration: none;
 }
 /*footer style*/
 .footer {
@@ -87,5 +87,4 @@ a {
     color: #373737;
     text-align: right;
 }
-
 
