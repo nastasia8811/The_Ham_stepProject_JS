@@ -1,0 +1,159 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    font-family: sans-serif;
+    background: url(../img/Layer211.png);
+    background-repeat: no-repeat;
+}
+
+.banner {
+    padding: 528px 30px 133px 224px;
+    background-size: cover;
+}
+
+.banner-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.banner-slogan {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 16px;
+    color: #FFFFFF;
+}
+
+.banner-big-slogan {
+    border: 1px solid #FFFFFF;
+    background: rgb(0, 0, 0, 0.5);
+    margin-top: 22px;
+    display: inline-block;
+}
+
+.banner-orange {
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 66px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F48E0B;
+    padding: 38px 31px;
+    display: inline-block;
+    border-right: 1px solid #F48E0B;
+}
+
+.banner-white {
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 66px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 38px 31px;
+    display: inline-block;
+}
+
+.header__logo {
+    display: inline-block;
+    text-transform: uppercase;
+    color: gold;
+    font-size: 36px;
+    line-height: 66px;
+
+}
+
+.header {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px solid gold;
+    margin-bottom: 30px;
+}
+
+.header__logo {
+    margin-right: 100px;
+}
+
+.header__nav {
+    display: inline-block;
+}
+
+.header__nav-menu__item {
+    display: inline-block;
+}
+
+.header__nav-menu__link {
+    text-transform: uppercase;
+    color: gold;
+}
+
+.header__nav-menu__item:not(:last-child) {
+    margin-right: 69px;
+}
+
+.team {
+    font-family: Montserrat, "Courier New", serif;
+    font-style: normal;
+    border: none;
+}
+
+.team-title {
+    margin-top: 500px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.team-title-content {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 24px;
+    /* identical to box height, or 141% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #4D4943;
+    margin-top: 28.5px;
+    border: none;
+
+}
+
+.avatar {
+    position: relative;
+    width: 193px;
+    height: 178px;
+    display: inline-block;
+}
+
+.line {
+    position: absolute;
+    background: #F1AD1D;
+    width: 60px;
+    height: 3.03px;
+}
+
+.avatar-container {
+    width: 1167px;
+    font-size: 0;
+    margin: 53px auto 0 auto;
+    position: absolute;
+
+}
