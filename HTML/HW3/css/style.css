@@ -21,6 +21,7 @@
     top: calc(50% - 1280px / 2);
 }
 
+/* header style*/
 .header {
     max-width: 1280px;
     height: 189px;
@@ -69,6 +70,7 @@
     background: #222F3A;
 }
 
+/* main style*/
 .main {
     max-width: 1280px;
     display: flex;
@@ -76,6 +78,7 @@
     margin-top: 48px;
 }
 
+/* aside style*/
 .aside {
     width: 344px;
     height: 399px;
@@ -104,6 +107,7 @@
     border: 1px solid transparent;
 }
 
+/* content style*/
 .content {
     width: 885px;
 }
@@ -141,6 +145,7 @@
     height: 109px;
 }
 
+/* footer style*/
 .footer {
     max-width: 1280px;
     height: 69px;
