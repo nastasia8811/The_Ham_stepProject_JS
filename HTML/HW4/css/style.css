@@ -1,0 +1,82 @@
+
+.container {
+    max-width: 100%;
+    width: 1170px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.header {
+    background: #313131;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    margin: 22px 27px;
+}
+
+.header-architect {
+    font-weight: bold;
+    font-size: 22px;
+
+}
+
+.header-button {
+    background: #000000;
+    border: none;
+}
+
+.header-search {
+    margin: 27px 25px 26px 26px;
+
+
+}
+
+.header-nav {
+
+
+}
+
+.header-nav-list {
+    display: flex;
+
+
+}
+
+.header-nav-list-item {
+    display: block;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    justify-content: space-between;
+    margin-right: 25px;
+}
+
+
+.the_latest_news {
+    background: url("../img/header-background.png");
+    color: #ffffff;
+    display: flex;
+}
+
+.the_latest_news-title {
+    font-weight: bold;
+    font-size: 27px;
+    justify-content: center;
+    align-content: center;
+    margin-top: 164px;
+}
+
+
+
+.the_latest_news-button {
+    justify-content: center;
+    align-content: center;
+    margin-top: 44px;
+}
