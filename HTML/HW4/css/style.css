@@ -124,7 +124,7 @@
     align-items: flex-start;
     flex-flow: column wrap;
     align-content: space-between;
-    height: 1000px;
+    height: 900px;
 
 }
 
@@ -136,6 +136,7 @@
     width: 32%;
     margin-bottom: 2%;
     background: white;
+    transition: 2s;
 }
 
 .hotels_container_item:nth-child(3n+1) {
@@ -158,13 +159,20 @@
     order: 2;
 }
 
+.hotels_container_item:hover {
+    border: 1px solid #14B9D5;
+    transform: scale(1.1);
+}
+
 .hotels-title {
+    display: block;
     font-weight: bold;
     font-size: 18px;
     color: #353A3D;
     margin-top: 20px;
     margin-bottom: 22px;
     text-align: center;
+
 
 }
 
@@ -182,24 +190,75 @@
     color: white;
     text-align: center;
     padding-top: 108px;
+    padding-bottom: 87px;
 }
+
 .clients-rectangle {
     max-width: 60px;
-    margin-top: 87px;
+
 }
 
 .clients-item {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 58px;
+    justify-content: center;
     align-items: center;
-
-    padding-top: 106px;
-    padding-bottom:191px;
+    margin-top: 106px;
+    margin-bottom: 191px;
 }
+
 .clients-item-link {
-margin-right: 58px;
+    max-width: 100%;
 }
 
-.clients-item-link:last-child {
-    margin-right: 0;
+.top-rated-places {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(7, auto);
+    grid-gap: 0;
 }
+
+.top-rated-items-img {
+    max-width: 100%;
+}
+
+
+.hot-news_container {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(2,1fr);
+}
+
+.hot-news_item {
+    background: #F9F7F7;
+
+}
+
+.hot-news-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #353A3D;
+}
+
+.hot-news-content {
+    grid-area: content;
+    font-weight: 600;
+    font-size: 14px;
+    color: #5B6469;
+
+}
+
+.hot-news-img {
+
+}
+.hot-news-item:first-of-type{
+    grid-area: 1 / 2.5 / 2 / 3;
+}
+.hot-news-item:nth-child(2) {
+    grid-area: 1 / 1 / 2 / 2.5;
+}
+
