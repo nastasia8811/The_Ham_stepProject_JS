@@ -1,18 +1,24 @@
 
 .container {
     max-width: 100%;
-    width: 1170px;
     font-family: "Open Sans", sans-serif;
     font-style: normal;
+    margin: 0 auto;
     box-sizing: border-box;
-    margin: auto;
 }
+
 
 .header {
     background: #313131;
     color: #FFFFFF;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo-section {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -33,19 +39,14 @@
 
 .header-search {
     margin: 27px 25px 26px 26px;
-
-
-}
-
-.header-nav {
-
-
 }
 
 .header-nav-list {
     display: flex;
+}
 
-
+.header-nav-list-item:hover {
+    color: #14B9D5;
 }
 
 .header-nav-list-item {
@@ -58,25 +59,147 @@
     margin-right: 25px;
 }
 
+.title {
+    font-weight: bold;
+    font-size: 27px;
+    color: #18B4CF;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 49px;
+    padding-bottom: 52px;
+
+}
 
 .the_latest_news {
-    background: url("../img/header-background.png");
-    color: #ffffff;
+    background: url("../img/Header/header-background.png");
+    background-size: cover;
+    width: 100%;
+    /*
+    background: no-repeat;*/
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .the_latest_news-title {
-    font-weight: bold;
-    font-size: 27px;
-    justify-content: center;
-    align-content: center;
-    margin-top: 164px;
+    color: #ffffff;
+    margin-top: 100px;
 }
 
-
+.the_latest_news-button_section {
+    display: flex;
+    font-weight: 600;
+    font-size: 18px;
+}
 
 .the_latest_news-button {
     justify-content: center;
-    align-content: center;
+    align-items: flex-end;
+    border-radius: 4px;
+    border: none;
+    background: #14B9D5;
+    color: #ffffff;
     margin-top: 44px;
+    padding: 16px 29px 17px 30px;
+    margin-bottom: 64px;
+}
+
+.the_latest_news-button:first-of-type {
+    background: #89CA62;
+    margin-right: 20px;
+    padding: 16px 19px 17px 19px;
+}
+
+.popular_posts {
+    background: #F2F2F2;
+}
+
+
+.hotels_container {
+    margin: 0 auto;
+    max-width: 1170px;
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column wrap;
+    align-content: space-between;
+    height: 1000px;
+
+}
+
+.hotels_news {
+    width: 100%;
+}
+
+.hotels_container_item {
+    width: 32%;
+    margin-bottom: 2%;
+    background: white;
+}
+
+.hotels_container_item:nth-child(3n+1) {
+    order: 1;
+}
+
+.hotels_container_item:nth-child(3n+2) {
+    order: 2;
+}
+
+.hotels_container_item:nth-child(3n) {
+    order: 3;
+}
+
+.hotels_container::before,
+.hotels_container::after {
+    content: "";
+    flex-basis: 100%;
+    width: 0;
+    order: 2;
+}
+
+.hotels-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #353A3D;
+    margin-top: 20px;
+    margin-bottom: 22px;
+    text-align: center;
+
+}
+
+.clients {
+    background: url(../img/clients/background2.png);
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular_clients-title {
+    color: white;
+    text-align: center;
+    padding-top: 108px;
+}
+.clients-rectangle {
+    max-width: 60px;
+    margin-top: 87px;
+}
+
+.clients-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 106px;
+    padding-bottom:191px;
+}
+.clients-item-link {
+margin-right: 58px;
+}
+
+.clients-item-link:last-child {
+    margin-right: 0;
 }

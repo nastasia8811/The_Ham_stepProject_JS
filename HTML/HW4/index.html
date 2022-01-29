@@ -6,12 +6,16 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
 <div class="container">
     <header class="header">
-        <img class="header-logo" src="img/logoheader.png" alt="logo">
-        <p class="header-architect">Architect</p>
-        <nav class="header-nav">
+        <div class="header-logo-section">
+            <img class="header-logo" src="img/Header/logoheader.png" alt="logo">
+            <p class="header-architect">Architect</p>
+        </div>
+        <nav>
             <ul class="header-nav-list">
                 <li><a class="header-nav-list-item" href="#">home</a></li>
                 <li><a class="header-nav-list-item" href="#">Architecture design</a></li>
@@ -22,57 +26,70 @@
             </ul>
         </nav>
         <button class="header-button">
-            <img class="header-search" src="img/fa-search.png" alt="search">
+            <img class="header-search" src="img/Header/fa-search.png" alt="search">
         </button>
     </header>
 
     <main>
         <section class="the_latest_news">
-            <h2 class="the_latest_news-title">
+            <h2 class="the_latest_news-title title">
                 THE LATEST NEWS ON DESIGN & ARCHITECTURE
             </h2>
-            <button class="the_latest_news-button">Subscribe Now</button>
-            <button class="the_latest_news-button">Best Articles</button>
-
+            <div class="the_latest_news-button_section">
+                <button class="the_latest_news-button">Subscribe Now</button>
+                <button class="the_latest_news-button">Best Articles</button>
+            </div>
+        </section>
+        <article class="popular_posts">
+            <h2 class="title">Most popular posts</h2>
+            <section class="hotels">
+                <div class="hotels_container">
+                    <div class="hotels_container_item">
+                        <img class="hotels_news" src="img/Most popular posts/vanglo_house_Canada.png"
+                             alt="Vanglo House">
+                        <h3 class="hotels-title">Vanglo House By LWPAC in Canada</h3>
+                    </div>
+                    <div class="hotels_container_item">
+                        <img class="hotels_news" src="img/Most popular posts/Hotel_in_USA.png"
+                             alt="Sunrise Expanse Hotel">
+                        <h3 class="hotels-title">Sunrise Expanse Hotel in USA</h3>
+                    </div>
+                    <div class="hotels_container_item">
+                        <img class="hotels_news" src="img/Most popular posts/Stargaze_Resort .png"
+                             alt="Stargaze Resort">
+                        <h3 class="hotels-title">Stargaze Resort & Spa in USA</h3>
+                    </div>
+                    <div class="hotels_container_item">
+                        <img class="hotels_news" src="img/Most popular posts/Royal_Blossom.png"
+                             alt="Royal Blossom Hotel">
+                        <h3 class="hotels-title">Royal Blossom Hotel & Spa in USA</h3>
+                    </div>
+                    <div class="hotels_container_item">
+                        <img class="hotels_news" src="img/Most popular posts/Hotel_Spain.png" alt="Sunset Shack Hotel">
+                        <h3 class="hotels-title">Sunset Shack Hotel in Spain</h3>
+                    </div>
+                    <div class="hotels_container_item">
+                        <img class="hotels_news" src="img/Most popular posts/Glorious_Expanse _France.png"
+                             alt="Glorious Expanse Hotel">
+                        <h3 class="hotels-title">Glorious Expanse Hotel in France</h3>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <section class="clients">
+            <h2 class="popular_clients-title title">
+                our most popular clients
+            </h2>
+            <img class="clients-rectangle" src="img/clients/Rectangle 1.png">
+            <div class="clients-item">
+                <a class="clients-item-link" href="#"><img src="img/clients/national_post.png" alt="National Post"></a>
+                <a class="clients-item-link" href="#"><img src="img/clients/Dryme.png" alt="Dryme"></a>
+                <a class="clients-item-link" href="#"><img src="img/clients/house_home.png" alt="house home"></a>
+                <a class="clients-item-link" href="#"><img src="img/clients/Journy.png" alt="Journy"></a>
+            </div>
         </section>
     </main>
-    <!--
-        <main class="main">
-            <aside class="aside">
-                <div class="aside-item"><a class="aside-item-block" href="#">Ramda</a></div>
-                <div class="aside-item"><a class="aside-item-block" href="#">Why Ramda?</a></div>
-                <div class="aside-item"><a class="aside-item-block" href="#">What's Different?</a></div>
-                <div class="aside-item"><a class="aside-item-block" href="#">Introductions</a></div>
-                <div class="aside-item"><a class="aside-item-block" href="#">Philosophy</a></div>
-            </aside>
-            <div class="content">
-                <div class="content-border">
-                    <img class="content-border-goat" src="img/goatimg.png" alt="Goat"/>
-                </div>
-                <div class="content-text">
-                    <p class="content-text-rus">
 
-                        латинском языке, обнаружение сходства атрибутируется Ричарду МакКлинтоку.
-                    </p>
-                    <p class="content-text-eng">
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt
-                        mollit
-                        anim id est laborum.
-                    </p>
-                </div>
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="footer-nav">
-                <a class="footer-nav-item" href="#">Ramda</a>
-                <a class="footer-nav-item" href="#">Why Ramda?</a>
-                <a class="footer-nav-item" href="#">What's Different?</a>
-                <a class="footer-nav-item" href="#">Introductions</a>
-                <a class="footer-nav-item" href="#">Philosophy</a>
-            </div>
-            <div class="footer-copyright">Copyright&copy;2018</div>
-        </footer>!-->
 </div>
 </body>
 
