@@ -73,14 +73,13 @@
 /* main style */
 /* section style */
 .the_latest_news {
-    background: url("../img/Header/header-background.png");
+    background: url(../img/Header/header-background.png);
     background-size: cover;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-attachment: fixed;
 }
 
 .the_latest_news-title {
@@ -117,12 +116,12 @@
     background: #F2F2F2;
 }
 
-.hotels {
+.box {
     margin: 0 auto;
     max-width: 1170px;
 }
 
-.hotels_container {
+.box_container {
     display: flex;
     align-items: flex-start;
     flex-flow: column wrap;
@@ -134,7 +133,7 @@
     width: 100%;
 }
 
-.hotels_container_item {
+.box_container_item {
     width: 32%;
     margin-bottom: 2%;
     background: white;
@@ -185,14 +184,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-attachment: fixed;
 }
 
 .popular_clients-title {
     color: white;
     text-align: center;
-    padding-top: 108px;
-    padding-bottom: 87px;
 }
 
 .clients-rectangle {
@@ -207,7 +203,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 106px;
-    margin-bottom: 191px;
+    margin-bottom: 150px;
 }
 
 .clients-item-link {
