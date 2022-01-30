@@ -81,6 +81,12 @@
     justify-content: center;
     align-items: center;
 }
+.background {
+    background-attachment: fixed;
+    height: 50vh;
+    width: 100%;
+}
+
 
 .the_latest_news-title {
     color: #ffffff;
@@ -184,13 +190,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-attachment: fixed;
 }
 
 .popular_clients-title {
     color: white;
     text-align: center;
-    margin-top: 90px;
-    margin-bottom: 50px;
 }
 
 .clients-rectangle {
@@ -204,7 +209,7 @@
     grid-gap: 58px;
     justify-content: center;
     align-items: center;
-    margin-top: 90px;
+    margin-top: 106px;
     margin-bottom: 150px;
 }
 
