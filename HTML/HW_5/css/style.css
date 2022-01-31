@@ -1,0 +1,23 @@
+/* common style */
+.container {
+    width: 1366px;
+    background: url(../img/milanholidays_b/background.png);
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+}
+.header {
+    line-height: 18px;
+}
+/* main style */
+.wrapper {
+    width: 1030px;
+    color: #ffffff;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+
+}
+/* section style */
