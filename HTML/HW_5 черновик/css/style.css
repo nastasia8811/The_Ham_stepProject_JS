@@ -15,49 +15,24 @@
 }
 
 .header {
-    color: #ffffff;
     padding-top: 47px;
     padding-bottom: 17px;
-    margin: 0 auto;
+    margin: auto;
     max-width: 1028px;
     line-height: 18px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 5.5% 10% 1fr 25%;
+    justify-items: end;
+    align-items: center
 }
 
 .header_logo {
-    max-width: 201px;
-}
-
-.header_logo_img {
-    float: left;
-    padding-right: 8px;
-    max-width: 53px;
-    max-height: 47px;
-}
-.milan {
-    font-size: 29px;
-    line-height: 29px;
-    text-transform: uppercase;
-}
-
-.holidays {
-    font-size: 18px;
-    line-height: 18px;
-    text-transform: uppercase;
-}
-a:hover img {
-    background-image: url("../img/logo.png");
-    filter: opacity(0%);
 
 }
 
-a:hover .milan {
-    color: #F26522;
-}
-
-a:hover .holidays {
+.header_logo:hover {
     color: #F26522;
 }
 
@@ -65,17 +40,33 @@ a:hover .holidays {
     text-align: right;
     font-size: 18px;
     line-height: 18px;
-    display: flex;
-    flex-direction: column;
 }
 
+/*grid area*/
+.img {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.milan {
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: 29px;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+
+.holidays {
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
 
 .email {
-
+    grid-area: 1 / 4 / 2 / 5;
 }
 
 .tel {
-
+    grid-area: 2 / 4 / 3 / 5;
 }
 
 
@@ -104,27 +95,16 @@ a:hover .holidays {
 
 .wrapper_item {
     text-align: center;
-    position: relative;
+
+
 }
-.hover_text:hover {
-    color: white;
-}
+
 .wrapper_item_link {
 
 }
 
 /* section style */
-
-.wrapper_item_link:hover {
-    color: #F26522;
-
-}
-
-.banner-orange:hover {
-    position: absolute;
-    bottom: 50%;
-}
-footer {
+.footer {
     margin: 0 auto;
     max-width: 1028px;
     font-size: 12px;
