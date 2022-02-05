@@ -12,6 +12,7 @@
     font-size: 18px;
 }
 
+/* header style */
 .header {
     color: #ffffff;
     padding-top: 47px;
@@ -28,20 +29,23 @@
     display: flex;
 
 }
+
 .header_logo_txt {
-display: flex;
+    display: flex;
     flex-direction: column;
     margin-left: 10px;
     margin-top: 5px;
 }
+
 .header_logo_orange_img {
     display: none;
 }
 
-.header_logo:hover .header_logo_orange_img {
+a:hover .header_logo_orange_img {
     display: block;
 }
-.header_logo:hover .header_logo_img {
+
+a:hover .header_logo_img {
     display: none;
 }
 
@@ -73,6 +77,23 @@ a:hover .header_logo_milan_holidays {
     flex-direction: column;
 }
 
+.email {
+    color: #ffffff;
+    margin-bottom: 19px;
+}
+
+.tel {
+    color: #ffffff;
+}
+
+.email:hover {
+    color: #F26522;
+}
+
+.tel:hover {
+    color: #F26522;
+}
+
 /* main style */
 .wrapper {
     margin: 0 auto;
@@ -85,12 +106,37 @@ a:hover .header_logo_milan_holidays {
 }
 
 .wrapper_item {
+    width: 300px;
+    max-height: 220px;
     text-align: center;
     cursor: pointer;
     position: relative;
 }
+
+/* gradient style*/
+a:hover .wrapper_item {
+    background: #F26522;
+    margin: 2px auto;
+    width: 301px;
+    height: 221px;
+    border-top: 2px solid #F26522;
+    border-bottom: 2px solid #000000;
+    box-sizing: border-box;
+    background-position: 0 0, 100% 0;
+    background-size: 20px 100%;
+}
+
+
+.wrapper_item_title {
+    color: #ffffff;
+}
+
+a:hover .wrapper_item_title {
+    color: #F26522;
+}
+
 .banner-orange-img {
-    width: 287px;
+    width: 288px;
     background-color: #F26522;
     padding-bottom: 12px;
     padding-top: 7px;
@@ -102,7 +148,7 @@ a:hover .header_logo_milan_holidays {
     top: 165px;
 }
 
-.wrapper_item:hover .banner-orange-img {
+a:hover .banner-orange-img {
     display: flex;
 }
 
@@ -121,18 +167,19 @@ a:hover .header_logo_milan_holidays {
     line-height: 20px;
     margin-top: 8px;
 }
+
 .details {
+    color: #ffffff;
     font-size: 14px;
     line-height: 14px;
     margin-right: 21px;
-
 }
+
 .details::after {
     content: '>';
     margin-left: 16px;
-
-
 }
+
 a:hover .wrapper_item_link {
     color: #F26522;
 }
