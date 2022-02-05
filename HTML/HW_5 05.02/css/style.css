@@ -9,6 +9,7 @@
     font-style: normal;
     font-weight: normal;
     color: #ffffff;
+    cursor: pointer;
     font-size: 18px;
 }
 
@@ -25,35 +26,49 @@
 }
 
 .header_logo {
-    display: flex;
-
-}
-.header_logo_txt {
-display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    margin-top: 5px;
-}
-.header_logo_orange_img {
-    display: none;
+    max-width: 155px;
+    position: relative;
 }
 
-.header_logo:hover .header_logo_orange_img {
-    display: block;
-}
-.header_logo:hover .header_logo_img {
-    display: none;
-}
 
-.holidays {
-    margin-top: 3px;
-    margin-bottom: -3px;
+.header_logo_milan_holidays {
+    float: right;
 }
 
 .milan {
     font-size: 29px;
     line-height: 29px;
 }
+
+.header_logo_img {
+    background-image: url("../img/logo.png");
+}
+.header_logo_img {
+    width: 53px;
+    height: 47px;
+    z-index: 1;
+    position: absolute;
+    float: left;
+}
+
+.header_logo_orange_img {
+    float: left;
+    position: absolute;
+    right: 38px;
+    z-index: 0;
+}
+
+a:hover .header_logo_img {
+    position: absolute;
+    float: left;
+    z-index: 0;
+}
+
+a:hover .header_logo_orange_img {
+    float: left;
+    z-index: 2;
+}
+
 
 .header_logo_milan_holidays {
     text-transform: uppercase;
@@ -62,8 +77,8 @@ display: flex;
 
 a:hover .header_logo_milan_holidays {
     color: #F26522;
+    text-transform: uppercase;
 }
-
 
 .header_address {
     text-align: right;
@@ -72,67 +87,97 @@ a:hover .header_logo_milan_holidays {
     display: flex;
     flex-direction: column;
 }
+.email {
+    color: #ffffff;
+    margin-bottom: 19px;
+}
+.tel {
+    color: #ffffff;
+}
+.email:hover {
+    color: #F26522;
+}
 
+.tel:hover {
+    color: #F26522;
+}
 /* main style */
 .wrapper {
     margin: 0 auto;
     max-width: 1030px;
     display: grid;
+    grid-auto-flow: row;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
     grid-column-gap: 60px;
     grid-row-gap: 37px;
 }
 
 .wrapper_item {
     text-align: center;
-    cursor: pointer;
-    position: relative;
-}
-.banner-orange-img {
-    width: 287px;
-    background-color: #F26522;
-    padding-bottom: 12px;
-    padding-top: 7px;
-    padding-left: 16px;
-    display: none;
-    justify-content: space-between;
-    align-items: end;
-    position: absolute;
-    top: 165px;
+    margin-bottom: 8px;
 }
 
-.wrapper_item:hover .banner-orange-img {
-    display: flex;
+.wrapper_item_link {
+    position: relative;
+}
+
+.wrapper_item_img {
+    border: 1px solid;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.banner-orange-img {
+    border: 1px solid;
+    height: auto;
+    position: absolute;
+    bottom: -150px;
+    width: 100%;
+}
+
+a:hover .banner-orange-img {
+    bottom: 0;
 }
 
 .hover_text {
     color: #ffffff;
     font-size: 10px;
     line-height: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+    position: absolute;
+    bottom: 34px;
+    left: 21px;
+    top: 11px;
 }
 
 .price {
     color: #ffffff;
     font-size: 20px;
     line-height: 20px;
-    margin-top: 8px;
+    top: 29px;
+    bottom: 12px;
 }
+
 .details {
+    position: absolute;
+    left: 170px;
+    top: 33px;
     font-size: 14px;
     line-height: 14px;
-    margin-right: 21px;
-
 }
+
 .details::after {
     content: '>';
-    margin-left: 16px;
-
+    height: 100%;
+    position: absolute;
+    top: 0;
 
 }
+
 a:hover .wrapper_item_link {
     color: #F26522;
 }
