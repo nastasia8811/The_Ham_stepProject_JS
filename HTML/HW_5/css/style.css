@@ -2,16 +2,15 @@
 .container {
     margin: 0 auto;
     box-sizing: border-box;
-    max-height: 768px;
     max-width: 1366px;
-    background: url(../img/milanholidays_b/background.png);
+    background: url("../img/milanholidays_b/background.png");
     background-size: cover;
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
     color: #ffffff;
     cursor: pointer;
+    font-size: 18px;
 }
 
 .header {
@@ -27,39 +26,73 @@
 }
 
 .header_logo {
-    max-width: 201px;
+    max-width: 155px;
+
 }
 
 .header_logo_img {
-    float: left;
-    padding-right: 8px;
-    max-width: 53px;
-    max-height: 47px;
+background-image: url("../img/logo.png");
 }
+
+.header_logo_milan_holidays {
+    float: right;
+}
+
 .milan {
     font-size: 29px;
     line-height: 29px;
-    text-transform: uppercase;
 }
 
-.holidays {
-    font-size: 18px;
-    line-height: 18px;
-    text-transform: uppercase;
-}
+
 a:hover img {
-    background-image: url("../img/logo.png");
-    filter: opacity(0%);
-
+    background-image: url("../img/logo_orange.png");
+    background: no-repeat;
 }
 
-a:hover .milan {
+/*
+.header_logo {
+    max-width: 201px;
+    position: relative;
+}
+
+/*.header_logo_img {
+/*width: 53px;
+height: 47px;
+z-index: 1;
+position: relative;
+float: left;
+}
+
+/*.header_logo_orange_img {
+float: left;
+position: absolute;
+right: 38px;
+z-index: 0;
+}
+.header_logo_img:hover {
+position: absolute;
+float: left;
+z-index: 0;
+}
+.header_logo_orange_img:hover {
+float: left;
+z-index: 2;
+}
+
+.header_logo_milan_holidays {
+
+}
+*/
+
+.header_logo_milan_holidays {
+    text-transform: uppercase;
+}
+
+
+a:hover .header_logo_milan_holidays {
     color: #F26522;
 }
 
-a:hover .holidays {
-    color: #F26522;
-}
 
 .header_address {
     text-align: right;
@@ -68,16 +101,6 @@ a:hover .holidays {
     display: flex;
     flex-direction: column;
 }
-
-
-.email {
-
-}
-
-.tel {
-
-}
-
 
 /* main style */
 .wrapper {
@@ -89,47 +112,78 @@ a:hover .holidays {
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
-    left: calc(50% - 1030px / 2);
-    top: calc(50% - 560px / 2);
     grid-column-gap: 60px;
     grid-row-gap: 37px;
 }
 
-.wrapper_item_img {
-    width: 100%;
-    padding-bottom: 20px;
-    max-width: 300px;
-    max-height: 220px;
-}
-
 .wrapper_item {
     text-align: center;
-    position: relative;
-}
-.hover_text:hover {
-    color: white;
 }
 .wrapper_item_link {
+    position: relative;
+}
+
+.wrapper_item_img {
+    border: 1px solid;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 
 }
 
-/* section style */
-
-.wrapper_item_link:hover {
-    color: #F26522;
-
-}
-
-.banner-orange:hover {
+.banner-orange-img {
+    border: 1px solid;
+    height: auto;
     position: absolute;
-    bottom: 50%;
+    bottom: -150px;
+    width: 100%;
 }
+
+a:hover .banner-orange-img {
+    bottom: 0;
+
+}
+.hover_text {
+    color: #ffffff;
+    font-size: 10px;
+    line-height: 10px;
+    position: absolute;
+    bottom: 34px;
+    left: 21px;
+    top: 11px;
+}
+
+.price {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 20px;
+    top: 29px;
+    bottom: 12px;
+}
+.details {
+    position: absolute;
+    left: 170px;
+    top: 33px;
+    font-size: 14px;
+    line-height: 14px;
+
+}
+.details::after {
+    content: '>';
+    height: 100%;
+    position: absolute;
+    top: 0;
+
+}
+a:hover .wrapper_item_link {
+    color: #F26522;
+}
+
 footer {
     margin: 0 auto;
     max-width: 1028px;
     font-size: 12px;
     line-height: 12px;
-
 }
 
 .footer-copyright {
