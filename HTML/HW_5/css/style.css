@@ -45,7 +45,7 @@ a:hover .header_logo_orange_img {
     display: block;
 }
 
-a:hover .header_logo_img {
+a:hover .header_logo {
     display: none;
 }
 
@@ -107,28 +107,21 @@ a:hover .header_logo_milan_holidays {
 
 .wrapper_item {
     width: 300px;
-    max-height: 220px;
     text-align: center;
     cursor: pointer;
     position: relative;
 }
 
-/* gradient style*/
-a:hover .wrapper_item {
-    background: #F26522;
-    margin: 2px auto;
-    width: 301px;
-    height: 221px;
-    border-top: 2px solid #F26522;
-    border-bottom: 2px solid #000000;
-    box-sizing: border-box;
-    background-position: 0 0, 100% 0;
-    background-size: 20px 100%;
+.wrapper_item_img {
+
+    border: 5px solid;
+    border-image: linear-gradient(to right top, #ffffff, #000000);
+    border-image-slice: 1;
+
 }
-
-
 .wrapper_item_title {
     color: #ffffff;
+    margin-top: 20px;
 }
 
 a:hover .wrapper_item_title {
@@ -146,10 +139,28 @@ a:hover .wrapper_item_title {
     align-items: end;
     position: absolute;
     top: 165px;
+    margin-left: 5px;
+}
+
+@keyframes banner-animation {
+    0% {
+        margin-bottom: 0;
+        opacity: 0;
+    }
+    100% {
+        margin-top: -15px;
+        opacity: 1;
+    }
 }
 
 a:hover .banner-orange-img {
     display: flex;
+    animation: banner-animation;
+    transition: background-color 5s;
+    animation-duration: 3s;
+    animation-delay: 200ms;
+    animation-fill-mode: backwards;
+    animation-play-state: running;
 }
 
 .hover_text {
