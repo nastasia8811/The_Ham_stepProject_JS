@@ -27,7 +27,6 @@
 
 .header_logo {
     display: flex;
-
 }
 
 .header_logo_txt {
@@ -45,7 +44,7 @@ a:hover .header_logo_orange_img {
     display: block;
 }
 
-a:hover .header_logo {
+a:hover .header_logo_img {
     display: none;
 }
 
