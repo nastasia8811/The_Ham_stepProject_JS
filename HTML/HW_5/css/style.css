@@ -62,11 +62,9 @@ a:hover .header_logo_img {
     text-transform: uppercase;
 }
 
-
 a:hover .header_logo_milan_holidays {
     color: #F26522;
 }
-
 
 .header_address {
     text-align: right;
@@ -171,21 +169,21 @@ a:hover .banner-orange-img {
     align-items: start;
 }
 
-.price {
+.hover_price {
     color: #ffffff;
     font-size: 20px;
     line-height: 20px;
     margin-top: 8px;
 }
 
-.details {
+.hover_details {
     color: #ffffff;
     font-size: 14px;
     line-height: 14px;
     margin-right: 21px;
 }
 
-.details::after {
+.hover_details::after {
     content: '>';
     margin-left: 16px;
 }
