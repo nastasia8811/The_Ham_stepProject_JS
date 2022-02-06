@@ -4,5 +4,23 @@
     background-image: url("../img/background.png");
     background-size: cover;
     height: 100vh;
+    font-family: Ubuntu, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
 }
 
+.header_list {
+    background-color: RGBA(0,0,0,0.40);
+    box-shadow: 0 4px 4px 0 #00000040;
+    display: flex;
+    color: #ffffff;
+
+
+
+}
+
+.header_list_link {
+    color: #ffffff;
+}
