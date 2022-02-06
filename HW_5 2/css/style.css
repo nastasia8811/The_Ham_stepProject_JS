@@ -98,7 +98,7 @@ a:hover .header_logo_milan_holidays {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 60px;
+    grid-column-gap: 50px;
     grid-row-gap: 37px;
 }
 
@@ -114,8 +114,8 @@ a:hover .header_logo_milan_holidays {
     border: 5px solid;
     border-image: linear-gradient(to right top, #ffffff, #000000);
     border-image-slice: 1;
-}
 
+}
 .wrapper_item_title {
     color: #ffffff;
     margin-top: 20px;
@@ -126,7 +126,7 @@ a:hover .wrapper_item_title {
 }
 
 .banner-orange-img {
-    width: 284px;
+    width: 288px;
     background-color: #F26522;
     padding-bottom: 12px;
     padding-top: 7px;
