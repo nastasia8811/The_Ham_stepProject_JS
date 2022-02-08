@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Sign up form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -35,10 +38,24 @@
             </ul>
         </nav>
     </header>
-    <form>
-        <input type="button" class="btn btn_fb" value="Facebook">
-        <input type="button" class="btn btn_Google" value="Google">
-    </form>
+    <div class="form_container">
+        <form class="form">
+            <h2 class="form_sign_up">Sign Up</h2>
+            <div class="form_button">
+                <input type="button" class="form_btn" value="Facebook">
+                <input type="button" class="form_btn" value="Google">
+            </div>
+            <p class="form_or">or</p>
+            <label class="form_label"><input type="text" class="form_item" value="Jason"></label>
+            <label class="form_label"><input type="text" class="form_item" value="Last Name"></label>
+            <label class="form_label"><input type="email" class="form_item" value="Email"></label>
+            <label class="form_label"><input type="password" class="form_item" value="Choose Password"></label>
+            <label class="form_label"><input type="password" class="form_item" value="Confirm Password"></label>
+            <label class="form_label_checkbox"><input type="checkbox">Agree with our <span><a
+                    class="sign_up_form_checkbox" href="#">Terms & Conditions</a></span></label>
+            <input type="button" class="sign_up_form_account" value="Create Account">
+        </form>
+    </div>
 </div>
 </body>
 </html>

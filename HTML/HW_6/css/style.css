@@ -4,7 +4,7 @@
     background-image: url("../img/background.png");
     background-size: cover;
     height: 100vh;
-    font-family: Ubuntu, serif;
+    font-family: Ubuntu, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -16,7 +16,7 @@
 </svg> */
 
 .header_list {
-    background-color: RGBA(0,0,0,0.40);
+    background-color: RGBA(0, 0, 0, 0.40);
     box-shadow: 0 4px 4px 0 #00000040;
     color: #ffffff;
     display: flex;
@@ -31,4 +31,101 @@
 .icon {
     height: 100%;
     width: 100%;
+}
+
+.form_container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 444px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.52);
+}
+
+.form {
+    max-width: 324px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form_sign_up {
+    align-self: flex-start;
+    font-size: 20px;
+    line-height: 20px;
+    color: #434343;
+
+}
+
+.form_button {
+    display: flex;
+
+}
+
+.form_label {
+    margin-right: 61px;
+    margin-left: 61px;
+}
+
+.form_btn {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.form_btn:first-child {
+    margin-right: 8px;
+}
+
+.form_btn:first-child {
+    background-color: #305DB8;
+
+}
+.form_btn:first-child::before {
+
+}
+
+.form_btn:last-child {
+    background-color: #DF4A32;
+}
+
+.form .form_or {
+    position: relative;
+    margin-top: 31px;
+    margin-bottom: 17px;
+    color: #848484;
+}
+
+.form_or::before  {
+    display: block;
+    width: 152px;
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #F2F2F2;
+    top: 50%;
+    left: 20px;
+
+}
+.form_or::after  {
+    display: block;
+    width: 152px;
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #F2F2F2;
+    top: 50%;
+    right: 20px;
+
+}
+.form_item {
+    color: #BEBEBE;
+    margin-bottom: 15px;
+    width: 324px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid #F2F2F2;
+    border-radius: 4px;
 }
