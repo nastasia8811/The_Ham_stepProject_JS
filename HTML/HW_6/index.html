@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Sign up form</title>
+    <script src="https://kit.fontawesome.com/347c10f788.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
@@ -14,45 +15,52 @@
     <header>
         <nav class="header">
             <h1><a class="header_logo">JOURNEY</a></h1>
-            <a>
-                <div class="icon_box">
-            <svg width="21" height="24">
-                <image class="icon" href="img/header/vector.png" preserveAspectRatio="xMidYMid slice"/>
-            </svg>
-                </div>
-            </a>
-            <a>
-                <svg width="23" height="23">
-                    <image class="icon" href="img/header/vector2.png" preserveAspectRatio="xMidYMid slice"/>
-                </svg>
-            </a>
-            <a>
-                <svg width="23" height="23">
-                    <image class="icon" href="img/header/vector3.png" preserveAspectRatio="xMidYMid slice"/>
-                </svg>
-            </a>
-            <p class="header_text">Welcome, <a class="header_action" href="#">Log In</a></p>
-            <p class="header_text">or <a class="header_action" href="#">Sign Up</a></p>
-            </ul>
+            <div class="icon_box">
+                <a>
+                    <svg width="21" height="24">
+                        <image class="icon" href="img/header/vector.png" preserveAspectRatio="xMidYMid slice"/>
+                    </svg>
+                </a>
+                <a>
+                    <svg width="23" height="23">
+                        <image class="icon" href="img/header/vector2.png" preserveAspectRatio="xMidYMid slice"/>
+                    </svg>
+                </a>
+                <a>
+                    <svg width="23" height="23">
+                        <image class="icon" href="img/header/vector3.png" preserveAspectRatio="xMidYMid slice"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="action_box">
+                <p class="header_text">Welcome, <a class="header_action" href="#">Log In</a></p>
+                <p class="header_text">or <a class="header_action" href="#">Sign Up</a></p>
+            </div>
         </nav>
     </header>
-    <div class="form_container">
-        <form class="form">
-            <h2 class="form_sign_up">Sign Up</h2>
-            <div class="form_button">
-                <input type="button" class="form_btn" value="Facebook">
-                <input type="button" class="form_btn" value="Google">
+
+
+    <div class="box">
+        <div class="top_box">
+            <h2 class="sign_up">Sign Up</h2>
+            <div class="button">
+                <a class="button_btn" href="#"><i class="fa-brands fa-facebook-f"></i>Facebook</a>
+                <a class="button_btn" href="#"><i class="fa-brands fa-google-plus-g"></i>Google</a>
             </div>
-            <p class="form_or">or</p>
-            <label class="form_label"><input type="text" class="form_item" value="Jason"></label>
-            <label class="form_label"><input type="text" class="form_item" value="Last Name"></label>
-            <label class="form_label"><input type="email" class="form_item" value="Email"></label>
-            <label class="form_label"><input type="password" class="form_item" value="Choose Password"></label>
-            <label class="form_label"><input type="password" class="form_item" value="Confirm Password"></label>
+            <p class="box_or">or</p>
+            <form class="form" action="" method="POST">
+                <label class="form_label"><input type="text" class="form_item" value="Jason"></label>
+                <label class="form_label"><input type="text" class="form_item" value="Last Name"></label>
+                <label class="form_label"><input type="email" class="form_item" value="Email"></label>
+                <label class="form_label"><input type="password" class="form_item"
+                                                 placeholder="Choose Password"></label>
+                <label class="form_label"><input type="password" class="form_item"
+                                                 placeholder="Confirm Password"></label>
             <label class="form_label_checkbox"><input type="checkbox">Agree with our <span><a
                     class="sign_up_form_checkbox" href="#">Terms & Conditions</a></span></label>
+            </form>
             <input type="button" class="sign_up_form_account" value="Create Account">
-        </form>
+        </div>
     </div>
 </div>
 </body>
