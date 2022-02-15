@@ -24,6 +24,7 @@
     align-items: center;
     width: 100%;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .header_logo {
@@ -32,6 +33,10 @@
     line-height: 22px;
     margin-left: 79px;
     margin-right: 820px;
+}
+
+.header_logo:hover {
+    color: #01813F;
 }
 
 .icon_box {
@@ -58,6 +63,10 @@ a svg {
     color: #ffffff;
 }
 
+.header_action:first-child {
+    margin-right: 3px;
+}
+
 .header_action:last-child a {
     margin-right: 79px;
 }
@@ -69,6 +78,10 @@ a svg {
     height: 18px;
     background: #3CB878;
     left: 0;
+}
+
+.header_action:hover {
+    color: #01813F;
 }
 
 .box {
@@ -136,8 +149,16 @@ a svg {
     background-color: #305DB8;
 }
 
+.button_btn:first-child:hover {
+    background-color: #022263;
+}
+
 .button_btn:last-child {
     background-color: #DF4A32;
+}
+
+.button_btn:last-child:hover {
+    background-color: #AB1F09;
 }
 
 .button_btn i {
@@ -162,7 +183,7 @@ a svg {
     color: #848484;
 }
 
-.box_or::before {
+.box_or::before ::after {
     display: block;
     width: 152px;
     content: "";
@@ -173,15 +194,9 @@ a svg {
 
 }
 
-.box_or::after {
-    display: block;
-    width: 152px;
-    content: "";
-    position: absolute;
-    border-bottom: 1px solid #F2F2F2;
-    top: 50%;
-    right: 20px;
-
+.form_item:hover {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.21);
+    border-radius: 4px;
 }
 
 .form_label {
@@ -199,14 +214,18 @@ a svg {
     border-radius: 4px;
 }
 
-.sign_up_form_account {
+.create_account {
     background: rgba(60, 184, 120, 0.8);
     border-radius: 4px;
     color: #ffffff;
     padding-top: 16px;
     padding-bottom: 16px;
     width: 100%;
-   margin-top: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+.create_account:hover {
+    background: #01813F;
 }
 
 input::placeholder {
