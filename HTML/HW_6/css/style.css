@@ -242,3 +242,11 @@ input::placeholder {
     color: #3CB878;
 }
 
+a:hover svg {
+    color: #01813F;
+}
+
+svg:hover path{
+    fill: #01813F;
+}
+
