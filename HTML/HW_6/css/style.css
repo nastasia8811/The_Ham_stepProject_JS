@@ -11,10 +11,6 @@
     line-height: 14px;
 }
 
-/* <svg width="200" height="200">
-  <image href="cheesecake.jpg" height="100%" width="100%" preserveAspectRatio="xMidYMid slice" />
-</svg> */
-
 .header {
     background-color: RGBA(0, 0, 0, 0.40);
     box-shadow: 0 4px 4px 0 #00000040;
@@ -24,15 +20,19 @@
     align-items: center;
     width: 100%;
     margin: 0 auto;
-    cursor: pointer;
+    min-height: 58px;
+
 }
 
 .header_logo {
+    cursor: pointer;
     font-weight: bold;
     font-size: 22px;
     line-height: 22px;
     margin-left: 79px;
     margin-right: 820px;
+    /*margin-top: 18px;*/
+    /*margin-bottom: 18px;*/
 }
 
 .header_logo:hover {
@@ -47,10 +47,16 @@
 .icon {
     height: 100%;
     width: 100%;
+    cursor: pointer;
 }
 
 a svg {
     margin-right: 26px;
+    cursor: pointer;
+}
+
+svg:hover path {
+    fill: #01813F;
 }
 
 .action_box {
@@ -114,14 +120,24 @@ a svg {
     line-height: 20px;
     color: #434343;
     margin-bottom: 15px;
+    margin-right: 216px;
 }
 
-.sign_up::after {
-    content: "Log In";
+.top_box_log_in {
+    display: flex;
+    align-items: center;
+}
+
+.log_in {
+    margin-bottom: 8px;
     color: #3CB878;
-    margin-left: 216px;
     font-size: 14px;
     line-height: 14px;
+}
+
+.log_in:hover {
+    color: #01813F;
+    text-decoration: underline;
 }
 
 .button {
@@ -139,13 +155,11 @@ a svg {
     color: #ffffff;
     border-radius: 4px;
     width: 50%;
+    position: relative;
 }
 
 .button_btn:first-child {
     margin-right: 8px;
-}
-
-.button_btn:first-child {
     background-color: #305DB8;
 }
 
@@ -161,19 +175,30 @@ a svg {
     background-color: #AB1F09;
 }
 
-.button_btn i {
-    border-right: 1px solid #cccc;
-    margin-right: 37.77px;
+.button_btn i::after {
+    position: absolute;
+    content: "";
+    border-right: 1px solid #0A162F;
+    background: #2B0D09;
+    height: 28px;
+    left: 55px;
+    bottom: 15px;
+    mix-blend-mode: normal;
+    opacity: 0.1;
 }
 
 .button_btn:first-child i {
-    padding-right: 18.77px;
-    padding-left: 16.77px;
+    padding-right: 18.5px;
+    padding-left: 16.5px;
+    margin-right: 25px;
+    font-size: 25px;
 }
 
 .button_btn:last-child i {
     padding-right: 7px;
-    padding-left: 12px;
+    padding-left: 10px;
+    margin-right: 38px;
+    font-size: 30px;
 }
 
 .box .box_or {
@@ -191,7 +216,6 @@ a svg {
     border-bottom: 1px solid #F2F2F2;
     top: 50%;
     left: 20px;
-
 }
 
 .form_item:hover {
@@ -224,6 +248,7 @@ a svg {
     margin-top: 20px;
     text-align: center;
 }
+
 .create_account:hover {
     background: #01813F;
 }
@@ -235,18 +260,40 @@ input::placeholder {
 .form_label_checkbox {
     margin-left: 58px;
     margin-top: 12px;
+    position: relative;
+}
 
+.form_label_checkbox {
+    padding-bottom: 5px;
 }
 
 .sign_up_form_checkbox {
     color: #3CB878;
 }
 
-a:hover svg {
+.sign_up_form_checkbox:hover {
+    color: #01813F;
+    text-decoration: underline;
+}
+
+[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.0001);
+    border: 1px solid #F2F2F2;
+
+}
+
+.sign_up_form_checkbox::before {
+    content: ">";
+    color: #3CB878;
+    position: absolute;
+    right: 225px;
+    transform: rotate(100deg);
+    font-size: 38px;
+    left: 11px;
+}
+
+.sign_up_form_checkbox:hover::before {
     color: #01813F;
 }
-
-svg:hover path{
-    fill: #01813F;
-}
-
