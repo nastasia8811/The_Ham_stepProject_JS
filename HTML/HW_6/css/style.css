@@ -261,10 +261,8 @@ input::placeholder {
     margin-left: 58px;
     margin-top: 12px;
     position: relative;
-}
-
-.form_label_checkbox {
     padding-bottom: 5px;
+    outline: none;
 }
 
 .sign_up_form_checkbox {
@@ -276,12 +274,13 @@ input::placeholder {
     text-decoration: underline;
 }
 
-[type='checkbox'] {
+.form_label_checkbox input {
     width: 20px;
     height: 20px;
+    border-radius:0;
+    outline: none;
     background: rgba(0, 0, 0, 0.0001);
     border: 1px solid #F2F2F2;
-
 }
 
 .sign_up_form_checkbox::before {
