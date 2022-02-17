@@ -19,10 +19,9 @@
 // console.log(myNumberOne / myNumberTwo);
 // console.log(myNumberOne % myNumberTwo);
 
-
+prompt()
 
 if(c>1 && c<10) {
     console.log(c);
 }
-
 
