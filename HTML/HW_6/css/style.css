@@ -33,9 +33,6 @@
     padding-left: 79px;
 }
 
-.header_logo:hover {
-    color: #01813F;
-}
 
 .icon_box {
     display: flex;
@@ -49,10 +46,6 @@ a svg {
 
 a:nth-child(3) {
     padding-right: 27px;
-}
-
-svg:hover path {
-    fill: #01813F;
 }
 
 a:nth-child(3)::after {
@@ -69,10 +62,6 @@ a:nth-child(3)::after {
 
 .header_action {
     color: #ffffff;
-}
-
-.header_action:hover {
-    color: #01813F;
 }
 
 .icon_box:nth-child(2) {
@@ -104,8 +93,7 @@ a:nth-child(3)::after {
 }
 
 .top_box {
-    min-width: 347px;
-    max-width: 347px;
+
     display: flex;
     justify-content: stretch;
     align-items: center;
@@ -138,19 +126,14 @@ a:nth-child(3)::after {
     line-height: 14px;
 }
 
-.log_in:hover {
-    color: #01813F;
-    text-decoration: underline;
-}
-
 .button {
     display: flex;
     width: 100%;
 }
 
 .button_btn {
-    padding-top: 17px;
-    padding-bottom: 17px;
+    padding-top: 13px;
+    padding-bottom: 13px;
     font-size: 16px;
     line-height: 16px;
     color: #ffffff;
@@ -164,16 +147,8 @@ a:nth-child(3)::after {
     background-color: #305DB8;
 }
 
-.button_btn:first-child:hover {
-    background-color: #022263;
-}
-
 .button_btn:last-child {
     background-color: #DF4A32;
-}
-
-.button_btn:last-child:hover {
-    background-color: #AB1F09;
 }
 
 .button_btn i::after {
@@ -205,7 +180,7 @@ a:nth-child(3)::after {
 
 .button_title {
     display: inline-block;
-    padding-bottom: 5px;
+    padding-bottom: 7px;
 }
 
 .button_title:first-child {
@@ -219,35 +194,36 @@ a:nth-child(3)::after {
     color: #848484;
 }
 
-.box_or::before ::after {
+.box_or:before, .box_or:after {
     display: block;
-    width: 152px;
+    width: 148px;
     content: "";
     position: absolute;
     border-bottom: 1px solid #F2F2F2;
     top: 50%;
+}
+
+.box_or::before {
+    right: 20px;
+}
+
+.box_or::after {
     left: 20px;
-}
-
-.form_item:hover {
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.21);
-    border-radius: 4px;
-}
-
-.form_label {
-    margin-right: 61px;
-    margin-left: 61px;
 }
 
 .form_item {
     margin-bottom: 15px;
-    width: 324px;
+    min-width: 300px;
     padding-top: 15px;
     padding-bottom: 15px;
     border: 1px solid #F2F2F2;
     border-radius: 4px;
     text-decoration: #434343;
     padding-left: 19px;
+    margin-right: 61px;
+    margin-left: 61px;
+    outline: none;
+    /*cursor: pointer;*/
 }
 
 .create_account {
@@ -259,10 +235,6 @@ a:nth-child(3)::after {
     width: 100%;
     margin-top: 20px;
     text-align: center;
-}
-
-.create_account:hover {
-    background: #01813F;
 }
 
 input::placeholder {
@@ -317,7 +289,39 @@ input::placeholder {
     color: #3CB878;
 }
 
-.form-label-link:hover {
-    color: #01813F;
-    text-decoration: underline;
+/*hover decoration*/
+svg:hover path {
+    fill: #01813F;
+    transition: text-shadow 0.3s ease-in-out;
 }
+
+.header_action:hover, .header_logo:hover, .log_in:hover {
+    color: #01813F;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.log_in:hover, .form-label-link:hover {
+    text-decoration: underline;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.button_btn:first-child:hover {
+    background-color: #022263;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.button_btn:last-child:hover {
+    background-color: #AB1F09;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.create_account:hover {
+    background: #01813F;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.form_item:hover {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.21);
+
+}
+
