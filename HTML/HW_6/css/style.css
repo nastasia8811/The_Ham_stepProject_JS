@@ -1,3 +1,4 @@
+/*body style*/
 .body {
     margin: 0 auto;
     width: 100%;
@@ -11,6 +12,7 @@
     line-height: 14px;
 }
 
+/*header style*/
 .header {
     background-color: RGBA(0, 0, 0, 0.40);
     box-shadow: 0 4px 4px 0 #00000040;
@@ -21,7 +23,6 @@
     width: 100%;
     margin: 0 auto;
     min-height: 58px;
-
 }
 
 .header_logo {
@@ -30,8 +31,6 @@
     font-size: 22px;
     line-height: 22px;
     padding-left: 79px;
-    /*margin-top: 18px;*/
-    /*margin-bottom: 18px;*/
 }
 
 .header_logo:hover {
@@ -40,15 +39,8 @@
 
 .icon_box {
     display: flex;
-    /*border-right: 1px solid #cccc;*/
     justify-content: space-around;
 }
-
-/*.icon {*/
-/*    height: 100%;*/
-/*    width: 100%;*/
-/*    cursor: pointer;*/
-/*}*/
 
 a svg {
     margin-right: 26px;
@@ -71,12 +63,6 @@ a:nth-child(3)::after {
     margin-top: 2px;
 }
 
-/*.action_box {*/
-/*    display: flex;*/
-/*    padding-left: 27px;*/
-/*    padding-right: 79px;*/
-/*}*/
-
 .header_text {
     padding-top: 5px;
 }
@@ -97,7 +83,6 @@ a:nth-child(3)::after {
     margin-right: 3px;
 }
 
-
 .sign_up::before {
     content: "";
     position: absolute;
@@ -107,6 +92,7 @@ a:nth-child(3)::after {
     left: 0;
 }
 
+/*form style*/
 .box {
     position: relative;
     margin-left: auto;
@@ -160,7 +146,6 @@ a:nth-child(3)::after {
 .button {
     display: flex;
     width: 100%;
-
 }
 
 .button_btn {
@@ -201,6 +186,7 @@ a:nth-child(3)::after {
     bottom: 15px;
     mix-blend-mode: normal;
     opacity: 0.1;
+    padding-bottom: 5px;
 }
 
 .button_btn:first-child i {
@@ -223,9 +209,8 @@ a:nth-child(3)::after {
 }
 
 .button_title:first-child {
-padding-right: 21px;
+    padding-right: 21px;
 }
-
 
 .box .box_or {
     position: relative;
@@ -284,48 +269,6 @@ input::placeholder {
     color: #BEBEBE;
 }
 
-/*
-.form_label_checkbox {
-    margin-left: 58px;
-    margin-top: 12px;
-    position: relative;
-    padding-bottom: 5px;
-    outline: none;
-}
-
-.sign_up_form_checkbox {
-    color: #3CB878;
-}
-
-.sign_up_form_checkbox:hover {
-    color: #01813F;
-    text-decoration: underline;
-}
-
-.form_label_checkbox input {
-    width: 20px;
-    height: 20px;
-    border-radius: 0;
-    outline: none;
-    background: rgba(0, 0, 0, 0.0001);
-    border: 1px solid #F2F2F2;
-}
-
-.sign_up_form_checkbox::before {
-    content: ">";
-    color: #3CB878;
-    position: absolute;
-    right: 225px;
-    transform: rotate(100deg);
-    font-size: 38px;
-    left: 11px;
-}
-
-.sign_up_form_checkbox:hover::before {
-    color: #01813F;
-}
-*/
-
 .form-checkbox {
     display: flex;
     align-items: center;
@@ -358,7 +301,6 @@ input::placeholder {
     font-size: 14px;
     line-height: 14px;
     color: #434343;
-
 }
 
 .form__element--checkbox:checked + .label-for-check::before {
@@ -373,7 +315,6 @@ input::placeholder {
 
 .form-label-link {
     color: #3CB878;
-
 }
 
 .form-label-link:hover {
