@@ -1,27 +1,10 @@
-// const myNumber = 1;
-// console.log(myNumber);
-//
-//
-// let myString = '123';
-// console.log(typeof myString);
-// console.log(typeof parseInt(myString));
-// console.log(typeof parseFloot(myString));
-// console.log(typeof + myString);
-//
-//
-// alert ("hello!This is alert");
-
-
-// const myNumberOne = +prompt('введите номер 1');
-// const myNumberTwo = +prompt('введите номер 2');
-// console.log(myNumberOne + myNumberTwo);
-// console.log(myNumberOne - myNumberTwo);
-// console.log(myNumberOne / myNumberTwo);
-// console.log(myNumberOne % myNumberTwo);
-
-prompt()
-
-if(c>1 && c<10) {
-    console.log(c);
-}
-
+// const firstNumber1 = +prompt("enter first number");
+// const firstNumber2 = +prompt("enter first number");
+// const firstNumber3 = +prompt("enter first number");
+// if(isNaN(firstNumber1) || isNaN(firstNumber2) || isNaN(firstNumber3));
+// {
+//     alert('error');
+// }ellse
+// {
+//     console.log((firstNumber1 + firstNumber2 + firstNumber3) / 3);
+// }
