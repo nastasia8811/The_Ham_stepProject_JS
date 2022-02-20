@@ -1,10 +1,17 @@
-// const firstNumber1 = +prompt("enter first number");
-// const firstNumber2 = +prompt("enter first number");
-// const firstNumber3 = +prompt("enter first number");
-// if(isNaN(firstNumber1) || isNaN(firstNumber2) || isNaN(firstNumber3));
-// {
-//     alert('error');
-// }ellse
-// {
-//     console.log((firstNumber1 + firstNumber2 + firstNumber3) / 3);
-// }
+"use strict";
+let userName;
+while (!userName) {
+    userName = prompt("Введите Ваше имя");
+}
+let userAge;
+userAge = prompt("Введите Ваш возраст");
+if (userAge < 18) {
+    alert("You are not allowed to visit this website")
+}else if (userAge >= 18 || userAge <= 22)) {
+    (confirm(`Welcome, ${userName}`))
+}else alert("You are not allowed to visit this website")
+
+if (userAge >= 23) {
+    alert(`Welcome, ${userName}`)
+}
+

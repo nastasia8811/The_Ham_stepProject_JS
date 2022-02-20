@@ -34,6 +34,17 @@ while (!lastName){
 }
 let birthYear;
 while (!birthYear || birthYear < 1910 || birthYear > 2022) {
-    birthYear=prompt ("Введите Ваш год рождения");
+    birthYear = prompt("Введите Ваш год рождения");
+    alert(`"Добро пожаловать, родившийся в ${birthYear}, ${firstName} ${lastName}"`);
+
+
+    You
+    are
+    not
+    allowed
+    to
+    visit
+    this
+    website
+
 }
-alert(`"Добро пожаловать, родившийся в ${birthYear}, ${firstName} ${lastName}"`);
