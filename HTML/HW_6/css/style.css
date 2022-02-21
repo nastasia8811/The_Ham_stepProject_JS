@@ -39,21 +39,22 @@
     justify-content: space-around;
 }
 
-a svg {
+.icon_box a svg {
     margin-right: 26px;
     cursor: pointer;
 }
 
-a:nth-child(3) {
+.icon_box a:nth-child(3) {
     padding-right: 27px;
 }
 
-a:nth-child(3)::after {
+.icon_box a:nth-child(3)::after {
     position: absolute;
     content: "";
     border-right: 1px solid rgba(255, 255, 255, 0.9);
     height: 19px;
     margin-top: 2px;
+    opacity: 0.1;
 }
 
 .header_text {
@@ -84,8 +85,8 @@ a:nth-child(3)::after {
 /*form style*/
 .box {
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    left: 36%;
+    right: 36%;
     margin-top: calc(25% - 300px);
     max-width: 444px;
     background: #FFFFFF;
@@ -93,7 +94,6 @@ a:nth-child(3)::after {
 }
 
 .top_box {
-
     display: flex;
     justify-content: stretch;
     align-items: center;
@@ -132,8 +132,8 @@ a:nth-child(3)::after {
 }
 
 .button_btn {
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     font-size: 16px;
     line-height: 16px;
     color: #ffffff;
@@ -158,10 +158,9 @@ a:nth-child(3)::after {
     background: #2B0D09;
     height: 28px;
     left: 55px;
-    bottom: 15px;
     mix-blend-mode: normal;
     opacity: 0.1;
-    padding-bottom: 5px;
+
 }
 
 .button_btn:first-child i {
@@ -180,7 +179,7 @@ a:nth-child(3)::after {
 
 .button_title {
     display: inline-block;
-    padding-bottom: 7px;
+    margin-bottom: 7px;
 }
 
 .button_title:first-child {
@@ -229,11 +228,13 @@ a:nth-child(3)::after {
 .create_account {
     background: rgba(60, 184, 120, 0.8);
     border-radius: 4px;
+    border: none;
     color: #ffffff;
     padding-top: 16px;
     padding-bottom: 16px;
-    width: 100%;
+    width: 73%;
     margin-top: 20px;
+    margin-left: 61px;
     text-align: center;
 }
 
