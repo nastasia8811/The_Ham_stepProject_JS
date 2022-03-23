@@ -9,7 +9,6 @@
 
 .table {
     position: absolute;
-
     font-family: 'Arimo', sans-serif;
     font-style: normal;
     line-height: 28px;
@@ -17,13 +16,13 @@
     text-transform: uppercase;
     color: #484848;
     text-align: center;
-    margin-top: 22px;
-    margin-bottom: 22px;
 }
 
 .background_light {
     background: #FAFAFA;
     border-right: none;
+    margin-top: 22px;
+    margin-bottom: 22px;
 }
 .background_light_gray {
     background: #F2F2F2;
@@ -63,13 +62,19 @@ th {
     margin-top: 27px;
     margin-bottom: 28px;
     font-weight: 700;
-    border: 1px solid #E3E3E4;
+    border: none;
+    padding-top: 22px;
+    padding-bottom: 22px;
 }
 
 td {
-    border: 1px solid #E3E3E4;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.27);
     font-size: 16px;
     font-weight: 400;
+    min-width: 280px;
+    padding-top: 22px;
+    padding-bottom: 22px;
 }
 
 .button{
@@ -77,6 +82,14 @@ td {
     font-size: 16px;
     line-height: 16px;
     text-transform: uppercase;
+    border: none;
+    border-radius: 5px 5px 0 0;
+   padding-top: 20px;
+    padding-bottom: 8px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+
 }
 .background_dark_grey {
+    background: #484848;
 }
