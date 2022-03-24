@@ -43,7 +43,7 @@
    background: #F04A56;
     color: #FFFFFF;
     font-size: 30px;
-    text-align: center;
+
 }
 
 .background_blue {
@@ -99,6 +99,8 @@ td {
 .background_dark_grey {
     background: #484848;
     border-bottom: 9px solid #404040;
+    padding-left: 45px;
+    padding-right: 45px;
 }
 
 .background_green.button {
@@ -140,7 +142,15 @@ td {
     line-height: 28px;
 }
 
-td svg path {
+.background_light_gray svg, .background_gray svg {
 margin-right: 5px;
 
+}
+
+.background_contact {
+    background: #DDDDDD;
+}
+
+.background_light_gray td:nth-child(3) {
+    background: #FAFAFA;
 }
