@@ -1,59 +1,39 @@
+//Теоретичні питання
+
+// 1) Які існують типи даних у Javascript?
+
+// Число «number» - примітивні
+// Число «bigint»
+// Строка «string» - примітивні
+// Булевий (логічний) тип «boolean» - примітивні
+// «null» - примітивні
+// «undefined» - примітивні
+// «symbol»
+// «object» - примітивні
+
+// 2) У чому різниця між == і ===?
+
+// == - порівняння (тип не порівнюється)
+// === - строге порівняння (порівнується також тип)
+
+// 3) Що таке оператор?
+
+//за допомогою операторів ми можемо порівнювати операнди, додавати, віднімати, множити , ділити,
+//брати остаток від ділення %, приведення до ступеню **.
+//об'єднувати строки з числами і т.п.
+
+// Завдання
+
 "use strict";
-const userName = prompt("Введите Ваше имя");
-const userAge = +prompt("Введите Ваш возраст");
+const userName = prompt("Введите Ваше имя", "");
+const userAge = +prompt("Введите Ваш возраст", "");
 
-if (userName (!"string")) {
-    prompt("Введите Ваше имя");
-} else (userName ("string")); {
-    +prompt("Введите Ваш возраст");
+while (!userName) { prompt("Введите Ваше имя", "") }
+while (isNaN(userAge)) { +prompt("Введите Ваш возраст", "") }
 
-
-
-    if (userAge (!"number")) {
-        +prompt("Введите Ваш возраст");
-    } else if (userAge ("number") && userAge >= 18 && userAge < 22) {
-        confirm("Are you sure you want to continue?");
-        alert(`Welcome, ${userName}`);
-    } else {alert(`Welcome, ${userName}`);}
-}
-
-
-
-/*switch (userAge) {
-    case 18:
-        confirm("Are you sure you want to continue?");
-        break;
-    case 19:
-        confirm("Are you sure you want to continue?");
-        alert(`Welcome, ${userName}`);
-        break;
-    case 20:
-        confirm("Are you sure you want to continue?");
-        alert(`Welcome, ${userName}`);
-        break;
-    case 21:
-        confirm("Are you sure you want to continue?");
-        alert(`Welcome, ${userName}`);
-        break;
-    case 22:
-        alert(`Welcome, ${userName}`);
-        break;
-
-    default:
-        alert("You are not allowed to visit this website");
-}
-
-if (userAge < 17) {
-    alert("You are not allowed to visit this website");
-}
-else if (userAge >= 18 && userAge < 22) {
-    (confirm("Are you sure you want to continue?"));
-        alert(`Welcome, ${userName}`);
-}else if (userAge (false)){
-    alert("You are not allowed to visit this website");
-}
-else if (userAge === 22) {
+if (userAge >= 18 && userAge <= 22 && confirm("Are you sure you want to continue?")) {
+    alert(`Welcome, ${userName}`);
+ } else if (userAge > 22) {
     alert(`Welcome, ${userName}`);
 } else {
-     alert("You are not allowed to visit this website");
-}*/
+     alert("You are not allowed to visit this website");}
