@@ -18,15 +18,22 @@
 //     alert( Number('8') / Number('2') ); // 4
 
 // ЗАВДАННЯ
+
 "use strict";
 const userNumber = +prompt("Введите Ваше число");
-for ( let i = 0 ; i < userNumber; i++) {
-    if (userNumber > i && userNumber % 5 === 0 && i % 5 === 0 )
-    {
-        console.log(i);
-    }
-else
-    if (userNumber % 5 !== 0) {
+switch (userNumber) {
+    case  1:
+    case  2:
+    case  3:
+    case  4:
         alert("Sorry, no numbers");
+        break;
+    default:
+        break;
+}
+
+for (let i = 0; i <= userNumber; i++) {
+    if (userNumber >= i && i % 5 === 0) {
+        console.log(i);
     }
 }
