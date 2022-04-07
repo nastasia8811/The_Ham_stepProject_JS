@@ -21,19 +21,10 @@
 
 "use strict";
 const userNumber = +prompt("Введите Ваше число");
-switch (userNumber) {
-    case  1:
-    case  2:
-    case  3:
-    case  4:
+for (let i = 0; i <= userNumber; i++){
+    if (userNumber <= 4){
         alert("Sorry, no numbers");
-        break;
-    default:
-        break;
-}
-
-for (let i = 0; i <= userNumber; i++) {
-    if (userNumber >= i && i % 5 === 0) {
+    }else if (userNumber >= i && i % 5 === 0){
         console.log(i);
     }
 }
