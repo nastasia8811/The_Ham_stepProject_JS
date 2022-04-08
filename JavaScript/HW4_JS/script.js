@@ -3,33 +3,32 @@
 // 3)
 // ЗАВДАННЯ
 "use strict";
-const firstNumber = +prompt("Введите число № 1");
-const secondNumber = +prompt("Введите число № 2");
-
-
-const getMathematicalOperation = () => {
-    let userChoice;
-
-    do {
-        userChoice = prompt('Выберите математическую операцию: '+', '-', '*', '/'', userChoice);
-    }
-
-    while (userChoice !== '+' && userChoice !== '-' && userChoice !== '*' && userChoice !== '/');
-
-    return userChoice;
+// const firstNumber = +prompt("Введите число № 1");
+// const secondNumber = +prompt("Введите число № 2");
+function getUserNumber() {
+   const firstNumber = userNumber('enter first number');
+   const secondNumber = userNumber('enter second number');
+    return
 }
+//     return +firstNumber + +secondNumber
+//     // if(isNaN(+a) || isNaN(+b) || a === null || b === null || a === "" || b === ""){
+//     //     a = prompt("enter first number:")
+//     //     b = prompt("enter second number:")
+//     // }
+// }
+// console.log(sum());
 
-switch (userChoice) {
-    case  '+':
-    case  '-':
-    case  '*':
-    case  '/':
-        alert("Sorry, no numbers");
-        break;
-    default:
-        break;
-    }
-
+// const getMathematicalOperation = () => {
+//     let userChoice;
+//
+//     do {
+//         userChoice = prompt('Выберите математическую операцию: '+', '-', '*', '/'', userChoice);
+//     }
+//
+//     while (userChoice !== '+' && userChoice !== '-' && userChoice !== '*' && userChoice !== '/');
+//
+//     return userChoice;
+// }
 // const squareArea = () => {
 //     const plus = getNumber("Enter the edge")
 //     return edge**2;
