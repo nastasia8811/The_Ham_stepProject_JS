@@ -1,15 +1,62 @@
-// 1)
-// 2)
-// 3)
-// ЗАВДАННЯ
-"use strict";
-// const firstNumber = +prompt("Введите число № 1");
-// const secondNumber = +prompt("Введите число № 2");
-function getUserNumber() {
-   const firstNumber = userNumber('enter first number');
-   const secondNumber = userNumber('enter second number');
-    return
+//
+//
+// const getUserNumber = function(firstNumber = +prompt("Введіть число № 1"), secondNumber = +prompt("Введіть число № 2")){
+// }
+// getUserNumber(firstNumber, secondNumber);
+//
+// const mathematicalOperation = function(firstNum,userChoice= +prompt('Виберіть математичну операцію:  + ,  - , * , /'), secondNum) {
+//     if (userChoice === '+') {
+//         return '+';
+//     } else if (userChoice === '-') {
+//         return '-';
+//     } else if (userChoice === '*') {
+//         return '*';
+//     } else if (userChoice === '/') {
+//         return '/';
+//     }
+//     mathematicalOperation(firstNumber, userChoice, secondNumber);
+
+//
+// const getMathematicalOperation = () => {
+//
+// }
+
+
+// const firstNumber = +prompt("Введіть число № 1");
+// const secondNumber = +prompt("Введіть число № 2");
+// const userChoice = prompt('Виберіть математичну операцію:  + ,  - , * , /');
+//  const resultOfExecution = function (firstNum, choice, secondNum){
+//      if (choice === '+'){
+//          return '+';
+//      } else if (choice === '-'){
+//          return '-';
+//      } else if (choice === '*'){
+//          return '*';
+//      } else if (choice === '/'){
+//          return '/';
+//      }
+//  }
+// resultOfExecution (firstNumber, userChoice, secondNumber);
+
+const firstNumber = +prompt("Введіть число № 1");
+const secondNumber = +prompt("Введіть число № 2");
+const userChoice = prompt('Виберіть математичну операцію:  + ,  - , * , /');
+
+const resultOfExecution = function (firstNum, choice, secondNum){
+    if (choice === '+'){
+        return 'firstNum + secondNum';
+    } else if (choice === '-'){
+        return 'firstNum - secondNum';
+    } else if (choice === '*'){
+        return 'firstNum * secondNum';
+    } else if (choice === '/'){
+        return 'firstNum / secondNum';
+    }
 }
+resultOfExecution (firstNumber, userChoice, secondNumber);
+console.log(firstNumber + userChoice + secondNumber)
+
+
 //     return +firstNumber + +secondNumber
 //     // if(isNaN(+a) || isNaN(+b) || a === null || b === null || a === "" || b === ""){
 //     //     a = prompt("enter first number:")
@@ -18,7 +65,7 @@ function getUserNumber() {
 // }
 // console.log(sum());
 
-// const getMathematicalOperation = () => {
+//  const getMathematicalOperation = () => {
 //     let userChoice;
 //
 //     do {
@@ -29,6 +76,8 @@ function getUserNumber() {
 //
 //     return userChoice;
 // }
+
+
 // const squareArea = () => {
 //     const plus = getNumber("Enter the edge")
 //     return edge**2;
