@@ -1,19 +1,16 @@
-
-const createNewUser = (firstName,lastName) => {
-    const newUser = {
+const createNewUser = (firstName= null,lastName= null) => {
+    return {
         firstName,
         lastName,
-        getLogin: function () {
-            return this.firstName.slice(0,1).toLowerCase() + lastName.toLowerCase();
+        get getLogin() {
+            return `${this.firstName.slice(0,1).toLowerCase()}${this.lastName.toLowerCase()}`
         }
-        }
-    let getLogin = newUser.getLogin();
-    console.log(newUser);
-    console.log(getLogin);
     };
-    createNewUser(prompt("Enter your firstName"),prompt("Enter your lastName"));
+};
+let newUser = createNewUser(prompt("Enter your firstName"),prompt("Enter your lastName"));
+console.log(newUser.getLogin);
+console.log(newUser);
 
-let myUser = CreateNewUser();
 
 
 
