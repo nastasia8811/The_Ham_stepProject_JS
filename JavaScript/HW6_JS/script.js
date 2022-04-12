@@ -1,50 +1,32 @@
-// 1) Функції потрібні для того, щоб не дублювати код
-// 2) аргумент - це значення яке передається параметру.
-// в одну функцію можна передати багато аргументів
-// 3) За допомогою інструкції return функція може повернути деяке значення
-// (результат роботи функції) програмі, яка її викликала.
-// Значення, що повертається, передається в точку виклику функції.
+//1) Функція, яка є властивістю об'єкту, називається методом цього объекта.
+
+//2) строка
+
+//3) Посилальні типи –  ці типи можуть містити дуже великі обсяги дуже різнорідних даних,
+// змінна, що містить тип посилання, фактично його значення не містить. Вона містить посилання місце у пам'яті,
+// де розміщуються реальні дані.
 
 
-const firstNumber = +prompt("Введіть число № 1");
-const secondNumber = +prompt("Введіть число № 2");
-const choice = prompt('Виберіть математичну операцію:  + ,  - , * , /');
-
-
-const resultOfExecution = function (firstNum, userChoice, secondNum){
-
-    if (userChoice === '+'){
-        return firstNum + secondNum;
-    } else if (userChoice === '-'){
-        return firstNum - secondNum;
-    } else if (userChoice === '*'){
-        return firstNum * secondNum;
-    } else if (userChoice === '/'){
-        return firstNum / secondNum;
-    }
+let createNewUser = (firstName= null,lastName= null) => {
+    return {
+        firstName,
+        lastName,
+        get getLogin() {
+            return `${this.firstName.slice(0,1).toLowerCase()}${this.lastName.toLowerCase()}`
+        },
+    };
 };
-resultOfExecution (firstNumber, choice, secondNumber);
-console.log(resultOfExecution(firstNumber , choice , secondNumber));
+let newUser = createNewUser(prompt("Enter your firstName"),prompt("Enter your lastName"));
+console.log(newUser.getLogin);
+console.log(newUser);
+
+newUser.birthday = createNewUser (prompt("Enter your birthday",""));
+newUser.birthday = new Date();
+console.log(newUser.birthday);
 
 
 
 
-// const firstNumber = +prompt("Введіть число № 1");
-// const secondNumber = +prompt("Введіть число № 2");
-// const choice = prompt('Виберіть математичну операцію:  + ,  - , * , /');
-//
-//
-// const resultOfExecution = function (firstNum, userChoice, secondNum){
-//
-//     if (choice === '+'){
-//         return firstNumber + secondNumber;
-//     } else if (choice === '-'){
-//         return firstNumber - secondNumber;
-//     } else if (choice === '*'){
-//         return firstNumber * secondNumber;
-//     } else if (choice === '/'){
-//         return firstNumber / secondNumber;
-//     }
-// };
-// resultOfExecution (firstNumber, choice, secondNumber);
-// console.log(resultOfExecution(firstNumber , choice , secondNumber));
+
+
+
