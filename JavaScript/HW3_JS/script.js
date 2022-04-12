@@ -21,10 +21,11 @@
 
 "use strict";
 const userNumber = +prompt("Введите Ваше число");
+if (userNumber <= 4){
+    alert("Sorry, no numbers");
+}
 for (let i = 0; i <= userNumber; i++){
-    if (userNumber <= 4){
-        alert("Sorry, no numbers");
-    }else if (userNumber >= i && i % 5 === 0){
+    if (userNumber >= i && i % 5 === 0){
         console.log(i);
     }
 }
