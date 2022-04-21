@@ -9,11 +9,19 @@
 // });
 // console.log(newArray);
 
-let filterBy = (elementArr = null,element = null) => {
-    elementArr.forEach(typeof arguments)
-    if (elementArr.arguments === element){
-        return false
-    }else console.log(filterBy(arguments))
+let filterBy = (elementArr = null,type = null) => {
+return elementArr.filter((item)=>{
+    if (item === null){
+        if (type === "null"){
+            return false
+        } else {
+            return true
+        }
+    }
+    return typeof item !== type
+})
+
+
 }
-filterBy([135, "nnnbnbnb", 765,], "jfhgjk");
+console.log(filterBy([135, "nnnbnbnb", 765,{}, null, undefined], 'number'));
 
