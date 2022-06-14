@@ -13,6 +13,7 @@ const tagStyle = document.body.style.background = "#ff0000";
 const findElementById = document.getElementById("optionsList");
 console.log(findElementById);
 console.log(findElementById.parentElement);
+
 if (findElementById.hasChildNodes()) {
     let children = findElementById.childNodes;
     console.log(findElementById.childNodes);
