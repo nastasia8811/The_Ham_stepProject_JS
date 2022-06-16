@@ -7,6 +7,7 @@ innerHTML - покаже текстову інформацію по одному
 яка може бути укладена між тегами основного елемента, що відкривають і закривають.
 3)document
 */
+
 const pHtmlCollection = document.getElementsByTagName("p");
 console.log(pHtmlCollection);
 const tagStyle = document.body.style.background = "#ff0000";
