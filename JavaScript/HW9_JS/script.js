@@ -1,32 +1,15 @@
+// 1 вариант
+function getNewList(parent = document.body,arr = []) {
+    const myFunction = (elem) => `${elem}`;
+    const newArr = arr.map(myFunction);
+    parent.insertAdjacentHTML("afterbegin","`${elem}`");
+}
+getNewList("ul", ["hello", "world", "Kiev", "Kharkiv", "Odessa", "Lviv"]);
 
-// - створити функцію яка виводить масив
-// let array = [1,2,3,4];
-// let funInvoke = arr => {
-//     console.log(arr);
-//     for (const arrElement of arr) {
-//         console.log(arrElement);
-//     }
-// };
-// funInvoke(array);
+// 2 вариант
+// arr = ["hello", "world", "Kiev", "Kharkiv", "Odessa", "Lviv"];
+// const myFunction = (elem) => `${elem} `;
+// document.body.innerText(arr.map(myFunction);)
 
-//
-//  function changeCollection(parent = document.body,arr = []) {
-//
-//      let i = 0
-//
-//      while (i <= arr.length - 1) {
-//
-//          document.write(arr[i]);
-//
-//          i = i + 1;
-//
-//      }
-//  }
-//
-//
-// changeCollection(document.createElement("div",["hello", "world", "Kiev", "Kharkiv", "Odessa", "Lviv"]))
-// document.body.append('div');
 
-const new_array = arr.map(function callback( currentValue[, index[, array]]) {
 
-}[thisArg])
