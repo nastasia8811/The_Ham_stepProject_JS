@@ -2,7 +2,7 @@
 function getNewList(parent = document.body,arr = []) {
     const myFunction = (elem) => `${elem}`;
     const newArr = arr.map(myFunction);
-    parent.insertAdjacentHTML("afterbegin","`${elem}`");
+    document.body.insertAdjacentHTML("afterbegin","<li>elem</li>");
 }
 getNewList("ul", ["hello", "world", "Kiev", "Kharkiv", "Odessa", "Lviv"]);
 
