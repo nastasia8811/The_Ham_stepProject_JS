@@ -8,5 +8,5 @@ function getNewList(arr = []) {
     ulList.innerHTML = newArr;
     return ulList
 }
-document.body.after(getNewList( ["hello", "world", "Kiev", "Kharkiv", "Odessa", "Lviv"]))
+document.body.after(getNewList( ["hello", "world", "Kiev", "Kharkiv", "Odessa", "Lviv"]));
 
