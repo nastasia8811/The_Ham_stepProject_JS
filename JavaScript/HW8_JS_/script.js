@@ -16,8 +16,8 @@ console.log(findElementById);
 console.log(findElementById.parentElement);
 
 if (findElementById.hasChildNodes()) {
-    let children = findElementById.childNodes;
-    console.log(findElementById.childNodes);
+    let children = findElementById.children;
+    console.log(findElementById.children);
 }
 const findElementByClass = document.getElementsByClassName(".testParagraph");
 findElementByClass.textContent ="<p>This is a paragraph</p>";
