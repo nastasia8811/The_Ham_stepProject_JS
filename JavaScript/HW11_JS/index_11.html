@@ -41,22 +41,25 @@
 
     </style>
     <script async src="script.js"></script>
+    <script async src="../test11_JS/script_11.js"></script>
 </head>
 <body>
-<form class="password-form" action="#" type="POST">
-    <label class="input-wrapper create_pw">
+<form class="password-form" action="" type="POST">
+    <label class="input-wrapper">
         Ввести пароль
-        <input type="password"/>
-        <i class="fas fa-eye icon-password"></i>
-        <!-- <i class="fas fa-eye-slash icon-password"></i> -->
+        <input id="inputFirst" onclick="showPass1inp()" type="password"/>
+        <!-- <i  class="fas fa-eye icon-password"></i> -->
+        <i id="closeEye" class="fas fa-eye-slash icon-password"></i>
     </label>
-    <label class="input-wrapper confirm_pw">
+    <label class="input-wrapper">
         Подтвердить пароль
-        <input type="password"/>
-        <i class="fas fa-eye icon-password"></i>
-        <!-- <i class="fas fa-eye-slash icon-password"></i> -->
+        <input id="checkInputFirst" onclick="showPass2inp()" type="password"/>
+        <!-- <i   class="fas fa-eye icon-password"></i> -->
+        <i id="closeEyeSecond" class="fas fa-eye-slash icon-password"></i>
     </label>
-    <button type="submit" class="btn">Подтвердить</button>
+    <b id="false" style="color: red;"></b>
+    <br>
+    <button id="btn" onclick="comparePasswords()" class="btn">Подтвердить</button>
 </form>
 </body>
 </html>
