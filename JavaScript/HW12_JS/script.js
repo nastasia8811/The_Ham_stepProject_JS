@@ -5,24 +5,22 @@ const buttonColor = document.querySelector('.btn');
 
 
 letter.addEventListener('keydown',(event) => {
-    if (event.key.classList('btn')) {
+    if (event.key.classList.includes('btn')) {
         const dataLetter = event.key.dataset.letter;
         const wrapper = document.querySelectorAll('.btn-wrapper');
         for (let i = 0; i < wrapper.length; i++) {
             wrapper[i].classList.style.background('.btn.active');
             event.key.classList.add('active');
+            console.log(event.target)
         }
 
-        const buttonBlue = document.querySelectorAll(".btn-wrapper .btn");
-
-        for (let i = 0; i < buttonBlue.length; i++) {
-            buttonBlue[i].classList.remove('active');
-            const dataContent = buttonBlue[i].dataset.content
-            }
+        for (let i = 0; i < letter.length; i++) {
+            letter[i].classList.remove('active');
+            const dataContent = buttonColor[i].dataset.content
             if (event.key === dataContent) {
-                dataLetter[i].classList.add('active');
+                buttonColor[i].classList.add('active');
             }
-            dataLetter[i].classList.remove('active');
-            console.log()
-        }
+            buttonColor[i].classList.remove('active');
+
+        }}
     })
