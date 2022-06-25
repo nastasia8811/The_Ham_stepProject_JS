@@ -20,7 +20,7 @@ function showPass2inp() {
 }
 const inp1 = document.getElementById("inputFirst");
 const inp2 = document.getElementById("checkInputFirst");
-function comparePasswords(){
+function comparePasswords() {
     if(inp1.value === "" || inp2.value === "" ) {
         alert("Поле пусте");
     }else if (inp1.value === inp2.value){

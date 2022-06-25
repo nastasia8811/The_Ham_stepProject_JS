@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework-buttons</title>
+    <style>
+        .btn-wrapper{
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .btn{
+            border: none;
+            border-radius: 20px;
+            min-width: 120px;
+            padding: 7px;
+            color: #fff;
+            font-size: 14px;
+            background-color: #000000;
+            cursor: pointer;
+        }
+        .btn:active,
+        .btn:focus{
+            outline: none;
+        }
+        .btn.active {
+            background-color: #305DB8;
+        }
+    </style>
+    <script async src="script.js"></script>
+</head>
+<body>
+<div class="btn-wrapper">
+    <button class="btn active" data-letter="Enter">Enter</button>
+    <button  class="btn" data-letter="S">S</button>
+    <button  class="btn" data-letter="E">E</button>
+    <button  class="btn" data-letter="O">O</button>
+    <button  class="btn" data-letter="N">N</button>
+    <button  class="btn" data-letter="L">L</button>
+    <button  class="btn" data-letter="Z">Z</button>
+</div>
+
+<script>
+    var a = document.getElementsByClassName("btn");
+
+    var which;
+    /*Ищем какую кнопку по номеру человек нажал, у каждой кнопки есть свой номер*/
+    /*https://keycode.inicar.info/KeyCode/1_KeyCode.php*/
+
+    window.addEventListener("keydown", function(e) {
+    //tested in IE/Chrome/Firefox
+    which = e.keyCode;
+    console.log(which);
+
+    /*Упрощенный код))*/
+
+    for(let i = 0; i <= a.length; i++) {
+        if(which == 13) {
+            a[0].className = "btn active";
+        }
+        else if(which == 83) {
+            a[1].className = "btn active";
+        }
+        else if(which == 69) {
+            a[2].className = "btn active";
+        }
+        else if(which == 79) {
+            a[3].className = "btn active";
+        }
+        else if(which == 78) {
+            a[4].className = "btn active";
+        }
+        else if(which == 76) {
+            a[5].className = "btn active";
+        }
+        else if(which == 90) {
+            a[6].className = "btn active";
+        }
+        else {
+            console.log('Another btn');
+        }
+        a[i].className = "btn";
+    }
+  })
+
+
+  
+</script>
+</body>
+</html>
