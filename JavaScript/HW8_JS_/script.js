@@ -35,5 +35,5 @@ ch.className = 'nav-item';
 console.log(ch);
 
 const deleteElements = document.querySelector(".section-title");
-document.body.classList.remove(deleteElements)
-console.log(deleteElements)
+document.body.classList.remove(deleteElements);
+console.log(deleteElements);
