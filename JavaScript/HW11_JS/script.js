@@ -9,6 +9,11 @@ function showPass1inp() {
         document.getElementById("closeEye").className = "fas fa-eye-slash icon-password";
     }
 }
+const btn = document.body.querySelector('.btn')
+btn.addEventListener('click', function(event) {
+    event.preventDefault();
+});
+
 function showPass2inp() {
     if (confirmPw.type === "password") {
         confirmPw.type = "text";
@@ -29,4 +34,10 @@ function comparePasswords() {
         document.getElementById("false").innerHTML = "Потрібно ввести однакові значення";
     }
 }
-
+// function preventEvent( event ) {
+//     if ( event.cancelable ) { //  если событие может быть отменено и предотвращено
+//         event.preventDefault(); // отменяем действие события по умолчанию
+//         console.log("Событие " + event.type + " отменено"); //  выводим в консоль информацию о том какое событие было отменено
+//     } else { //  если событие не может быть отменено и предотвращено
+//         console.warn("Событие " + event.type + " не может быть отменено"); //  выводим в консоль информацию о том, что данное событие не может быть отменено
+//     }
