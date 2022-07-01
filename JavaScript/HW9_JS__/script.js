@@ -5,10 +5,10 @@ function getNewList(arr = [],parent = document.body) {
         const li = `<li>${elem}</li>`
         return li
     });
-    ulList.innerHTML = newArr;
+    // ulList.innerHTML = newArr;
     return ulList
 }
-getNewList(["hello", "world", "Kiev", "Kharkiv", "Odessa", "Lviv"], document.body.after(ulList));
+getNewList(["hello", "world", "Kiev", "Kharkiv", "Odessa", "Lviv"], ulList.innerHTML = newArr);
 
 // 2 вариант
 

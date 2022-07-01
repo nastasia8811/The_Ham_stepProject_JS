@@ -26,10 +26,10 @@ console.log(findElementById.children);
 findElementById.textContent ="<p>This is a paragraph</p>";
 console.log(findElementById);
 
-const findElem = document.querySelector(".main-header");
+const findElem = document.querySelector(".main-img_header");
 console.log(findElem.children);
 
-const findElements = document.querySelector(".main-header");
+const findElements = document.querySelector(".main-img_header");
 const ch = findElements.children
 ch.className = 'nav-item';
 console.log(ch);

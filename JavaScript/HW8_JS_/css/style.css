@@ -95,7 +95,7 @@ body {
   align-items: flex-start;
   justify-content: center;
 
-  /* 100vh - main-header-content */
+  /* 100vh - main-img_header-content */
   height: calc(100vh - 81px);
   max-height: calc(862px - 81px);
 }
