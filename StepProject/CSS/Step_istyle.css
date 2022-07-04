@@ -155,7 +155,7 @@
     align-items: center;
 }
 
-
+/*our serv*/
 .services {
     display: flex;
     align-items: center;
@@ -169,23 +169,15 @@
     color: #4E4E4E;
     margin-bottom: 26px;
 }
-/*our serv*/
+
 
 ul {
     list-style: none;
     padding-left: 0;
 }
 
-.centered-content {
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
 .tabs {
+    margin-bottom: 91px;
     display: flex;
 width: 1160px;
     align-items: stretch;
@@ -216,7 +208,7 @@ margin-top: 28px;
     font-size: 14px;
     line-height: 24px;
     color: #777777;
-
+    margin-bottom: 91px;
 }
 .tabs-content li {
     display: none;
@@ -228,7 +220,7 @@ margin-top: 28px;
     float: left;
     margin-right: 8px;
 }
-
+/*purchase now*/
 .purchase_now {
     background-image: url('../IMG/img_2/background_2.png');
     background-repeat: no-repeat;
@@ -272,3 +264,74 @@ margin-top: 28px;
     color: #D8D8D8;
     margin-bottom: 70px;
 }
+
+/*amazing work*/
+.amazing_work {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #E9EDEF;
+}
+.amazing_work_theme {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    color: #4E4E4E;
+    margin-bottom: 26px;
+}
+
+.amazing_work-tabs-img {
+    max-width: 1160px;
+   display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+.amazing_work-tabs-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 42px;
+    color: #717171;
+    border: 1px solid #DADADA;
+    cursor: pointer;
+}
+
+.amazing_work-tabs-title.active {
+    font-size: 14px;
+    line-height: 42px;
+    color: #18CFAB;
+    border: 2px solid #18CFAB;
+}
+.amazing_work-tabs-img{
+    max-width: 1160px;
+    margin-top: 28px;
+    margin-bottom: 91px;
+}
+
+
+.amazing_work-tabs-img img {
+    display: none;
+}
+.amazing_work-tabs-img .active {
+    display: flex;
+}
+/*.open_menu {*/
+/*    display: none;*/
+/*}*/
+/*.open_menu .active {*/
+/*    display: block;*/
+/*}*/
+
+.img {
+    display: none;
+}
+.img .active {
+    display: block;
+}
+/*.menu_jpg{*/
+/*    float: left;*/
+/*    margin-right: 8px;*/
+/*}*/
+
+
