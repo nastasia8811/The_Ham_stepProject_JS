@@ -1,15 +1,14 @@
 
 function getNewList(arr = [],parent = document.body) {
-    const newArr = arr.map((elem) => {
-        arr.innerText = `<li>${elem}</li>`
-        return elem
-    });
+    arr.map((elem) => {`<li>${elem}</li>`
+        document.innerText = elem;
+        return li
 
-    return newArr
-parent.append(li)
-}
+    })
 
-getNewList(["hello", "world", "Kiev", "Kharkiv", "Odessa", "Lviv"], document.querySelector('.wrapper_list'));
+    parent.append(li);
+    }
+    getNewList(["hello", "world", "Kiev", "Kharkiv", "Odessa", "Lviv"], document.querySelector('ul'));
 
 
 // Создайте в html ul, дайте класс ul
