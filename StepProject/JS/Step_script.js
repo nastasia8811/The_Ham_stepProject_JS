@@ -44,10 +44,15 @@ for(let i = 0; i<list.length; i++){
 }
 
 //load more
-const images = [
-    ['/graphic-design1.jpg','/graphic-design2.jpg','/graphic-design3.jpg','/graphic-design4.jpg','/graphic-design5.jpg','/graphic-design6.jpg','/graphic-design7.jpg','/graphic-design8.jpg','/graphic-design9.jpg','/graphic-design10.jpg','/graphic-design11.jpg','/graphic-design12.jpg',],
-    ['/web-design1.jpg','/web-design2.jpg','/web-design3.jpg','/web-design4.jpg','/web-design5.jpg','/web-design6.jpg','/web-design7.jpg','/web-design8.jpg','/web-design9.jpg','/web-design10.jpg','/web-design11.jpg','/web-design12.jpg',],
-]
+// const images = [
+//     ['/graphic-design1.jpg','/graphic-design2.jpg','/graphic-design3.jpg','/graphic-design4.jpg','/graphic-design5.jpg','/graphic-design6.jpg','/graphic-design7.jpg','/graphic-design8.jpg','/graphic-design9.jpg','/graphic-design10.jpg','/graphic-design11.jpg','/graphic-design12.jpg',],
+//     ['/web-design1.jpg','/web-design2.jpg','/web-design3.jpg','/web-design4.jpg','/web-design5.jpg','/web-design6.jpg','/web-design7.jpg','/web-design8.jpg','/web-design9.jpg','/web-design10.jpg','/web-design11.jpg','/web-design12.jpg',],
+//     ['/landing-page1.jpg','/landing-page2.jpg','/landing-page3.jpg','/landing-page4.jpg','/landing-page5.jpg','/landing-page6.jpg','/landing-page7.jpg','/landing-page8.jpg','/landing-page9.jpg','/landing-page10.jpg','/landing-page11.jpg','/landing-page12.jpg',],
+//     ['/wordpress1.jpg','/wordpress2.jpg','/wordpress3.jpg','/wordpress4.jpg','/wordpress5.jpg','/wordpress6.jpg','/wordpress7.jpg','/wordpress8.jpg','/wordpress9.jpg','/wordpress10.jpg','/wordpress11.jpg','/wordpress12.jpg',]
+// ]
+
+// let arr = [];
+// arr.push()
 // const SET_TIMEOUT = 2000;
 // function Gallery() {
 //
@@ -72,12 +77,12 @@ const images = [
 //     loadMore.addEventListener('click',() => {
 //
 //         loadMore.classList.add('loader');
-//         loadMore.setAttribute('disabled', '')
+//         // loadMore.setAttribute('disabled', '')
 //
 //
 //         setTimeout(() => {
 //             loadMore.classList.remove('loader');
-//             loadMore.removeAttribute('disabled')
+//             // loadMore.removeAttribute('disabled')
 //
 //             images[cout].forEach((image, id) => {
 //                 galleryContent.insertAdjacentHTML('beforeend', `
