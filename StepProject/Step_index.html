@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>The Ham</title>
-    <link href="favicon.png" rel="icon" type="imagine/png"/>
-
-
+    <link href="IMG/img_header/fav.jpg" rel="icon" type="imagine/png"/>
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/Step_istyle.css">
-
+    <link rel="stylesheet" href="CSS/slider.css">
     <script defer src="JS/Step_script.js"></script>
+    <script defer src="JS/swiper.js"></script>
+
 
 </head>
 <body>
@@ -1443,7 +1443,7 @@
                 </a>
             </div>
         </section>
-        <section class=" say_about">
+        <div class=" say_about">
             <div class="section_container">
                 <h3 class="say_about_theme">What People Say About theHam</h3>
                 <svg class="svg" width="91" height="8" viewBox="0 0 91 8" fill="none"
@@ -1465,7 +1465,57 @@
                     odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.</p>
             </div>
 
-        </section>
+            <!-- Swiper -->
+
+            <div class="slider-section">
+
+            <!-- Container for the image gallery -->
+            <div class="container">
+                <!-- Image text -->
+                <div class="caption-container">
+                    <p class="user_name" id="caption"></p>
+                    <p class="user_position">Ux designer</p>
+                </div>
+                <!-- Full-width images with number text -->
+                <div class="mySlides">
+                    <img class="round new" src="IMG/slider/user1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <img class="round" src="IMG/slider/user2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <img class="round" src="IMG/slider/user3.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <img class="round" src="IMG/slider/user4.jpg" style="width:100%">
+                </div>
+
+
+
+                <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor round" src="IMG/slider/user1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Hasan Ali">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor round" src="IMG/slider/user2.jpg" style="width:100%" onclick="currentSlide(2)" alt="John Cooper">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor round" src="IMG/slider/user3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Smith Johnson">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor round" src="IMG/slider/user4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Lolita Maison">
+                    </div>
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+        </div>
     </main>
 </div>
 </body>

@@ -44,6 +44,159 @@ for(let i = 0; i<list.length; i++){
 }
 
 //load more
+
+
+const images = [
+    [{
+        data: 'graphic_design',
+        src: '.IMG/Step Project Ham/graphic design/graphic-design1.jpg'
+    },{
+        data: 'graphic_design',
+        src: '.IMG/Step Project Ham/graphic design/graphic-design1.jpg'
+    },{
+        data: 'graphic_design',
+        src: '.IMG/Step Project Ham/graphic design/graphic-design1.jpg'
+    },{
+        data: 'graphic_design',
+        src: '.IMG/Step Project Ham/graphic design/graphic-design1.jpg'
+    },{
+        data: 'graphic_design',
+        src: '.IMG/Step Project Ham/graphic design/graphic-design1.jpg'
+    },{
+        data: 'graphic_design',
+        src: '.IMG/Step Project Ham/graphic design/graphic-design1.jpg'
+    },{
+        data: 'graphic_design',
+        src: '.IMG/Step Project Ham/graphic design/graphic-design1.jpg'
+    },{
+        data: 'graphic_design',
+        src: '.IMG/Step Project Ham/graphic design/graphic-design1.jpg'
+    },{
+        data: 'graphic_design',
+        src: '.IMG/Step Project Ham/graphic design/graphic-design1.jpg'
+    },{
+        data: 'graphic_design',
+        src: '.IMG/Step Project Ham/graphic design/graphic-design1.jpg'
+    },{
+        data: 'graphic_design',
+        src: '.IMG/Step Project Ham/graphic design/graphic-design1.jpg'
+    },{
+        data: 'graphic_design',
+        src: '.IMG/Step Project Ham/graphic design/graphic-design1.jpg'
+    }],
+    [{
+        data: 'web_design',
+        src: 'IMG/Step%20Project%20Ham/web%20design/web-design1.jpg'
+    },{
+        data: 'web_design',
+        src: 'IMG/Step%20Project%20Ham/web%20design/web-design1.jpg'
+    },{
+        data: 'web_design',
+        src: 'IMG/Step%20Project%20Ham/web%20design/web-design1.jpg'
+    },{
+        data: 'web_design',
+        src: 'IMG/Step%20Project%20Ham/web%20design/web-design1.jpg'
+    },{
+        data: 'web_design',
+        src: 'IMG/Step%20Project%20Ham/web%20design/web-design1.jpg'
+    },{
+        data: 'web_design',
+        src: 'IMG/Step%20Project%20Ham/web%20design/web-design1.jpg'
+    },{
+        data: 'web_design',
+        src: 'IMG/Step%20Project%20Ham/web%20design/web-design1.jpg'
+    },{
+        data: 'web_design',
+        src: 'IMG/Step%20Project%20Ham/web%20design/web-design1.jpg'
+    },{
+        data: 'web_design',
+        src: 'IMG/Step%20Project%20Ham/web%20design/web-design1.jpg'
+    },{
+        data: 'web_design',
+        src: 'IMG/Step%20Project%20Ham/web%20design/web-design1.jpg'
+    },{
+        data: 'web_design',
+        src: 'IMG/Step%20Project%20Ham/web%20design/web-design1.jpg'
+    },{
+        data: 'web_design',
+        src: 'IMG/Step%20Project%20Ham/web%20design/web-design1.jpg'
+    }],
+    [{
+        data: 'landing_pages',
+        src: 'IMG/Step Project Ham/landing page/landing-page1.jpg'
+    },{
+        data: 'landing_pages',
+        src: 'IMG/Step Project Ham/landing page/landing-page1.jpg'
+    },{
+        data: 'landing_pages',
+        src: 'IMG/Step Project Ham/landing page/landing-page1.jpg'
+    },{
+        data: 'landing_pages',
+        src: 'IMG/Step Project Ham/landing page/landing-page1.jpg'
+    },{
+        data: 'landing_pages',
+        src: 'IMG/Step Project Ham/landing page/landing-page1.jpg'
+    },{
+        data: 'landing_pages',
+        src: 'IMG/Step Project Ham/landing page/landing-page1.jpg'
+    },{
+        data: 'landing_pages',
+        src: 'IMG/Step Project Ham/landing page/landing-page1.jpg'
+    },{
+        data: 'landing_pages',
+        src: 'IMG/Step Project Ham/landing page/landing-page1.jpg'
+    },{
+        data: 'landing_pages',
+        src: 'IMG/Step Project Ham/landing page/landing-page1.jpg'
+    },{
+        data: 'landing_pages',
+        src: 'IMG/Step Project Ham/landing page/landing-page1.jpg'
+    },{
+        data: 'landing_pages',
+        src: 'IMG/Step Project Ham/landing page/landing-page1.jpg'
+    },{
+        data: 'landing_pages',
+        src: 'IMG/Step Project Ham/landing page/landing-page1.jpg'
+    }],
+    [{
+        data: 'wordpress',
+        src: '.IMG/Step Project Ham/graphic design/graphic-design1.jpg'
+    },{
+        data: 'wordpress',
+        src: '.IMG/Step Project Ham/graphic design/graphic-design1.jpg'
+    },{
+        data: 'wordpress',
+        src: '.IMG/Step Project Ham/graphic design/graphic-design1.jpg'
+    },{
+        data: 'wordpress',
+        src: '.IMG/Step Project Ham/graphic design/graphic-design1.jpg'
+    },{
+        data: 'wordpress',
+        src: '.IMG/Step Project Ham/graphic design/graphic-design1.jpg'
+    },{
+        data: 'wordpress',
+        src: '.IMG/Step Project Ham/graphic design/graphic-design1.jpg'
+    },{
+        data: 'wordpress',
+        src: '.IMG/Step Project Ham/graphic design/graphic-design1.jpg'
+    },{
+        data: 'wordpress',
+        src: '.IMG/Step Project Ham/graphic design/graphic-design1.jpg'
+    },{
+        data: 'wordpress',
+        src: '.IMG/Step Project Ham/graphic design/graphic-design1.jpg'
+    },{
+        data: 'wordpress',
+        src: '.IMG/Step Project Ham/graphic design/graphic-design1.jpg'
+    },{
+        data: 'wordpress',
+        src: '.IMG/Step Project Ham/graphic design/graphic-design1.jpg'
+    },{
+        data: 'wordpress',
+        src: '.IMG/Step Project Ham/graphic design/graphic-design1.jpg'
+    }]
+]
+console.log(images)
 // const images = [
 //     ['/graphic-design1.jpg','/graphic-design2.jpg','/graphic-design3.jpg','/graphic-design4.jpg','/graphic-design5.jpg','/graphic-design6.jpg','/graphic-design7.jpg','/graphic-design8.jpg','/graphic-design9.jpg','/graphic-design10.jpg','/graphic-design11.jpg','/graphic-design12.jpg',],
 //     ['/web-design1.jpg','/web-design2.jpg','/web-design3.jpg','/web-design4.jpg','/web-design5.jpg','/web-design6.jpg','/web-design7.jpg','/web-design8.jpg','/web-design9.jpg','/web-design10.jpg','/web-design11.jpg','/web-design12.jpg',],
