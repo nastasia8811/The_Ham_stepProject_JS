@@ -8,7 +8,7 @@
 .mySlides {
     display: none;
     width: 143px;
-    height: 142px;
+
     margin: 0 auto;
 
 }
@@ -21,7 +21,6 @@
 .round {
     border-radius: 100px;
     border: 8px solid rgb(41, 98, 89);
-
 }
 
 
@@ -33,21 +32,20 @@
     top: 40%;
     width: auto;
     padding: 16px;
-    margin-top: -11px;
-    margin-right: 100px;
-    margin-left: -450px;
     color: #FFFFFF;
     font-weight: bold;
     font-size: 20px;
-    border-radius: 0 3px 3px 0;
+    border: 1px solid #FFFFFF;
     user-select: none;
-    background-color: #18CFAB;
-}
+    margin-top: -25px;
+    margin-right: 200px;
+    margin-left: -450px;
 
+}
 /* Position the "next button" to the right */
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -87,6 +85,7 @@
     position: relative;
     display: flex;
     justify-content: center;
+    margin-top: 60px;
 }
 
 .row:after {
@@ -116,10 +115,23 @@ margin: 60px 25px 110px 25px;
     margin-bottom: 5px;
 }
 
-.user_position {
-    display: none;
+.user_comment {
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: #BBBBBB;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: -200px;
+
 }
 
-.user_position .active {
-    display: block;
+.user_position {
+
+    text-align: center;
+    color: #BBBBBB;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
 }

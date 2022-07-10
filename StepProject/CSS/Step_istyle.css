@@ -369,7 +369,6 @@ ul {
 
 .gallery-content .flip-card {
     position: relative;
-
     display: block;
 }
 
@@ -568,6 +567,7 @@ a:hover .wrapper_item_blog {
     justify-content: center;
     flex-direction: column;
     width: 1160px;
+    position: relative;
 }
 
 .say_about_theme {
@@ -578,15 +578,7 @@ a:hover .wrapper_item_blog {
     margin-top: 98px;
 }
 
-.say_about_content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 30px;
-    color: #BBBBBB;
-    margin-top: 36px;
-    margin-bottom: 37px;
+.user_block {
+    margin-bottom: 118px;
 }
+
