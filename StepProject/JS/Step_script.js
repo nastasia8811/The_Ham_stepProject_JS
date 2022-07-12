@@ -26,7 +26,7 @@ tabs.addEventListener("click", (event) => {
    const images = [
     [{
         data: 'graphic_design',
-        src: 'IMG/Step Project Ham/graphic design/graphic-design1.jpg',
+        src: '../IMG/Step Project Ham/graphic design/graphic-design1.jpg',
         alt: 'Graphic design',
     },{
         data: 'graphic_design',
@@ -217,7 +217,7 @@ tabs.addEventListener("click", (event) => {
         alt: 'Wordpress',
     },{
         data: 'wordpress',
-        src: 'IMG/Step Project Ham/graphic design/graphic-design12.jpg',
+        src: '../IMG/Step Project Ham/wordpress/wordpress12.jpg',
         alt: 'Wordpress',
     }]
 ];
@@ -247,27 +247,20 @@ for(let i = 0; i < list.length; i++){
 }
 
 const SET_TIMEOUT = 1000;
-
 function Gallery() {
-
     const loadMore = document.querySelector('.load_more');
     const galleryContent = document.querySelector('.gallery-content');
     let counter = 0;
     loadMore.addEventListener('click',() => {
-
         loadMore.classList.add('loader');
-        // loadMore.setAttribute('disabled', '');
-
         setTimeout(() => {
             loadMore.classList.remove('loader');
-            // loadMore.removeAttribute('disabled');
-        },2000)
-
-            images.forEach((image, id) => {
+        },2000);
+            images.forEach(image => {
                 galleryContent.insertAdjacentHTML('beforeend', `<div class="flip-card" data-gallery="${image.data}">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img class = "${image.id}" src="${image.src}" alt="${image.alt}">
+                            <img class="${image.id}" src="${image.src}" alt="${image.alt}">
                         </div>
                         <div class="flip-card-back">
                             <svg width="88" height="43" viewBox="0 0 88 43" fill="none"
