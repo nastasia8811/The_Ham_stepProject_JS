@@ -461,3 +461,201 @@ btnLoad.addEventListener('click', () => {
 	}, 2000);
 });
 
+// const images = [
+// 	[{
+// 		data: 'graphic_design',
+// 		img: 'IMG/Step Project Ham/graphic design/graphic-design1.jpg',
+// 		alt: 'Graphic design',
+// 	},{
+// 		data: 'graphic_design',
+// 		img: 'IMG/Step Project Ham/graphic design/graphic-design2.jpg',
+// 		alt: 'Graphic design',
+// 	},{
+// 		data: 'graphic_design',
+// 		img: 'IMG/Step Project Ham/graphic design/graphic-design3.jpg',
+// 		alt: 'Graphic design',
+// 	},{
+// 		data: 'graphic_design',
+// 		img: 'IMG/Step Project Ham/graphic design/graphic-design4.jpg',
+// 		alt: 'Graphic design',
+// 	},{
+// 		data: 'graphic_design',
+// 		img: 'IMG/Step Project Ham/graphic design/graphic-design5.jpg',
+// 		alt: 'Graphic design',
+// 	},{
+// 		data: 'graphic_design',
+// 		img: 'IMG/Step Project Ham/graphic design/graphic-design6.jpg',
+// 		alt: 'Graphic design',
+// 	},{
+// 		data: 'graphic_design',
+// 		img: 'IMG/Step Project Ham/graphic design/graphic-design7.jpg',
+// 		alt: 'Graphic design',
+// 	},{
+// 		data: 'graphic_design',
+// 		img: 'IMG/Step Project Ham/graphic design/graphic-design8.jpg',
+// 		alt: 'Graphic design',
+// 	},{
+// 		data: 'graphic_design',
+// 		img: 'IMG/Step Project Ham/graphic design/graphic-design9.jpg',
+// 		alt: 'Graphic design',
+// 	},{
+// 		data: 'graphic_design',
+// 		img: 'IMG/Step Project Ham/graphic design/graphic-design10.jpg',
+// 		alt: 'Graphic design',
+// 	},{
+// 		data: 'graphic_design',
+// 		img: 'IMG/Step Project Ham/graphic design/graphic-design11.jpg',
+// 		alt: 'Graphic design',
+// 	},{
+// 		data: 'graphic_design',
+// 		img: 'IMG/Step Project Ham/graphic design/graphic-design12.jpg',
+// 		alt: 'Graphic design',
+// 	}],
+// 	[{
+// 		data: 'web_design',
+// 		img: 'IMG/Step%20Project%20Ham/web%20design/web-design1.jpg',
+// 		alt: 'Web design',
+// 	},{
+// 		data: 'web_design',
+// 		img: 'IMG/Step%20Project%20Ham/web%20design/web-design2.jpg',
+// 		alt: 'Web design',
+// 	},{
+// 		data: 'web_design',
+// 		img: 'IMG/Step%20Project%20Ham/web%20design/web-design3.jpg',
+// 		alt: 'Web design',
+// 	},{
+// 		data: 'web_design',
+// 		img: 'IMG/Step%20Project%20Ham/web%20design/web-design4.jpg',
+// 		alt: 'Web design',
+// 	},{
+// 		data: 'web_design',
+// 		img: 'IMG/Step%20Project%20Ham/web%20design/web-design5.jpg',
+// 		alt: 'Web design',
+// 	},{
+// 		data: 'web_design',
+// 		img: 'IMG/Step%20Project%20Ham/web%20design/web-design6.jpg',
+// 		alt: 'Web design',
+// 	},{
+// 		data: 'web_design',
+// 		img: 'IMG/Step%20Project%20Ham/web%20design/web-design7.jpg',
+// 		alt: 'Web design',
+// 	},{
+// 		data: 'web_design',
+// 		img: 'IMG/Step%20Project%20Ham/web%20design/web-design8.jpg',
+// 		alt: 'Web design',
+// 	},{
+// 		data: 'web_design',
+// 		img: 'IMG/Step%20Project%20Ham/web%20design/web-design9.jpg',
+// 		alt: 'Web design',
+// 	},{
+// 		data: 'web_design',
+// 		img: 'IMG/Step%20Project%20Ham/web%20design/web-design10.jpg',
+// 		alt: 'Web design',
+// 	},{
+// 		data: 'web_design',
+// 		img: 'IMG/Step%20Project%20Ham/web%20design/web-design11.jpg',
+// 		alt: 'Web design'
+// 	},{
+// 		data: 'web_design',
+// 		img: 'IMG/Step%20Project%20Ham/web%20design/web-design12.jpg',
+// 		alt: 'Web design',
+// 	}],
+// 	[{
+// 		data: 'landing_pages',
+// 		img: 'IMG/Step Project Ham/landing page/landing-page1.jpg',
+// 		alt: 'Landing pages',
+// 	},{
+// 		data: 'landing_pages',
+// 		img: 'IMG/Step Project Ham/landing page/landing-page2.jpg',
+// 		alt: 'Landing pages',
+// 	},{
+// 		data: 'landing_pages',
+// 		img: 'IMG/Step Project Ham/landing page/landing-page3.jpg',
+// 		alt: 'Landing pages',
+// 	},{
+// 		data: 'landing_pages',
+// 		img: 'IMG/Step Project Ham/landing page/landing-page4.jpg',
+// 		alt: 'Landing pages',
+// 	},{
+// 		data: 'landing_pages',
+// 		img: 'IMG/Step Project Ham/landing page/landing-page5.jpg',
+// 		alt: 'Landing pages',
+// 	},{
+// 		data: 'landing_pages',
+// 		img: 'IMG/Step Project Ham/landing page/landing-page6.jpg',
+// 		alt: 'Landing pages',
+// 	},{
+// 		data: 'landing_pages',
+// 		img: 'IMG/Step Project Ham/landing page/landing-page7.jpg',
+// 		alt: 'Landing pages',
+// 	},{
+// 		data: 'landing_pages',
+// 		img: 'IMG/Step Project Ham/landing page/landing-page8.jpg',
+// 		alt: 'Landing pages',
+// 	},{
+// 		data: 'landing_pages',
+// 		img: 'IMG/Step Project Ham/landing page/landing-page9.jpg',
+// 		alt: 'Landing pages',
+// 	},{
+// 		data: 'landing_pages',
+// 		img: 'IMG/Step Project Ham/landing page/landing-page10.jpg',
+// 		alt: 'Landing pages',
+// 	},{
+// 		data: 'landing_pages',
+// 		img: 'IMG/Step Project Ham/landing page/landing-page11.jpg',
+// 		alt: 'Landing pages',
+// 	},{
+// 		data: 'landing_pages',
+// 		img: 'IMG/Step Project Ham/landing page/landing-page12.jpg',
+// 		alt: 'Landing pages',
+// 	}],
+// 	[{
+// 		data: 'wordpress',
+// 		img: 'IMG/Step Project Ham/graphic design/graphic-design1.jpg',
+// 		alt: 'Wordpress',
+// 	},{
+// 		data: 'wordpress',
+// 		img: 'IMG/Step Project Ham/graphic design/graphic-design2.jpg',
+// 		alt: 'Wordpress',
+// 	},{
+// 		data: 'wordpress',
+// 		img: 'IMG/Step Project Ham/graphic design/graphic-design3.jpg',
+// 		alt: 'Wordpress',
+// 	},{
+// 		data: 'wordpress',
+// 		img: 'IMG/Step Project Ham/graphic design/graphic-design4.jpg',
+// 		alt: 'Wordpress',
+// 	},{
+// 		data: 'wordpress',
+// 		img: 'IMG/Step Project Ham/graphic design/graphic-design5.jpg',
+// 		alt: 'Wordpress',
+// 	},{
+// 		data: 'wordpress',
+// 		img: 'IMG/Step Project Ham/graphic design/graphic-design6.jpg',
+// 		alt: 'Wordpress',
+// 	},{
+// 		data: 'wordpress',
+// 		img: 'IMG/Step Project Ham/graphic design/graphic-design7.jpg',
+// 		alt: 'Wordpress',
+// 	},{
+// 		data: 'wordpress',
+// 		img: 'IMG/Step Project Ham/graphic design/graphic-design8.jpg',
+// 		alt: 'Wordpress',
+// 	},{
+// 		data: 'wordpress',
+// 		img: 'IMG/Step Project Ham/graphic design/graphic-design9.jpg',
+// 		alt: 'Wordpress',
+// 	},{
+// 		data: 'wordpress',
+// 		img: 'IMG/Step Project Ham/graphic design/graphic-design10.jpg',
+// 		alt: 'Wordpress',
+// 	},{
+// 		data: 'wordpress',
+// 		img: 'IMG/Step Project Ham/graphic design/graphic-design11.jpg',
+// 		alt: 'Wordpress',
+// 	},{
+// 		data: 'wordpress',
+// 		img: 'IMG/Step Project Ham/graphic design/graphic-design12.jpg',
+// 		alt: 'Wordpress',
+// 	}]
+// ];
