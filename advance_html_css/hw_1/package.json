@@ -1,0 +1,19 @@
+{
+  "name": "project-x",
+  "version": "1.0.0",
+  "description": "Anastasiia Melnyk fe_2_online",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/AnastasiiaMelnyk/homework.git"
+  },
+  "author": "Anastasiia Melnyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/AnastasiiaMelnyk/homework/issues"
+  },
+  "homepage": "https://gitlab.com/AnastasiiaMelnyk/homework#readme"
+}
