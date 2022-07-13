@@ -443,6 +443,10 @@ ul {
     color: #8A8A8A;
 }
 
+.gallery-content .disabled {
+    display: none;
+}
+
 /* loader */
 
 .button .loader {

@@ -21,6 +21,7 @@
 .round {
     border-radius: 100px;
     border: 8px solid rgb(41, 98, 89);
+
 }
 
 
@@ -39,7 +40,7 @@
     user-select: none;
     margin-top: -25px;
     margin-right: 200px;
-    margin-left: -450px;
+    margin-left: -480px;
 
 }
 /* Position the "next button" to the right */
