@@ -1,0 +1,12 @@
+@mixin title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+}
+
+@mixin flex {
+  display: flex;
+
+}
+

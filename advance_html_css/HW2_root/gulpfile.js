@@ -7,7 +7,7 @@
 // const bs = browserSync.create();
 //
 // export const buildStyles = () => gulp.src('./src/styles/**/*.scss')
-//         .pipe(sass().on('error', sass.logError))
+//         .pipe(sass())
 //         .pipe(gulp.dest('./dist/css'));
 
 const { src, dest, watch, series } = require("gulp");
