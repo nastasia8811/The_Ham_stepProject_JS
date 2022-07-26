@@ -10,3 +10,10 @@
 .container {
   font-family: 'Roboto', sans-serif;
 }
+
+.header {
+  &__navigation {
+    @include flex;
+
+  }
+}
