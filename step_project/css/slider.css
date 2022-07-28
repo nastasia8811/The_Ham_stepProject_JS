@@ -2,15 +2,12 @@
 .slider-section {
     width: 1160px;
     margin: 0 auto;
-
 }
 
 .mySlides {
     display: none;
     width: 143px;
-
     margin: 0 auto;
-
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -21,9 +18,7 @@
 .round {
     border-radius: 100px;
     border: 8px solid rgb(41, 98, 89);
-
 }
-
 
 /* Next & previous buttons */
 .prev,
@@ -55,7 +50,6 @@
     background-color: #18CFAB;
 }
 
-
 /* Container for image text */
 .caption-container {
     text-align: center;
@@ -69,6 +63,7 @@
 .user_name {
     color: #18CFAB;
 }
+
 .user_position{
 
     color: #BBBBBB;
@@ -76,7 +71,6 @@
     font-size: 16px;
     line-height: 30px;
 }
-
 
 .container-row {
     width: 600px;
@@ -93,8 +87,6 @@
     content: "";
     display: table;
     clear: both;
-
-
 }
 
 /* Six columns side by side */

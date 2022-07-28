@@ -223,7 +223,6 @@ const images = [
     }]
 ];
 
-
 // amazing work
 const list = document.querySelectorAll('.menu-item');
 const itemBox = document.querySelectorAll('.flip-card');
