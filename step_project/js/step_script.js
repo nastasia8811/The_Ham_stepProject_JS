@@ -226,6 +226,7 @@ const images = [
 // amazing work
 const list = document.querySelectorAll('.menu-item');
 const itemBox = document.querySelectorAll('.flip-card');
+
 for (let i = 0; i < list.length; i++) {
     list[i].addEventListener('click', function () {
         for (let j = 0; j < list.length; j++) {
@@ -247,9 +248,8 @@ for (let i = 0; i < list.length; i++) {
 
 const SET_TIMEOUT = 1000;
 function Gallery() {
-    const loadMore = document.querySelector('.load_more');
     const galleryContent = document.querySelector('.gallery-content');
-
+    const loadMore = document.querySelector('.load_more');
     let counter = 0;
     loadMore.addEventListener('click', () => {
         loadMore.classList.add('loader');

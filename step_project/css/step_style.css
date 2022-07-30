@@ -364,6 +364,10 @@ ul {
     flex-wrap: wrap
 }
 
+.disabled {
+    display: none;
+}
+
 .gallery-content .flip-card {
     position: relative;
     display: block;
@@ -372,6 +376,7 @@ ul {
 .gallery-content .flip-card.hide {
     display: none;
 }
+
 
 .gallery-content .flip-card img {
     position: absolute;
