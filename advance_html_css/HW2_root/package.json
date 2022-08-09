@@ -4,7 +4,7 @@
   "description": "Anastasiia Melnyk fe_2_online",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
@@ -29,5 +29,4 @@
     "gulp-uglify": "^3.0.2",
     "sass": "^1.54.0"
   }
-
 }
