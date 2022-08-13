@@ -1,19 +1,17 @@
 @import "../styles/abstracts/mixins.scss";
 @import "../styles/abstracts/variables.scss";
-@import "../styles/abstracts/header.scss";
+@import "../styles/components/header.scss";
+
+//@use "layout/header";
+//@use "layout/card-container";
+//@use "layout/footer";
 
 .container {
+  @include for-mobile {
   font-family: 'Roboto', sans-serif;
   margin: 0 auto;
-}
 
-.header {
-  &__navigation {
-    ul {
-      @include flex;
-    }
-  }
-}
+}}
 
 
 

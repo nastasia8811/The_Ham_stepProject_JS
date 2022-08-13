@@ -1,0 +1,7 @@
+.header {
+  &__navigation {
+    ul {
+      @include flex;
+    }
+  }
+}
