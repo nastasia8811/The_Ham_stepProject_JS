@@ -1,0 +1,63 @@
+@use "../variables";
+
+.header {
+  position: relative;
+  display: inline-block;
+  height: 50px;
+
+  &__mobile-menu {
+    //background-color: black;
+    //color: white;
+    //padding: 16px;
+    //font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 23px;
+    margin-bottom: 23px;
+    display: flex;
+    justify-content: flex-end;
+    //&_close {
+    //  display: block;
+    //}
+    //&_open {
+    //  display: none;
+    //}
+  &__navigation {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+    &__navigation-link {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      &:hover {
+        background-color: #ddd;
+      }
+    }
+  }
+}
+
+
+.active {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+
+//@media  (min-width: variables.$M){
+//
+//}
+//
+//@media  (min-width: variables.$L){
+//
+//}
