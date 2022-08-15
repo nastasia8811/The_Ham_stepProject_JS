@@ -2,62 +2,75 @@
 // import dartSass from 'sass';
 // import gulpSass from 'gulp-sass';
 // import browserSync from 'browser-sync';
-// // import autoprefixer from 'gulp-autoprefixer';
-// // import gulpClean from 'gulp-clean';
-// // import cleanCss from 'gulp-clean-css';
-// // import imagemin from 'gulp-imagemin';
-// // import concat from 'gulp-concat';
-// // import minifyJs from 'gulp-js-minify';
-// // import gulpUglify from 'gulp-uglify';
-// // import sourcemaps from 'gulp-sourcemaps';
-// // import babel from 'gulp-babel';
+// import autoprefixer from 'gulp-autoprefixer';
+// import gulpClean from 'gulp-clean';
+// import cleanCss from 'gulp-clean-css';
+// import imagemin from 'gulp-imagemin';
+// import concat from 'gulp-concat';
+// import minifyJs from 'gulp-js-minify';
+// import gulpUglify from 'gulp-uglify';
 //
 // const sass = gulpSass(dartSass);
 // const bs = browserSync.create();
 //
-// const buildStyles = () => gulp.src('./src/styles/**/*.scss')
-//     .pipe(sass())
-//     .pipe(gulp.dest('./dist/css'));
-//
-//
-// export const dev = gulp.series(buildStyles, () => {
+// export const serv = gulp.series(buildStyles, () => {
 //     bs.init({
 //         server: {
 //             baseDir: "./"
 //         }
 //     });
-//     gulp.watch('./src/**/*', gulp.series(buildStyles, (done) => {
+//     gulp.watch('./src/**/*', gulp.series(gulpCleanBuilt, (done) => {
 //         bs.reload();
 //         done();
 //     }));
 // });
-
-// // const minifyCss = () => gulp.src('./dist/css')
-// //         .pipe(cleanCss())
-// //         .pipe(gulp.dest('./dist/css'));
 //
-// const gulpCleanBuilt = () => gulp.src('./index.js')
+// const gulpCleanBuilt = () => gulp.src('./script.js')
 //     .pipe(gulpClean({force: true}))
-//     .pipe(gulp.dest('dist'));
+//     .pipe(gulp.dest('dist/js'));
 //
-// const pref = () => (gulp.src('src/**/*.css')
-//         .pipe(cleanCss())
+// const buildStyles = () => (gulp.src('./src/styles/**/*.scss')
+//         .pipe(sass().on('error', sass.logError))
 //         .pipe(autoprefixer())
 //         .pipe(concat('all.css'))
-//         .pipe(gulp.dest('dist'))
+//         .pipe(cleanCss())
+//         .pipe(gulp.dest("dist/css")).pipe(bs.stream())
 // );
 //
-// const imagesBuilt = () => (gulp.src('src/images/**/*.ipg')
+// const imagesBuilt = () => (gulp.src('./src/images/**/*.{jpg,jpeg,png,svg,webp}')
 //         .pipe(imagemin())
 //         .pipe(gulp.dest('dist/images'))
 // );
 //
-// const buildJs = () => (gulp.src('./dist/js'))
-//     .pipe(minifyJs())
-//     .pipe(gulp.dest('./dist/')
+// const buildJs = () => (gulp.src('./src/js/*.js'))
+//         .pipe(concat('scripts.min.js'))
+//         .pipe(minifyJs())
+//         .pipe(gulpUglify())
+//         .pipe(gulp.dest("dist/js/*.js"))
+//         .pipe(bs.stream()
 //     );
 //
+// const watcher =()=> {
+//     watch("*html").on("change", bs.reload);
+//     watch("./src/js/*.js").on("change", series(buildStyles, bs.reload));
+//     watch("./src/styles/**/*.scss", buildStyles);
+//     watch("./src/images/**/*.{jpg,jpeg,png,svg,webp}").on(
+//         "change",
+//         series(images, bs.reload)
+//     );
+// };
+// exports.default = parallel(serv, watcher, series(buildStyles, imagesBuilt, buildJs));
 
+
+// const scripts = (cb) => {
+//     src("./src/js/*.js")
+//         .pipe(concat('scripts.min.js'))
+//         .pipe(jsMin())
+//         .pipe(gulpUglify())
+//         .pipe(dest("dist/js/*.js"))
+//         .pipe(bs.stream());
+//     cb();
+// }
 // const { src, dest, watch, series } = require("gulp");
 //
 //
@@ -102,7 +115,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const cleanCss = require('gulp-clean-css');
 const concat = require('gulp-concat');
 // const imagemin = import('gulp-imagemin')
-// const imagemin = require ('gulp-imagemin');
+const imagemin = require ('gulp-imagemin');
 const jsMin = require ('gulp-js-minify');
 const gulpUglify = require ("gulp-uglify");
 
@@ -137,11 +150,10 @@ const styles =(cback) => {
 
 const images = (cb) => {
     src("./src/images/**/*.{jpg,jpeg,png,svg,webp}")
-        // .pipe(imagemin())
+        .pipe(imagemin())
         .pipe(dest("./dist/images"));
     cb()
 };
-
 
 const watcher =()=> {
     watch("*html").on("change", bs.reload);
