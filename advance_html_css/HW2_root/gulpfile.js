@@ -114,7 +114,6 @@ const autoprefixer = require('gulp-autoprefixer');
 // const gulpClean = require('gulp-clean');
 const cleanCss = require('gulp-clean-css');
 const concat = require('gulp-concat');
-// const imagemin = import('gulp-imagemin')
 const imagemin = require ('gulp-imagemin');
 const jsMin = require ('gulp-js-minify');
 const gulpUglify = require ("gulp-uglify");
@@ -144,6 +143,7 @@ const styles =(cback) => {
         .pipe(autoprefixer())
         .pipe(concat('all.css'))
         .pipe(cleanCss())
+        // .pipe(gulpClean())
         .pipe(dest("dist/css")).pipe(bs.stream())
     cback();
 }

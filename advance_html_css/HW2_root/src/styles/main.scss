@@ -6,9 +6,18 @@
 
 
 .container {
+  width: 100%;
+  min-width: variables.$S-small;
   font-family: 'Roboto', sans-serif;
   margin: 0 auto;
+
   @import "layout/header";
+  @media (min-width: variables.$M-middle-f) and (max-width: variables.$M-middle) {
+    min-width: variables.$M-middle;
+    //margin-right: 85px;
+    //margin-left: 85px;
+  }
+  @import "layout/posts";
 }
 
 

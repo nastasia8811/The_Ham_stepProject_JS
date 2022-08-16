@@ -15,10 +15,15 @@ menuButton.addEventListener('click', () => {
         closeButton.classList.add('active');
         menuOpen.classList.add('hide');
     }
-})
+});
 
-// Window.onclick = function (event) {
-//     if (!event.target.matches('.header__mobile-menu')) {
+let mediaQuery = window.matchMedia('(min-width: variables.$M-middle-f)');
+if (mediaQuery.matches) {
+    menuOpen.classList.remove('hide');
+}
+// let window = document.querySelector('body');
+// window.addEventListener('click', (event) => {
+//     if (!event.target.matches('header__mobile-menu')) {
 //         let i;
 //         for (i = 0; i < menuOpen.length; i++) {
 //             let openDropdown = menuOpen[i];
@@ -26,5 +31,4 @@ menuButton.addEventListener('click', () => {
 //                 openDropdown.classList.remove('active');
 //             }
 //         }
-//     }
-// }
+//     }});
