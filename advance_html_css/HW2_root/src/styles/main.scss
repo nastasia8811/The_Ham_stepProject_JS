@@ -15,6 +15,9 @@
     //margin-right: 85px;
     //margin-left: 85px;
   }
+  @media (min-width: variables.$L) and (max-width: variables.$L-large) {
+    min-width: variables.$L-large;
+  }
   @import "layout/posts";
   @import "layout/insta";
   @import "layout/footer";
