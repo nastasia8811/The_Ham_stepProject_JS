@@ -1,37 +1,43 @@
 @use "../variables";
+@use "../mixins";
+.instagram-section {
 
-.instagram__wrapper {
-  max-width: variables.$S;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  width: 100%;
+}
+.instagram {
+  min-width: variables.$S;
+  @include mixins.center;
+  &__title-wrapper {
+    display: flex;
+    margin-left: 43px;
+  }
+
+  &__wrapper {
+    margin-left: 43px;
+    margin-bottom: 42px;
+    &__wrapper-link {
+      display: none;
+
+    }
+    }
+  }
+
+
+
   @media (min-width: variables.$M-middle-f) and (max-width: variables.$M-middle) {
     .instagram {
-      margin: 0 auto;
-      width: 100%;
-      background-color: variables.$background;
-    }
-  }
-  &__link {
-    display: none;
-    @media (min-width: variables.$M-middle-f) and (max-width: variables.$M-middle) {
-      display: block;
-    }
-  }
-}
+      min-width: variables.$M;
+      @include mixins.center;
 
-@media (min-width: variables.$M-middle-f) and (max-width: variables.$M-middle) {
-  &__title-wrapper {
-    max-width: variables.$M;
-    display: flex;
-    justify-content: space-between;
-  }
-}
+      &__title-wrapper {
+        display: flex;
+        margin-left: 0;
+      }
 
-@media (min-width: variables.$M-middle-f) and (max-width: variables.$M-middle) {
-    .main__title {
-      font-size: 16px;
+      &__wrapper {
+        margin-left: 0;
+        margin-bottom: 42px;
+      }
     }
+
   }
 

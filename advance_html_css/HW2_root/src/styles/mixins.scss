@@ -1,17 +1,16 @@
 @use "variables";
+@mixin center {
+margin: 0 auto;
+width: 100%;
+}
 
-//@mixin root {
-//  min-width: 373px;
-//  max-width: 1600px;
-//  margin-left: auto !important;
-//  margin-right: auto !important;
-//}
-//
-//@mixin title {
-//  font-weight: 700;
-//  line-height: 22px;
-//  display: flex;
-//}
+
+@mixin title {
+  font-weight: 700;
+  line-height: 22px;
+}
+
+
 //
 //
 //@mixin flex {

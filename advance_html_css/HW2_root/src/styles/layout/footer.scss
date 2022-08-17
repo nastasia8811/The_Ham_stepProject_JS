@@ -1,4 +1,5 @@
 @use "../variables";
+@use "../mixins";
 
 .footer {
   background: variables.$background-footer;
@@ -9,13 +10,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @include mixins.center;
 }
 
 .footer__title {
   color: variables.$footer-title-color;
-  font-weight: 700;
+  @include mixins.title;
   font-size: 14px;
-  line-height: 22px;
+
   text-transform: uppercase;
 }
 

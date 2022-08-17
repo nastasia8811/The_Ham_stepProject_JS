@@ -1,19 +1,17 @@
 @use "../variables";
+@use "../mixins";
 
 .header {
   max-width: variables.$S;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  width: 100%;
+  @include mixins.center;
 
   &__mobile-menu {
     position: relative;
     border: none;
     cursor: pointer;
     margin-top: 23px;
-    //margin-right: 28px;
-    //display: flex;
     svg {
       float: right;
     }
@@ -83,11 +81,7 @@
     }
 
     .header__navigation-link {
-      //margin-right: 30px;
       flex-direction: row;
-      //:last-child{
-      //  margin-right: 0;
-      //}
     }
   }
 }

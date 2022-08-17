@@ -7,15 +7,11 @@
   width: 100%;
 
   &__title {
-    font-weight: 700;
+    @include mixins.title;
     font-size: 14px;
-    line-height: 22px;
     text-transform: uppercase;
     margin-top: 23px;
     margin-bottom: 28px;
-  }
-
-  &__grid {
   }
 }
 
@@ -39,6 +35,12 @@
   }
 }
 
+.active {
+  display: block;
+}
+.hide {
+  display: none;
+}
 
 @media (min-width: variables.$M-middle-f) and (max-width: variables.$M-middle) {
 
