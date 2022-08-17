@@ -5,6 +5,7 @@
   max-width: variables.$S;
   margin: 0 auto;
   width: 100%;
+  }
 
   &__title {
     font-weight: 700;
@@ -14,14 +15,16 @@
     margin-top: 23px;
     margin-bottom: 28px;
   }
-}
 
-.posts__item {
+  &__grid {
+
+  }
+
+main__grid-item {
   margin-bottom: 29px;
 
-  &-img {
+  grid__item-wrapper
 
-    }
   &-title {
     font-weight: 700;
     font-size: 14px;
@@ -29,55 +32,80 @@
     color: variables.$title-color;
     margin-top: 5px;
   }
+
   &-menu {
     font-weight: 400;
     font-size: 11px;
     line-height: 20px;
     color: variables.$comments-color;
   }
+
   &-content {
     display: none;
   }
 }
 
-@media (min-width: variables.$M-middle-f) and (max-width: variables.$M-middle) {
-  .main {
-    max-width: variables.$M;
-    margin: 0 auto;
-    width: 100%;
+//@media (min-width: variables.$M-middle-f) and (max-width: variables.$M-middle) {
+//  .main {
+//    max-width: variables.$M;
+//    margin: 0 auto;
+//    width: 100%;
+//
+//    &__title {
+//      font-size: 16px;
+//      text-transform: uppercase;
+//      margin-top: 56px;
+//    }
+//  }
+//
+//.main__grid {
+//  display: flex;
+//  flex-direction: column;
+//}
+//
+//.grid__item {
+//  display: flex;
+//  max-width: 600px;
+//  margin-bottom: 32px;
+//  margin-top: 30px;
+//  flex-direction: row;
+//  align-items: center;
+//
+//  &-wrapper {
+//    margin-left: 5px;
+//
+//    &-title {
+//      font-size: 16px;
+//    }
+//
+//    &-menu {
+//      font-size: 12px;
+//    }
+//
+//    &-content a{
+//      display: block;
+//      font-weight: 400;
+//      font-size: 14px;
+//      line-height: 26px;
+//      color: variables.$text-color;
+//    }
+//  }
+//}
+//}
 
-    &__title {
-      font-size: 16px;
-      text-transform: uppercase;
-      margin-top: 56px;
-    }
-
-    .posts__item {
-      display: flex;
-      max-width: 585px;
-      margin-bottom: 32px;
-      margin-top: 30px;
-
-      &-img {
-        float: left;
-      }
-
-      &-title {
-        font-size: 16px;
-      //margin-top: 15px;
-      }
-
-      &-menu {
-        font-size: 12px;
-      }
-
-      &-content {
-        display: block;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 26px;
-        color: variables.$text-color;
-      }
-    }
-  }
-}
+//@media (min-width: variables.$L) and (max-width: variables.$L-large) {
+//  .main {
+//    max-width: variables.$L;
+//    margin: 0 auto;
+//    width: 100%;
+//  }
+//  .grid__item {
+//    display: grid;
+//    grid-auto-flow: row;
+//    grid-template-rows:  1fr 1fr;
+//    grid-template-columns: 1fr 1fr;
+//    grid-row-gap: 5px;
+//    grid-column-gap: 5px;
+//    align-items: stretch;
+//  }
+//}

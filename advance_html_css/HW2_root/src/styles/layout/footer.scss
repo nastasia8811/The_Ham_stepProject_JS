@@ -1,0 +1,38 @@
+@use "../variables";
+
+.footer {
+  background: variables.$background-footer;
+}
+
+.footer__content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__title {
+  color: variables.$footer-title-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.footer__content {
+  max-width: 303px;
+  color: variables.$footer-text-color;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.footer__contacts {
+  color: variables.$footer-text-color;
+  max-width: 235px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+

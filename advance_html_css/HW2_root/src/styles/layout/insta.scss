@@ -1,0 +1,37 @@
+@use "../variables";
+
+.instagram__wrapper {
+  max-width: variables.$S;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  @media (min-width: variables.$M-middle-f) and (max-width: variables.$M-middle) {
+    .instagram {
+      margin: 0 auto;
+      width: 100%;
+      background-color: variables.$background;
+    }
+  }
+  &__link {
+    display: none;
+    @media (min-width: variables.$M-middle-f) and (max-width: variables.$M-middle) {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: variables.$M-middle-f) and (max-width: variables.$M-middle) {
+  &__title-wrapper {
+    max-width: variables.$M;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: variables.$M-middle-f) and (max-width: variables.$M-middle) {
+    .main__title {
+      font-size: 16px;
+    }
+  }
+

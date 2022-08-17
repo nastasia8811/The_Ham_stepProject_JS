@@ -1,8 +1,6 @@
 @use "variables";
 @use "mixins";
-@import "layout/posts";
-@import "layout/insta";
-@import "layout/footer";
+
 
 
 .container {
@@ -18,6 +16,8 @@
     //margin-left: 85px;
   }
   @import "layout/posts";
+  @import "layout/insta";
+  @import "layout/footer";
 }
 
 
