@@ -6,8 +6,8 @@
   min-width: variables.$S-small;
   font-family: 'Roboto', sans-serif;
   @include mixins.center;
-
   @import "layout/header";
+
   @media (min-width: variables.$M-middle-f) and (max-width: variables.$M-middle) {
     min-width: variables.$M-middle;
   }

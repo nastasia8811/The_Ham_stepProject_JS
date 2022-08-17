@@ -9,7 +9,10 @@ width: 100%;
   font-weight: 700;
   line-height: 22px;
 }
-
+ @mixin text-align {
+   font-weight: 400;
+   text-align: center
+ }
 
 //
 //

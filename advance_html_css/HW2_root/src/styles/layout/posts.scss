@@ -3,8 +3,7 @@
 
 .main {
   max-width: variables.$S;
-  margin: 0 auto;
-  width: 100%;
+  @include mixins.center;
 
   &__title {
     @include mixins.title;
@@ -24,12 +23,14 @@
     color: variables.$title-color;
     margin-top: 5px;
   }
+
   &_menu {
     font-weight: 400;
     font-size: 11px;
     line-height: 20px;
     color: variables.$comments-color;
   }
+
   &_content {
     display: none;
   }
@@ -38,6 +39,7 @@
 .active {
   display: block;
 }
+
 .hide {
   display: none;
 }
@@ -66,8 +68,9 @@
     flex-direction: row;
     align-items: center;
   }
+
   .grid__item-wrapper {
-    margin-left: 5px;
+    margin-left: 21px;
 
     &_title {
       font-size: 16px;
@@ -90,24 +93,41 @@
 @media (min-width: variables.$L) and (max-width: variables.$L-large) {
   .main {
     max-width: variables.$L;
-    &__grid{
+
+    &__title {
+      margin-top: 66px;
+    }
+
+    &__grid {
       display: grid;
       grid-auto-flow: row;
       grid-template-rows:  1fr 1fr;
       grid-template-columns: 1fr 1fr;
-      grid-row-gap: 5px;
-      grid-column-gap: 5px;
+      grid-row-gap: 32px;
+      grid-column-gap: 25px;
       align-items: stretch;
     }
   }
+
   .main__grid-item {
     flex-wrap: wrap;
     max-width: 800px;
   }
 
+
   .grid__item-img {
     float: left;
+    margin-right: 21px;
   }
+
+  .grid__item-wrapper_content {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: variables.$text-color;
+  }
+
 }
 
 

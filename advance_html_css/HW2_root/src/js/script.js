@@ -18,12 +18,24 @@ menuButton.addEventListener('click', () => {
     }
 });
 
-let mediaQuery = window.matchMedia('min-width: variables.$M-middle-f');
-if (mediaQuery.matches) {
+let mediaQuery = window.matchMedia('(min-width: variables.$M-middle-f)');
+
+mediaQuery.addEventListener('matches', ()=> {
     menuOpen.classList.remove('hide');
     menuOpen.classList.add('active');
-}
+});
 
+//
+// mediaQuery.addListener(handleTabletChange)
+// handleTabletChange(mediaQuery)
+
+
+// if (mediaQuery.matches) {
+//     menuOpen.classList.remove('hide');
+//     menuOpen.classList.add('active');
+// }
+
+// let mediaQueryLarge = window.matchMedia('min-width: variables.$L');
 // let mediaLarge = link.matchMedia("min-width: variables.$L-large");
 // if (mediaQuery.matches) {
 //     menuOpen.classList.remove('hide');
