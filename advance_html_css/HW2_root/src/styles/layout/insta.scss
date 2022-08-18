@@ -1,0 +1,99 @@
+@use "../variables";
+@use "../mixins";
+
+
+.instagram {
+  min-width: variables.$S;
+  @include mixins.center;
+
+  &__title-wrapper {
+    @include mixins.center;
+    display: flex;
+    max-width: variables.$S;
+
+    &_right {
+      display: none;
+    }
+
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+
+    &-link {
+      display: none;
+      margin-bottom: 42px;
+
+      &:first-child {
+        display: block;
+      }
+
+    }
+  }
+}
+
+
+@media (min-width: variables.$M-middle-f) and (max-width: variables.$M-middle) {
+  .instagram-section {
+    background: variables.$background;
+  }
+
+  .instagram {
+    min-width: variables.$M;
+
+    &__title-wrapper {
+      display: flex;
+      justify-content: space-between;
+      max-width: variables.$M;
+
+      &_right {
+        display: block;
+      }
+    }
+
+    &__wrapper {
+      margin-left: 0;
+
+      &-link {
+        display: block;
+        margin-right: 10px;
+        margin-bottom: 50px;
+
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+
+  }
+}
+
+@media (min-width: variables.$L) and (max-width: variables.$L-large) {
+  .instagram-section {
+    background: variables.$background;
+  }
+  .instagram {
+    min-width: variables.$L;
+
+    &__title-wrapper {
+      display: flex;
+      justify-content: space-between;
+      max-width: variables.$L;
+
+      &_right {
+        display: block;
+      }
+    }
+    &__wrapper {
+      margin-left: 0;
+      &-link {
+        display: block;
+        margin-right: 10px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+

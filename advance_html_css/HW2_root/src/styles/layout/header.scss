@@ -1,0 +1,119 @@
+@use "../variables";
+@use "../mixins";
+
+.header {
+  max-width: variables.$S;
+  display: flex;
+  flex-direction: column;
+  @include mixins.center;
+
+  &__mobile-menu {
+    position: relative;
+    border: none;
+    cursor: pointer;
+    margin-top: 23px;
+    svg {
+      float: right;
+    }
+
+    &_close,
+    &_open {
+      display: none;
+    }
+  }
+
+  &__navigation {
+    position: absolute;
+    right: -52px;
+    top: 60px;
+    background-color: variables.$background-menu;
+    min-width: 182px;
+
+    .header__navigation-link {
+      display: flex;
+      text-transform: uppercase;
+      color: variables.$title-color;
+      padding: 12px 16px;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 22px;
+
+      &:hover {
+        background-color: variables.$hover-fon;
+      }
+
+      &:nth-child(1) {
+        color: variables.$home-color;
+      }
+    }
+  }
+
+  &__img {
+    margin-top: 23px;
+  }
+}
+
+@media (min-width: variables.$M-middle-f) and (max-width: variables.$M-middle) {
+  .header {
+    max-width: variables.$M;
+
+    &__mobile-menu {
+      display: none;
+    }
+
+    &__navigation {
+      display: flex;
+      align-content: center;
+      align-items: center;
+      position: static;
+      background-color: variables.$white;
+      margin-top: 41px;
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+
+    .header__navigation-link {
+      flex-direction: row;
+    }
+  }
+  .active {
+    display: block;
+  }
+
+  .hide {
+    display: none;
+  }
+}
+
+@media (min-width: variables.$L) and (max-width: variables.$L-large) {
+  .header {
+    max-width: variables.$L;
+
+    &__mobile-menu {
+      display: none;
+    }
+
+    &__navigation {
+      display: flex;
+      align-content: center;
+      align-items: center;
+      position: static;
+      background-color: variables.$white;
+      margin-top: 41px;
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+
+    .header__navigation-link {
+      flex-direction: row;
+      margin-right: 68px;
+      :last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+
+
+

@@ -1,0 +1,144 @@
+@use "../variables";
+@use "../mixins";
+
+.footer {
+  background: variables.$background-footer;
+}
+.off {
+  display: none;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include mixins.center;
+
+  &-title {
+    margin-top: 38px;
+    margin-bottom: 8px;
+    color: variables.$footer-title-color;
+    @include mixins.title;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &-content {
+    max-width: 303px;
+    color: variables.$footer-text-color;
+    @include mixins.text-align;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  &-icon {
+    justify-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  &-contacts {
+    color: variables.$footer-text-color;
+    max-width: 235px;
+    font-size: 14px;
+    line-height: 24px;
+    @include mixins.text-align;
+    margin-bottom: 47px;
+  }
+}
+
+@media (min-width: variables.$M-middle-f) and (max-width: variables.$M-middle) {
+  .off {
+    display: block;
+  }
+
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include mixins.center;
+
+    &-title {
+      margin-top: 57px;
+      margin-bottom: 22px;
+      color: variables.$footer-title-color;
+      @include mixins.title;
+      font-size: 16px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    &-content {
+      max-width: 684px;
+      color: variables.$footer-text-color;
+      @include mixins.text-align;
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    &-icon {
+      justify-items: center;
+      margin-top: 37px;
+      margin-bottom: 34px;
+    }
+
+    &-contacts {
+      color: variables.$footer-text-color;
+      max-width: 613px;
+      font-size: 16px;
+      line-height: 26px;
+      @include mixins.text-align;
+      margin-bottom: 56px;
+    }
+  }
+
+}
+@media (min-width: variables.$L) and (max-width: variables.$L-large) {
+  .off {
+    display: block;
+  }
+  .footer__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      @include mixins.center;
+
+    &-title {
+      margin-top: 66px;
+      margin-bottom: 22px;
+      color: variables.$footer-title-color;
+      @include mixins.title;
+      font-size: 16px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    &-content {
+      max-width: 684px;
+      color: variables.$footer-text-color;
+      @include mixins.text-align;
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    &-icon {
+      justify-items: center;
+      margin-top: 37px;
+      margin-bottom: 34px;
+    }
+
+    &-contacts {
+      max-width: 613px;
+      color: variables.$footer-text-color;
+      font-size: 16px;
+      line-height: 26px;
+      @include mixins.text-align;
+      margin-bottom: 70px;
+    }
+  }
+}
+
