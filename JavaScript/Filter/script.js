@@ -202,12 +202,12 @@ function Gallery() {
 	loadMore.addEventListener('click',() => {
 
 		loadMore.classList.add('loader');
-		// loadMore.setAttribute('disabled', '')
+		// loadMore.setAttribute('hide', '')
 
 
 		setTimeout(() => {
 			loadMore.classList.remove('loader');
-			// loadMore.removeAttribute('disabled')
+			// loadMore.removeAttribute('hide')
 
 			// Если нам нужно что бы подгружалось по 12 тогда мы можем создать себе массив данных нужного формата которысый состоит из 2 массивов по 12 обьектов
 			// и что бы за каждым кликом обращатся к нужному куску мы можем делать каунт клика кторый будет являтся индексом в главном массиве и будем обращяться вот так images[cout]
