@@ -288,6 +288,8 @@ function Gallery() {
             setTimeout(() => {
             loadMore.remove()}, 1000);
         }
+
+
     }, SET_TIMEOUT);
 }
 
