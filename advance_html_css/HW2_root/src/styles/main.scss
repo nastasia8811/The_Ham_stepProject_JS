@@ -4,6 +4,7 @@
 
 .container {
   min-width: variables.$S-small;
+  max-width: 1170px;
   font-family: 'Roboto', sans-serif;
   @include mixins.center;
   @import "layout/header";
@@ -19,6 +20,9 @@
   @import "layout/insta";
   @import "layout/footer";
 }
+
+
+
 
 
 
