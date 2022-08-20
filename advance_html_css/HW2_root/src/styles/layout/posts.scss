@@ -44,7 +44,7 @@
 //  display: none;
 //}
 
-@media (min-width: variables.$M-middle-f) and (max-width: variables.$M-middle) {
+@media (min-width: variables.$M) {
 
   .main {
     max-width: variables.$M;
@@ -90,7 +90,7 @@
   }
 }
 
-@media (min-width: variables.$L) and (max-width: variables.$L-large) {
+@media (min-width: variables.$L) {
   .main {
     max-width: variables.$L;
 
@@ -110,7 +110,7 @@
   }
 
   .main__grid-item {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     max-width: 800px;
   }
 

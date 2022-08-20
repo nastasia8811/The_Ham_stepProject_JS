@@ -18,7 +18,7 @@ menuButton.addEventListener('click', () => {
     }
 });
 
-let mediaQuery = window.matchMedia('(min-width: variables.$M-middle-f)');
+let mediaQuery = window.matchMedia('(min-width: variables.$M)');
 
 mediaQuery.addEventListener('matches', ()=> {
     menuOpen.classList.remove('hide');

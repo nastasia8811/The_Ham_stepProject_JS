@@ -3,6 +3,8 @@
 
 .footer {
   background: variables.$background-footer;
+  width: 100%;
+  @include mixins.center;
 }
 .off {
   display: none;
@@ -49,7 +51,7 @@
   }
 }
 
-@media (min-width: variables.$M-middle-f) and (max-width: variables.$M-middle) {
+@media (min-width: variables.$M) {
   .off {
     display: block;
   }
@@ -96,7 +98,7 @@
   }
 
 }
-@media (min-width: variables.$L) and (max-width: variables.$L-large) {
+@media (min-width: variables.$L) {
   .off {
     display: block;
   }
