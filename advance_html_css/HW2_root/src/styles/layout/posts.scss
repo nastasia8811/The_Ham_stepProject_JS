@@ -12,13 +12,16 @@
     margin-top: 23px;
     margin-bottom: 28px;
   }
-}
+  &__grid-item {
+      margin-bottom: 28px;
+    }
+  }
+
 
 .grid__item-wrapper {
 
   &_title {
     font-weight: 700;
-    font-size: 14px;
     line-height: 30px;
     color: variables.$title-color;
     margin-top: 5px;
@@ -40,9 +43,6 @@
   display: block;
 }
 
-//.hide {
-//  display: none;
-//}
 
 @media (min-width: variables.$M) {
 

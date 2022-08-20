@@ -54,13 +54,13 @@
     margin-top: 83px;
   }
 }
-@media (max-width: 768px) {
-.hide {
-  display: none;
-}
-}
+
 
 @media (min-width: variables.$M) {
+  .hide {
+    display: none;
+  }
+
   .header {
     max-width: variables.$M;
     position: static;

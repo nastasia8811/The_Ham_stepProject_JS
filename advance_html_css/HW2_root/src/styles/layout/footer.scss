@@ -2,15 +2,16 @@
 @use "../mixins";
 
 .footer {
-  background: variables.$background-footer;
   width: 100%;
   @include mixins.center;
 }
+
 .off {
   display: none;
 }
 
 .footer__container {
+  background: variables.$background-footer;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,51 +58,34 @@
   }
 
   .footer__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    @include mixins.center;
 
     &-title {
       margin-top: 57px;
       margin-bottom: 22px;
-      color: variables.$footer-title-color;
-      @include mixins.title;
       font-size: 16px;
-      text-transform: uppercase;
-      text-align: center;
     }
 
     &-content {
-      max-width: 684px;
-      color: variables.$footer-text-color;
-      @include mixins.text-align;
+      //max-width: 684px;
       font-size: 16px;
       line-height: 28px;
     }
 
     &-icon {
-      justify-items: center;
       margin-top: 37px;
       margin-bottom: 34px;
     }
 
     &-contacts {
-      color: variables.$footer-text-color;
       max-width: 613px;
       font-size: 16px;
       line-height: 26px;
-      @include mixins.text-align;
       margin-bottom: 56px;
     }
   }
-
 }
+
 @media (min-width: variables.$L) {
-  .off {
-    display: block;
-  }
   .footer__container {
       display: flex;
       flex-direction: column;
@@ -123,24 +107,10 @@
       max-width: 684px;
       color: variables.$footer-text-color;
       @include mixins.text-align;
-      font-size: 16px;
-      line-height: 28px;
-    }
-
-    &-icon {
-      justify-items: center;
-      margin-top: 37px;
-      margin-bottom: 34px;
     }
 
     &-contacts {
-      max-width: 613px;
-      color: variables.$footer-text-color;
-      font-size: 16px;
-      line-height: 26px;
-      @include mixins.text-align;
       margin-bottom: 70px;
     }
   }
 }
-

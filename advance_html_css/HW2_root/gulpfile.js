@@ -5,12 +5,13 @@ const { parallel, series, watch , src, dest} = require('gulp');
 const bs = require('browser-sync').create();
 const sass = require("gulp-sass")(require("sass"));
 const autoprefixer = require('gulp-autoprefixer');
-// const gulpClean = require('gulp-clean');
+const gulpClean = require('gulp-clean');
 const cleanCss = require('gulp-clean-css');
 const concat = require('gulp-concat');
 const imagemin = require ('gulp-imagemin');
 const jsMin = require ('gulp-js-minify');
 const gulpUglify = require ("gulp-uglify");
+const clean = require("gulp-clean");
 
 const serv =() => {
     bs.init({
@@ -59,6 +60,20 @@ const watcher =()=> {
     );
 };
 
+function cleanImg() {
+    return src('dist/images/', {allowEmpty: true})
+        .pipe(clean())
+}
+
+function cleanDist() {
+    return src('dist', {allowEmpty: true})
+        .pipe(clean())
+}
+
+exports.build = series(cleanDist, styles, images, scripts,);
+
+exports.images = images;
+exports.cleanImg = cleanImg;
 exports.default = parallel(serv, watcher, series(styles, images, scripts));
 
 

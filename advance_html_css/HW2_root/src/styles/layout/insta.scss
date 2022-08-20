@@ -5,6 +5,7 @@
 .instagram {
   min-width: variables.$S;
   @include mixins.center;
+  background: variables.$white;
 
   &__title-wrapper {
     @include mixins.center;
@@ -43,7 +44,6 @@
     min-width: variables.$M;
 
     &__title-wrapper {
-      display: flex;
       justify-content: space-between;
       max-width: variables.$M;
 
@@ -65,7 +65,6 @@
         }
       }
     }
-
   }
 }
 
@@ -77,21 +76,14 @@
     min-width: variables.$L;
 
     &__title-wrapper {
-      display: flex;
-      justify-content: space-between;
       max-width: variables.$L;
-
-      &_right {
-        display: block;
-      }
     }
+
     &__wrapper {
       margin-left: 0;
-      &-link {
-        display: block;
-        margin-right: 10px;
-        margin-bottom: 50px;
-      }
+      &-link:last-child {
+          display: block;
+        }
     }
   }
 }

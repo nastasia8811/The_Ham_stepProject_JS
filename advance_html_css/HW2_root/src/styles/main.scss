@@ -57,7 +57,6 @@ table {
   max-width: 1170px;
   font-family: 'Roboto', sans-serif;
   @include mixins.center;
-  @import "layout/header";
 
   @media (min-width: variables.$M) {
     max-width: variables.$M;
@@ -66,7 +65,7 @@ table {
     //max-width: variables.$L;
     max-width: 1170px;
   }
-
+  @import "layout/header";
   @import "layout/posts";
   @import "layout/insta";
   @import "layout/footer";
