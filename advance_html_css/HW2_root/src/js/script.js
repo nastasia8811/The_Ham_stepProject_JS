@@ -1,10 +1,11 @@
-let menuButton = document.querySelector(".header__mobile-menu");
-let closeButton = document.querySelector(".header__mobile-menu_close");
-let openButton = document.querySelector(".header__mobile-menu_open");
-let menuOpen = document.querySelector('.header__navigation');
 
+// const menuButton = document.querySelector(".header__mobile-menu");
 
-menuButton.addEventListener('click', (event) => {
+document.querySelector(".header__mobile-menu").addEventListener('click', (event) => {
+
+    const closeButton = document.querySelector(".header__mobile-menu_close");
+    const openButton = document.querySelector(".header__mobile-menu_open");
+    const menuOpen = document.querySelector('.header__navigation');
     if (closeButton.classList.contains('active')) {
         closeButton.classList.remove('active');
         menuOpen.classList.remove('hide');
