@@ -67,7 +67,7 @@ function cleanImg() {
 
 function cleanDist() {
     return src('dist', {allowEmpty: true})
-        .pipe(clean())
+        .pipe(gulpClean())
 }
 
 exports.build = series(cleanDist, styles, images, scripts,);
