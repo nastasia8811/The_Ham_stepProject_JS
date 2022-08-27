@@ -1,0 +1,29 @@
+{
+  "name": "hw2_gulp_scss",
+  "version": "1.0.0",
+  "description": "Anastasiia Melnyk fe_2_online",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/AnastasiiaMelnyk/homework/-/tree/main/advance_html_css/HW2_gulp-scss"
+  },
+  "author": "Anastasiia Melnyk",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-js-minify": "^0.0.3",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.54.0"
+  }
+}
