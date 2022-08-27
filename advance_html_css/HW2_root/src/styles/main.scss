@@ -1,0 +1,26 @@
+@use "variables";
+@use "mixins";
+
+
+.container {
+  min-width: variables.$S-small;
+  font-family: 'Roboto', sans-serif;
+  @include mixins.center;
+  @import "layout/header";
+
+  @media (min-width: variables.$M-middle-f) and (max-width: variables.$M-middle) {
+    min-width: variables.$M-middle;
+  }
+  @media (min-width: variables.$L) and (max-width: variables.$L-large) {
+    min-width: variables.$L-large;
+  }
+
+  @import "layout/posts";
+  @import "layout/insta";
+  @import "layout/footer";
+}
+
+
+
+
+
