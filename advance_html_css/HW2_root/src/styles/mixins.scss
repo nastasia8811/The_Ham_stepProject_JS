@@ -1,4 +1,5 @@
 @use "variables";
+
 @mixin center {
 margin: 0 auto;
 width: 100%;
@@ -9,32 +10,9 @@ width: 100%;
   font-weight: 700;
   line-height: 22px;
 }
+
  @mixin text-align {
    font-weight: 400;
    text-align: center
  }
-
-//
-//
-//@mixin flex {
-//  display: flex;
-//  align-content: center;
-//  align-items: center;
-//}
-
-//@mixin for-mobile {
-//  @media (min-width: variables.$S) {
-//  }
-//}
-//
-//@mixin for-laptop {
-//  @media (min-width: variables.$M) {
-//  }
-//}
-//
-//@mixin for-desktop {
-//  @media (min-width: variables.$L) {
-//
-//  }
-//}
 

@@ -6,12 +6,14 @@
   display: flex;
   flex-direction: column;
   @include mixins.center;
+  position: relative;
 
   &__mobile-menu {
-    position: relative;
+    position: absolute;
     border: none;
     cursor: pointer;
     margin-top: 23px;
+    right: 0;
     svg {
       float: right;
     }
@@ -24,8 +26,8 @@
 
   &__navigation {
     position: absolute;
-    right: -52px;
     top: 60px;
+    right: 0;
     background-color: variables.$background-menu;
     min-width: 182px;
 
@@ -49,13 +51,18 @@
   }
 
   &__img {
-    margin-top: 23px;
+    margin-top: 83px;
   }
 }
+.hide {
+  display: none;
+}
 
-@media (min-width: variables.$M-middle-f) and (max-width: variables.$M-middle) {
+@media (min-width: variables.$M) {
+
   .header {
     max-width: variables.$M;
+    position: static;
 
     &__mobile-menu {
       display: none;
@@ -70,22 +77,25 @@
       margin-top: 41px;
       justify-content: center;
       flex-wrap: nowrap;
+
     }
 
     .header__navigation-link {
       flex-direction: row;
+      &:hover {
+        background-color: variables.$white;
+      }
+    }
+    &__img {
+      margin-top: 43px;
     }
   }
   .active {
     display: block;
   }
-
-  .hide {
-    display: none;
-  }
 }
 
-@media (min-width: variables.$L) and (max-width: variables.$L-large) {
+@media (min-width: variables.$L){
   .header {
     max-width: variables.$L;
 
@@ -107,6 +117,9 @@
     .header__navigation-link {
       flex-direction: row;
       margin-right: 68px;
+      &:hover {
+        background-color: variables.$white;
+      }
       :last-child {
         margin-right: 0;
       }

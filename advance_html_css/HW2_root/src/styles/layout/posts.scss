@@ -12,13 +12,16 @@
     margin-top: 23px;
     margin-bottom: 28px;
   }
-}
+  &__grid-item {
+      margin-bottom: 28px;
+    }
+  }
+
 
 .grid__item-wrapper {
 
   &_title {
     font-weight: 700;
-    font-size: 14px;
     line-height: 30px;
     color: variables.$title-color;
     margin-top: 5px;
@@ -40,11 +43,8 @@
   display: block;
 }
 
-.hide {
-  display: none;
-}
 
-@media (min-width: variables.$M-middle-f) and (max-width: variables.$M-middle) {
+@media (min-width: variables.$M) {
 
   .main {
     max-width: variables.$M;
@@ -90,7 +90,7 @@
   }
 }
 
-@media (min-width: variables.$L) and (max-width: variables.$L-large) {
+@media (min-width: variables.$L) {
   .main {
     max-width: variables.$L;
 
@@ -110,7 +110,7 @@
   }
 
   .main__grid-item {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     max-width: 800px;
   }
 

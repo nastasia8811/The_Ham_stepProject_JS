@@ -5,6 +5,7 @@
 .instagram {
   min-width: variables.$S;
   @include mixins.center;
+  background: variables.$white;
 
   &__title-wrapper {
     @include mixins.center;
@@ -34,7 +35,7 @@
 }
 
 
-@media (min-width: variables.$M-middle-f) and (max-width: variables.$M-middle) {
+@media (min-width: variables.$M) {
   .instagram-section {
     background: variables.$background;
   }
@@ -43,7 +44,6 @@
     min-width: variables.$M;
 
     &__title-wrapper {
-      display: flex;
       justify-content: space-between;
       max-width: variables.$M;
 
@@ -65,11 +65,10 @@
         }
       }
     }
-
   }
 }
 
-@media (min-width: variables.$L) and (max-width: variables.$L-large) {
+@media (min-width: variables.$L) {
   .instagram-section {
     background: variables.$background;
   }
@@ -77,21 +76,14 @@
     min-width: variables.$L;
 
     &__title-wrapper {
-      display: flex;
-      justify-content: space-between;
       max-width: variables.$L;
-
-      &_right {
-        display: block;
-      }
     }
+
     &__wrapper {
       margin-left: 0;
-      &-link {
-        display: block;
-        margin-right: 10px;
-        margin-bottom: 50px;
-      }
+      &-link:last-child {
+          display: block;
+        }
     }
   }
 }
