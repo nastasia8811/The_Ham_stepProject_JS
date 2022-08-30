@@ -1,6 +1,4 @@
-
-
-'usr strict'
+'use strict'
 const { parallel, series, watch , src, dest} = require('gulp');
 const bs = require('browser-sync').create();
 const sass = require("gulp-sass")(require("sass"));
@@ -23,11 +21,11 @@ const serv =() => {
 };
 
 const scripts = (cb) => {
-    src("./src/js/*.js")
+    src("./src/scripts/*.js")
         .pipe(concat('scripts.min.js'))
         .pipe(jsMin())
         .pipe(gulpUglify())
-        .pipe(dest("dist/js/*.js"))
+        .pipe(dest("dist/scripts/*.js"))
         .pipe(bs.stream());
     cb();
 }
@@ -38,7 +36,7 @@ const styles =(cback) => {
         .pipe(autoprefixer())
         .pipe(concat('all.css'))
         .pipe(cleanCss())
-        // .pipe(gulpClean())
+        .pipe(gulpClean())
         .pipe(dest("dist/css")).pipe(bs.stream())
     cback();
 }
@@ -52,7 +50,7 @@ const images = (cb) => {
 
 const watcher =()=> {
     watch("*html").on("change", bs.reload);
-    watch("./src/js/*.js").on("change", series(scripts, bs.reload));
+    watch("./src/scripts/*.js").on("change", series(scripts, bs.reload));
     watch("./src/styles/**/*.scss", styles);
     watch("./src/images/**/*.{jpg,jpeg,png,svg,webp}").on(
         "change",
@@ -70,7 +68,7 @@ function cleanDist() {
         .pipe(gulpClean())
 }
 
-exports.build = series(cleanDist, styles, images, scripts,);
+exports.build = series(cleanDist, styles, images, scripts);
 
 exports.images = images;
 exports.cleanImg = cleanImg;

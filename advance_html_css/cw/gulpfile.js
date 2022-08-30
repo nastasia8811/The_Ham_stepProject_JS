@@ -30,11 +30,11 @@ const serv = (done) => {
 // }
 
 const scripts = (cb) => {
-    src('./src/js/**/*.js')
-        .pipe(concat('scripts.min.js'))
+    src('./src/scripts/**/*.scripts')
+        .pipe(concat('scripts.min.scripts'))
         .pipe(uglify())
-        .pipe(dest('./src/js'))
-        .pipe(dest('./dist/js'))
+        .pipe(dest('./src/scripts'))
+        .pipe(dest('./dist/scripts'))
         .pipe(browserSync.stream());
     cb();
 };
@@ -65,7 +65,7 @@ function cleanImg() {
 
 const watcher = () => {
     watch('*.html').on('change', browserSync.reload);
-    watch(['./src/js/**/*.js', '!./src/js/**/*min.js'])
+    watch(['./src/scripts/**/*.scripts', '!./src/scripts/**/*min.scripts'])
         .on('change', series(scripts, browserSync.reload));
     watch('./src/styles/**/*.scss', styles);
     watch('./src/img/**/*.{jpg,jpeg,png,svg,webp}', images);
@@ -80,7 +80,7 @@ const cleanDist = (cb) => {
 const buildCopy = (cb) => {
     src([
         'src/css/**/*.min.css',
-        'src/js/**/*.min.js',
+        'src/scripts/**/*.min.scripts',
         'src/img/**/*',
     ], { base: './src' })
         .pipe(dest('./dist'));

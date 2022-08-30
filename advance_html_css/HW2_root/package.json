@@ -2,7 +2,7 @@
   "name": "hw2_gulp_scss",
   "version": "1.0.0",
   "description": "Anastasiia Melnyk fe_2_online",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
     "build": "gulp build"
