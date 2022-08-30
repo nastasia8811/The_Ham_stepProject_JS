@@ -1,0 +1,25 @@
+{
+  "name": "project-x",
+  "version": "1.0.0",
+  "description": "Anastasiia Melnyk fe_2_online",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/AnastasiiaMelnyk/homework/-/tree/main/advance_html_css"
+  },
+  "author": "Anastasiia Melnyk",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "eslint": "^8.20.0",
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "moment": "^2.29.4"
+  }
+}
