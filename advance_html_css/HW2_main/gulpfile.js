@@ -25,7 +25,7 @@ const scripts = (cb) => {
         .pipe(concat('scripts.min.js'))
         .pipe(jsMin())
         .pipe(gulpUglify())
-        .pipe(dest("dist/scripts/*.js"))
+        .pipe(dest("dist/scripts"))
         .pipe(bs.stream());
     cb();
 }
