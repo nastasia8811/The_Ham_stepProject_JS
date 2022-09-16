@@ -4,7 +4,7 @@
 const clients1 = ["Гилберт", "Сальваторе", "Пирс", "Соммерс", "Форбс", "Донован", "Беннет"];
 const clients2 = ["Пирс", "Зальцман", "Сальваторе", "Майклсон"];
 const uniqueClients = [...new Set(clients1, clients2)];
-// console.log(uniqueClients);
+ console.log(uniqueClients);
 
 // №2
 const characters = [
@@ -60,9 +60,14 @@ const user1 = {
     name: "John",
     years: 30
 };
-
-const { newName = "Lola", newYears = 20, isAdmin} = user1;
-
+// function newFunction (name, years, isAdmin){
+//     const {name: newName, years:newYears, isAdmin} = user1;
+// const user2 = {
+//
+// }
+// }
+// newFunction('Anna', 20, 'no');
+// console.log(newFunction)
 // alert(newName);
 // alert(newYears);
 // alert(isAdmin);
@@ -105,7 +110,7 @@ const fullProfile = {
     ...satoshi2019,
     ...satoshi2020
 }
-// console.log(fullProfile);
+console.log(fullProfile);
 
 
 // №5
@@ -127,7 +132,7 @@ const bookToAdd = {
 
 const [one, two, three] = books;
 const newArr = [one, two, three, bookToAdd];
-// console.log(newArr);
+console.log(newArr);
 
 // №6
 
@@ -135,6 +140,18 @@ const employee = {
     name: 'Vitalii',
     surname: 'Klichko'
 }
+
+const { salary = 3000, age = 20, name, surname } = employee;
+
+const newEmployee = {
+    salary,
+    age,
+    name,
+    surname
+}
+console.log(newEmployee);
+
+
 // №7
 
 const array = ['value', () => 'showValue'];
