@@ -57,20 +57,16 @@ characters.forEach(({ name, lastName, age }) => console.log(name, lastName, age)
 // №3
 
 const user1 = {
-    name: "John",
+    name1: "John",
     years: 30
 };
-// function newFunction (name, years, isAdmin){
-//     const {name: newName, years:newYears, isAdmin} = user1;
-// const user2 = {
-//
-// }
-// }
-// newFunction('Anna', 20, 'no');
-// console.log(newFunction)
-// alert(newName);
-// alert(newYears);
-// alert(isAdmin);
+
+const {name1, years, isAdmin = false} = user1;
+
+
+alert(name1);
+alert(years);
+alert(isAdmin);
 
 // №4
 
@@ -155,7 +151,7 @@ console.log(newEmployee);
 // №7
 
 const array = ['value', () => 'showValue'];
-
+const [value, showValue] = array;
 
 alert(value); // має бути виведено 'value'
 alert(showValue());  // має бути виведено 'showValue'
