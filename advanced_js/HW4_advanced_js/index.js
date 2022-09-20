@@ -1,5 +1,5 @@
 'use strict'
-const mainElement = document.createElement('div');
+const mainElement = document.createElement('ul');
 mainElement.setAttribute('id', 'wrap_${id}');
 document.body.append(mainElement);
 
@@ -9,7 +9,7 @@ fetch('https://ajax.test-danit.com/api/swapi/films')
     })
     .then((data) => {
         data.forEach(({episodeId, characters, name, openingCrawl}) => {
-            mainElement.insertAdjacentHTML('beforeend', `<p>${episodeId}, <div id="characters"></div>${name}, ${openingCrawl}</p>` )
+            mainElement.insertAdjacentHTML('beforeend', `<li> Episode ${episodeId} Film: ${name} <div id="characters"></div> ${openingCrawl}</p>` )
             const idCharacters = document.querySelector('#characters');
 
             characters.forEach((url) =>{
@@ -18,8 +18,7 @@ fetch('https://ajax.test-danit.com/api/swapi/films')
                     .then(res => {
                             console.log(res.name);
                             console.log(episodeId);
-
-                        idCharacters.append()
+                        idCharacters.insertAdjacentHTML('afterbegin', `<p>${res.name}</p>`)
                         }
                     )
             })
