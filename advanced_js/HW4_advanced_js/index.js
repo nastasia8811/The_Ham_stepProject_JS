@@ -1,17 +1,16 @@
 'use strict'
-const mainElement = document.createElement('ul');
-mainElement.setAttribute('id', 'wrap_${id}');
+const mainElement = document.createElement('div');
+mainElement.setAttribute('id', 'wrap');
 document.body.append(mainElement);
 
 fetch('https://ajax.test-danit.com/api/swapi/films')
     .then((response) => {
         return response.json();
     })
-    .then((data) => {
-        data.forEach(({episodeId, characters, name, openingCrawl}) => {
-            mainElement.insertAdjacentHTML('beforeend', `<li> Episode ${episodeId} Film: ${name} <div id="characters"></div> ${openingCrawl}</p>` )
+    .then((elemArr) => {
+        elemArr.forEach(({episodeId, characters, name, openingCrawl}) => {
+            mainElement.insertAdjacentHTML('beforeend', `<p class="title"> Episode ${episodeId}</p><h1 class="title">Film: ${name}</h1> <div id="characters"></div><p class="text">${openingCrawl}</p>`)
             const idCharacters = document.querySelector('#characters');
-
             characters.forEach((url) =>{
                 fetch(url)
                     .then(response => response.json())
@@ -22,7 +21,7 @@ fetch('https://ajax.test-danit.com/api/swapi/films')
                         }
                     )
             })
-            console.log(data);
+            console.log(elemArr);
         });
         })
 
