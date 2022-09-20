@@ -29,28 +29,6 @@ const books = [
         name: "Коти в мистецтві",
     }
 ];
-
-books.forEach((elem) => {
-    let elementRoot = document.querySelector("#root");
-    let priceList = document.createElement('ul')
-    let li = document.createElement('li');
-    priceList.append(elementRoot);
-    li.innerText = elem;
-    priceList.append(li);
-
-    try {
-        if (!elem.author) {
-            throw new SyntaxError("Данные неполны: нет автора");
-        } else if (!elem.name) {
-            throw new SyntaxError("Данные неполны: нет имени");
-        } else if (!elem.price) {
-            throw new SyntaxError("Данные неполны: нет цены");
-        }
-    } catch (e) {
-        alert("Error: " + e.message);
-    }
-});
-
 class CreateProduct {
     constructor(author, name, price) {
         this.name = name;
@@ -60,11 +38,38 @@ class CreateProduct {
     }
 
     render() {
-        this.name = document.createElement("li");
-        this.author = document.createElement("li");
+      return `<li>${this.name}, ${this.author}, ${this.price} </li> `
+
     }
 
 }
+let container = document.createElement('ul');
+document.body.append(container);
+
+books.forEach((elem) => {
+    try {
+        if (!elem.author) {
+            throw new SyntaxError("Данные неполны: нет автора");
+        } else if (!elem.name) {
+            throw new SyntaxError("Данные неполны: нет имени");
+        } else if (!elem.price) {
+            throw new SyntaxError("Данные неполны: нет цены");
+        }
+        container.insertAdjacentHTML("beforeend", new CreateProduct(elem.author, elem.name, elem.price).render());
+
+    } catch (e) {
+        alert("Error: " + e.message);
+    }
+});
+
+
+
+// const htmlArr = books.map((author, name,price) => {
+//     return `<p> ${author}</p>
+//                 <p>${name}</p>
+//                 <p>${price}</p>`
+// });
+// li.innerHTML = htmlArr.join('');
 
 //     constructor(name, fullName, article, price) {
 //         this.name = name;
