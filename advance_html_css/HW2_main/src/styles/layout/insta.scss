@@ -53,12 +53,15 @@
     }
 
     &__wrapper {
-      margin-left: 0;
+      margin: 0 auto;
+      max-width: variables.$M;
+      justify-content: space-between;
 
       &-link {
         display: block;
         margin-right: 10px;
         margin-bottom: 50px;
+        width: 30%;
 
         &:last-child {
           display: none;
@@ -74,16 +77,21 @@
   }
   .instagram {
     min-width: variables.$L;
+    max-width: variables.$L;
 
     &__title-wrapper {
       max-width: variables.$L;
     }
 
     &__wrapper {
-      margin-left: 0;
-      &-link:last-child {
+      margin: 0 auto;
+      max-width: variables.$L;
+      &-link {
+        width: 30%;
+        &:last-child {
           display: block;
         }
+      }
     }
   }
 }

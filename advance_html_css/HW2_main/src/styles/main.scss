@@ -62,8 +62,8 @@ table {
     max-width: variables.$M;
   }
   @media (min-width: variables.$L) {
-    //max-width: variables.$L;
-    max-width: 1170px;
+    max-width: variables.$L;
+
   }
   @import "layout/header";
   @import "layout/posts";

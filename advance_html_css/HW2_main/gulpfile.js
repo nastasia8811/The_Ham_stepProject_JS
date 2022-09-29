@@ -22,7 +22,7 @@ const serv =() => {
 
 const scripts = (cb) => {
     src("./src/scripts/*.js")
-        .pipe(concat('scripts.min.js'))
+        .pipe(concat('styles.min.js'))
         .pipe(jsMin())
         .pipe(gulpUglify())
         .pipe(dest("dist/scripts"))
@@ -32,9 +32,10 @@ const scripts = (cb) => {
 
 const styles =(cback) => {
     src("./src/styles/**/*.scss")
+
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer())
-        .pipe(concat('all.css'))
+        .pipe(concat('styles.min.css'))
         .pipe(cleanCss())
         .pipe(gulpClean())
         .pipe(dest("dist/css")).pipe(bs.stream())
