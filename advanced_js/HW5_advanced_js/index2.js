@@ -1,11 +1,11 @@
 const post = 'https://ajax.test-danit.com/api/json/posts';
 const user = 'https://ajax.test-danit.com/api/json/users';
-const postContainer = document.createElement('div');
-postContainer.setAttribute('class', 'post');
-document.body.append(postContainer);
-const usersInfo = document.createElement('div');
-usersInfo.setAttribute('class', 'user');
-postContainer.append(usersInfo);
+// const postContainer = document.createElement('div');
+// postContainer.setAttribute('class', 'post');
+// document.body.append(postContainer);
+// const usersInfo = document.createElement('div');
+// usersInfo.setAttribute('class', 'user');
+// postContainer.append(usersInfo);
 
 class Card {
     constructor(title, body, username, name, email) {
@@ -14,41 +14,59 @@ class Card {
         this.username = username;
         this.name = name;
         this.email = email;
+        this.btn = null;
     }
 
-    post() {
+    findPost() {
         return fetch(post)
             .then((response) => {
                 return response.json();
             })
-            .then((elemArr) => {
-                elemArr.forEach(({title, body}) => {
-                    postContainer.insertAdjacentHTML('beforeend',` <h4>${title}</h4> <p>${body}</p>`)
-                })
-    })}
+            .then((response) => console.log(json()))
 
-    user() {
+
+    }
+
+    findUser() {
         return fetch(user)
             .then((response) => {
                 return response.json();
             })
-            .then((elemArr) => {
+            .then((elemUser) => console.log(json))
+    }
 
-    })}
 
-    render() {
-        const postContainer = document.createElement('div');
-        postContainer.setAttribute('class', 'post');
+
+    render(){
+        const postContainer = document.createElement("div");
+        postContainer.classList.add("post-container");
         document.body.append(postContainer);
+
         const usersInfo = document.createElement('div');
         usersInfo.setAttribute('class', 'user');
-        postContainer.append(usersInfo);
 
+        const postInfo = document.createElement('div');
+        postInfo.classList.add('post');
+        postContainer.append(usersInfo, postInfo);
 
-
-        return `<h4>${title}</h4> <p>${body}</p> <h3>${username}</h3><h3>${name}</h3> <p>${email}</p>`
-
+        this.btn = document.createElement('button');
+        const {btn} = this;
+        btn.append(postContainer);
+        return btn;
     }
+
+    createPost(){
+
+        this.findUser.forEach({name, username, email})
+        postContainer.insertAdjacentHTML('beforeend', `<h3>${this.username}</h3><h3>${this.name}</h3> <p>${this.email}`)
+
+
+        this.findPost.forEach(({title, body}) => {
+            postContainer.insertAdjacentHTML('beforeend',` <h4>${this.title}</h4> <p>${this.body}</p>`)
+        })
+    }
+
+
 }
 
 
