@@ -132,8 +132,7 @@ const bookToAdd = {
     author: 'George R. R. Martin'
 }
 
-const [one, two, three] = books;
-const newArr = [one, two, three, bookToAdd];
+const newArr = [...books, bookToAdd];
 console.log(newArr);
 
 // №6
