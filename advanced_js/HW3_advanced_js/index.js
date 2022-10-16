@@ -1,10 +1,16 @@
 'use strict'
+// Деструктуризація - поділ складної структури масиву чи об'єкту на прості частини. Ми можемо дістати з
+// об'єкту чи масиву менші фрагменти.
+// Деструктуризацію ми можемо використовувати для оголошення або присвоєння змінної.
+// Обробляти вкладені об'єкти або масиви.
 
 // №1
 const clients1 = ["Гилберт", "Сальваторе", "Пирс", "Соммерс", "Форбс", "Донован", "Беннет"];
 const clients2 = ["Пирс", "Зальцман", "Сальваторе", "Майклсон"];
-const uniqueClients = [...new Set(clients1, clients2)];
- console.log(uniqueClients);
+
+const [lastName1, , ,lastName4, lastName5, lastName6, lastName7] = clients1;
+
+const uniqueClients = [lastName1, lastName4, lastName5, lastName6, lastName7, ...clients2];
 
 // №2
 const characters = [
@@ -61,11 +67,11 @@ const user1 = {
     years: 30
 };
 
-const {name1, years, isAdmin = false} = user1;
+const {name1, years:age1, isAdmin = false} = user1;
 
 
 alert(name1);
-alert(years);
+alert(age1);
 alert(isAdmin);
 
 // №4
@@ -137,13 +143,10 @@ const employee = {
     surname: 'Klichko'
 }
 
-const { salary = 3000, age = 20, name, surname } = employee;
-
 const newEmployee = {
-    salary,
-    age,
-    name,
-    surname
+    salary: 3000,
+    age: 20,
+    ...employee
 }
 console.log(newEmployee);
 
