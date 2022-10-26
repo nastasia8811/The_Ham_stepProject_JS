@@ -3,7 +3,31 @@
 /*    padding: 0;*/
 /*    box-sizing: border-box;*/
 /*}*/
+.post {
+    border: 1px solid #0C1927;
+    padding: 1px;
+}
+.user {
+    color: #022263;
+    font-size: 20px;
+    /*    font-weight: 800;*/
+}
 
+.post_title {
+    color: #d64374;
+    font-size: 25px;
+}
+.post_body {
+    max-width: 100%;
+}
+.post_name{
+    color: #d64374;
+    text-transform: uppercase;
+}
+.post_email {
+    color: #5B6469;
+    font-size: 10px;
+}
 /*body {*/
 /*    --twitter-color: #50b7f5;*/
 /*    --twitter-background: #e6ecf0;*/

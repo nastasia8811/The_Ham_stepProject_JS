@@ -16,26 +16,18 @@ class Card {
         this.email = email;
         this.btn = null;
     }
-
     findPost() {
         return fetch(post)
-            .then((response) => {
-                return response.json();
-            })
-            .then((response) => console.log(json()))
-
+            .then((response) =>  response.json())
+            .then((postTwitter) =>console.log(json))
 
     }
 
     findUser() {
         return fetch(user)
-            .then((response) => {
-                return response.json();
-            })
-            .then((elemUser) => console.log(json))
+            .then((response) => response.json())
+            .then((userTwitter) => console.log(userTwitter))
     }
-
-
 
     render(){
         const postContainer = document.createElement("div");
@@ -54,7 +46,6 @@ class Card {
         btn.append(postContainer);
         return btn;
     }
-
     createPost(){
 
         this.findUser.forEach({name, username, email})
@@ -64,9 +55,11 @@ class Card {
         this.findPost.forEach(({title, body}) => {
             postContainer.insertAdjacentHTML('beforeend',` <h4>${this.title}</h4> <p>${this.body}</p>`)
         })
+
     }
-
-
+    createBtn(){
+        this.btn.addEventListener()
+    }
 }
 
 

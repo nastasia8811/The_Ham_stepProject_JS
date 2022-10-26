@@ -3,33 +3,58 @@ const mainElement = document.createElement('div');
 mainElement.setAttribute('id', 'wrap');
 document.body.append(mainElement);
 
-fetch('https://ajax.test-danit.com/api/swapi/films')
-    .then((response) => {
-        return response.json();
-    })
-    .then((elemArr) => {
-        elemArr.forEach(({episodeId, characters, name, openingCrawl}) => {
-            mainElement.insertAdjacentHTML('beforeend', `<p class="title"> Episode ${episodeId}</p><h1 class="title">Film: ${name}</h1> <div id="characters"></div><p class="text">${openingCrawl}</p>`)
-            const idCharacters = document.querySelector('#characters');
-            characters.forEach((url) =>{
-                fetch(url)
-                    .then(response => response.json())
-                    .then(res => {
-                            console.log(res.name);
-                            console.log(episodeId);
-                        idCharacters.insertAdjacentHTML('afterbegin', `<p>${res.name}</p>`)
-                        }
-                    )
-            })
-            console.log(elemArr);
-        });
+function filmsList () {
+    mainElement.innerHTML = "<p>loading...</p>"
+    fetch('https://ajax.test-danit.com/api/swapi/films')
+        .then((response) => response.json())
+        .then((elemArr) => {
+            elemArr.forEach(({episodeId, characters, name, openingCrawl}) => {
+                mainElement.insertAdjacentHTML('beforeend', `<p class="title"> Episode ${episodeId}</p><h1 class="title">Film: ${name}</h1> <div id="characters"></div><p class="text">${openingCrawl}</p>`)
+                const idCharacters = document.querySelector('#characters');
+                characters.forEach((url) => {
+                    fetch(url)
+                        .then(response => response.json())
+                        .then(res => {
+                                console.log(res.name);
+                                console.log(episodeId);
+                                idCharacters.insertAdjacentHTML('afterbegin', `<p>${res.name}</p>`)
+                            }
+                        )
+                })
+                console.log(elemArr);
+            });
         })
+}
+
+// fetch('https://ajax.test-danit.com/api/swapi/films')
+//     .then((response) => {
+//         return response.json();
+//     })
+//     .then((elemArr) => {
+//         elemArr.forEach(({episodeId, characters, name, openingCrawl}) => {
+//             mainElement.insertAdjacentHTML('beforeend', `<p class="title"> Episode ${episodeId}</p><h1 class="title">Film: ${name}</h1> <div id="characters"></div><p class="text">${openingCrawl}</p>`)
+//             const idCharacters = document.querySelector('#characters');
+//
+//             characters.forEach((url) =>{
+//                 fetch(url)
+//                     .then(response => response.json())
+//                     .then(res => {
+//                             console.log(res.name);
+//                             console.log(episodeId);
+//                             idCharacters.insertAdjacentHTML('afterbegin', `<p>${res.name}</p>`)
+//                         }
+//                     )
+//             })
+//             console.log(elemArr);
+//         });
+//     })
 
 
-
-
-
-
+//setTimeout(()=>{
+//  },3000)
+//
+//function startTime(res) {
+// setTimeout(function() {startTime()}, 1000);}
 
 
 // const xhr = new XMLHttpRequest()
