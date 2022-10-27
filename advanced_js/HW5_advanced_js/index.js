@@ -33,10 +33,9 @@ class Card {
     }
 
     createElements() {
-        this.container.insertAdjacentHTML('beforeend', ` <h4 class="post_title">${this.title}</h4> <p class="post_body">${this.body}</p> `)
+        this.container.insertAdjacentHTML('beforeend', `<h1 class="post_name">${this.username}</h1><h3 class="post_name">${this.name}</h3><p class="post_email">${this.email}</p><h4 class="post_title">${this.title}</h4> <p class="post_body">${this.body}</p>`);
         this.container.className = 'post';
         document.body.append(this.container);
-        this.container.insertAdjacentHTML("beforeend", `<h3 class="post_name">${this.username}</h3><h3 class="post_name">${this.name}</h3> <p class="post_email">${this.email}</p>`)
         this.deleteButton.innerHTML = "Delete";
         this.container.append(this.deleteButton);
         this.deleteButton.addEventListener("click", () => {
@@ -44,11 +43,11 @@ class Card {
                 method: "DELETE"
             })
                 .then((response) => response.json())
-                .then(({ status, id}) => {
-                    console.log("ggg")
-                    if (status === 'success') {
-                        this.container.remove()
-                    }})
+                // .then(({ status, id}) => {
+                //
+                //     if (status === 'success') {
+                //         this.container.remove()
+                //     }})
         })
     }
 }
