@@ -1,22 +1,23 @@
 
 
-fetch('https://ajax.test-danit.com/api/json/users')
-    .then((response) => response.json())
-    .then((usersArr) => {
-        usersArr.forEach(({name, username, email, id}) => {
-            fetch('https://ajax.test-danit.com/api/json/posts')
-                .then((response) => response.json())
-                .then((userPost) => {
-                    const filterPost = userPost.filter((post) =>  post.userId === id);
-                    filterPost.forEach(({title, body}) => {
-                            new Card(title, body, name, username, email, id).createElements();
-                        }
-                    )
-                })
-                .catch((elem) => console.log(elem.message));
+
+    fetch('https://ajax.test-danit.com/api/json/users')
+.then((response) => response.json())
+.then((usersArr) => {
+    usersArr.forEach(({name, username, email, id}) => {
+    fetch('https://ajax.test-danit.com/api/json/posts')
+        .then((response) => response.json())
+        .then((userPost) => {
+            const filterPost = userPost.filter((post) =>  post.userId === id);
+            filterPost.forEach(({title, body}) => {
+                    new Card(title, body, name, username, email, id).createElements();
+                }
+            )
         })
-    })
-    .catch((elem) => console.log(elem.message));
+        .catch((elem) => console.log(elem.message));
+})
+})
+.catch((elem) => console.log(elem.message));
 
 
 class Card {
@@ -48,11 +49,12 @@ class Card {
                     if (status === 'success') {
                         this.container.remove()
                     }})
-
-                })
-
+        })
     }
-
-
 }
+
+
+
+
+
 
