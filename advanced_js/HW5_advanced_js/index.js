@@ -17,8 +17,8 @@ class Card {
         document.body.append(this.container);
         this.deleteButton.innerHTML = "Delete";
         this.container.append(this.deleteButton);
-        this.deleteButton.addEventListener("click", () => {
-            fetch('https://ajax.test-danit.com/api/json/posts/${id}', {
+        this.deleteButton.addEventListener("click", (e) => {
+            const{id:postId} = fetch('https://ajax.test-danit.com/api/json/posts/${postId}', {
                 method: "DELETE"
             })
                 .then((response) => response.json())
