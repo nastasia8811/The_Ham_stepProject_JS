@@ -18,21 +18,12 @@ class Card {
         this.deleteButton.innerHTML = "Delete";
         this.container.append(this.deleteButton);
         this.deleteButton.addEventListener("click", (e) => {
-            const{id:postId} = fetch('https://ajax.test-danit.com/api/json/posts/${postId}', {
-                method: "DELETE"
-            })
-                .then((response) => response.json())
-                .then(({status}) => {
-                    if (status === 'success') {
-                        this.container.remove()
-                    }
-                })
-                .catch(err => console.log(err));
+            deletePost(e)
         })
     }
 }
 
-fetch('https://ajax.test-danit.com/api/json/users')
+ fetch('https://ajax.test-danit.com/api/json/users')
     .then((response) => response.json())
     .then((usersArr) => {
         usersArr.forEach(({name, username, email, id, userId}) => {
@@ -40,7 +31,7 @@ fetch('https://ajax.test-danit.com/api/json/users')
                 .then((response) => response.json())
                 .then((userPost) => {
                     const filterPost = userPost.filter((post) => post.userId === id);
-                    filterPost.forEach(({title, body}) => {
+                    filterPost.forEach(({title, body,id}) => {
                             new Card(title, body, name, username, email, id).createElements();
                         }
                     )
@@ -51,6 +42,18 @@ fetch('https://ajax.test-danit.com/api/json/users')
     .catch((elem) => console.log(elem.message));
 
 
+const deletePost = () => {
+fetch('https://ajax.test-danit.com/api/json/posts/${id}', {
+        method: "DELETE"
+    })
+        .then(response => response.json())
+        .then(({status, id})=> {
+            if (status === 'success') {
+                this.container.remove()
+            }
 
+        })
+         .catch(err => console.log(err));
+}
 
 
