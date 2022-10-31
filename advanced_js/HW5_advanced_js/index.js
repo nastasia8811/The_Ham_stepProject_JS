@@ -17,11 +17,13 @@ class Card {
         document.body.append(this.container);
         this.deleteButton.innerHTML = "Delete";
         this.container.append(this.deleteButton);
-        this.deleteButton.addEventListener("click", (e) => {
-            deletePost(e)
+        this.deleteButton.addEventListener("click", () => {
+            deletePost()
         })
     }
 }
+
+
 
  fetch('https://ajax.test-danit.com/api/json/users')
     .then((response) => response.json())
@@ -42,8 +44,8 @@ class Card {
     .catch((elem) => console.log(elem.message));
 
 
-const deletePost = () => {
-fetch('https://ajax.test-danit.com/api/json/posts/${id}', {
+const deletePost = (id) => {
+    fetch(`https://ajax.test-danit.com/api/json/posts/${id}`, {
         method: "DELETE"
     })
         .then(response => response.json())
@@ -51,9 +53,7 @@ fetch('https://ajax.test-danit.com/api/json/posts/${id}', {
             if (status === 'success') {
                 this.container.remove()
             }
-
         })
-         .catch(err => console.log(err));
+        .catch(err => console.log(err));
 }
-
 
