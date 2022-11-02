@@ -13,12 +13,12 @@ class Card {
 
     createElements() {
         this.container.insertAdjacentHTML('beforeend', `<h1 class="post_name">${this.username}</h1><h3 class="post_name">${this.name}</h3><p class="post_email">${this.email}</p><h4 class="post_title">${this.title}</h4> <p class="post_body">${this.body}</p>`);
-        this.container.className = 'post';
+        this.container.className = `post`;
         document.body.append(this.container);
         this.deleteButton.innerHTML = "Delete";
         this.container.append(this.deleteButton);
         this.deleteButton.addEventListener("click", () => {
-            deletePost()
+            deletePost(this.id, this.container )
         })
     }
 }
@@ -42,15 +42,15 @@ class Card {
     })
     .catch((elem) => console.log(elem.message));
 
-const deletePost = (id) => {
+const deletePost = (id, container) => {
     fetch(`https://ajax.test-danit.com/api/json/posts/${id}`, {
         method: "DELETE"
     })
-        .then(response => response.json())
-        .then(({status})=> {
-            if (status === 'success') {
-                this.container.remove()
-            }
+        .then(({status}) => {
+            if (status === 200) {
+                console.log('success')
+                container.remove()}
+
         })
         .catch(err => console.log(err));
 }
