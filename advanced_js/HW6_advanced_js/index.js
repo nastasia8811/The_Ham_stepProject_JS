@@ -1,3 +1,6 @@
+// Асинхронність в JS це коли частина коду відкладається для виконання.
+// На приклад код виконається з затримкою в часі (SetTimeOut) або після того як прийде відповідь від сервера (async\await) за це відповідає Event loop.
+
 document.body.insertAdjacentHTML(`beforeend`, `<button class="ip">Знайти по IP</button>`)
 const button = document.querySelector('.ip');
 button.addEventListener('click', () => {
