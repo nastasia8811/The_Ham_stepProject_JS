@@ -24,7 +24,6 @@ class Card {
 }
 
 
-
  fetch('https://ajax.test-danit.com/api/json/users')
     .then((response) => response.json())
     .then((usersArr) => {
@@ -33,7 +32,7 @@ class Card {
                 .then((response) => response.json())
                 .then((userPost) => {
                     const filterPost = userPost.filter((post) => post.userId === id);
-                    filterPost.forEach(({title, body,id}) => {
+                    filterPost.forEach(({title, body, id}) => {
                             new Card(title, body, name, username, email, id).createElements();
                         }
                     )
@@ -43,13 +42,12 @@ class Card {
     })
     .catch((elem) => console.log(elem.message));
 
-
 const deletePost = (id) => {
     fetch(`https://ajax.test-danit.com/api/json/posts/${id}`, {
         method: "DELETE"
     })
         .then(response => response.json())
-        .then(({status, id})=> {
+        .then(({status})=> {
             if (status === 'success') {
                 this.container.remove()
             }
