@@ -48,7 +48,6 @@ const deletePost = (id, container) => {
     })
         .then(({status}) => {
             if (status === 200) {
-                console.log('success')
                 container.remove()}
 
         })

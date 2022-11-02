@@ -3,11 +3,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #e6aaee;
 }
 
-.ip{
-    margin-left: 50%;
+.ip {
+    padding: 10px;
+    margin: 0 auto ;
     margin-top: 10%;
-    color: #FF0000;
+    display: block;
+    color: #FFFFFF;
+    background-color: #b018c2;
+    border-radius: 13px;
+}
+
+.ul_style {
     text-align: center;
+}
+
+.address_style {
+    color: #4f1b55;
 }
