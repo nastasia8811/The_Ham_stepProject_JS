@@ -1,51 +1,44 @@
-
 document.body.insertAdjacentHTML(`beforeend`, `<button class="ip">Знайти по IP</button>`)
 const button = document.querySelector('.ip');
-button.addEventListener('click', (e) => {
-    getApi()
+button.addEventListener('click', () => {
+    getCards(this.country, this.region, this.city, this.regionName)
 })
 
 const getApi = async () => {
-    await fetch('https://api.ipify.org/?format=json')
-        .then(res => res.json())
-        .then(elem => {
-
-        })
+    const res = await fetch('https://api.ipify.org/?format=json')
+    const ip = await res.json()
+    return ip
 }
 
 const getCards = async () => {
-    try {
-        let result = await getApi();
-        const response = await fetch('https://ip-api.com/ip');
-        const {status, continent, country, region, city, district} = await response.json();
-        if (status === 'success') {
-             new Address(continent, country, region, city, district).createElements();
-        } else throw new Error('Unable to load Data...')
-    } catch (err) {
-        console.warn(err)
-    }
-
+    let ipObject = await getApi();
+    const response = await fetch(`http://ip-api.com/json/${ipObject.ip}`)
+        .then((response) => response.json())
+        .then(({status, country, region, city, regionName}) => {
+            if (status === "success") {
+                new Address(country, region, city, regionName).createElements();
+            } else throw new Error('Unable to load ...')
+        })
 }
 
+
 class Address {
-    constructor(continent, country, region, city, district) {
-        this.continent = continent;
+    constructor(country, region, city, regionName) {
         this.country = country;
         this.region = region;
         this.city = city;
-        this.district = district;
+        this.regionName = regionName;
     }
 
     createElements() {
         const ipAd = document.createElement('p');
         document.body.append(ipAd)
         ipAd.insertAdjacentHTML(`afterend`,
-            `<li >
-                    <ul>${this.continent}</ul>
-                    <ul>${this.country}</ul>
-                    <ul>${this.region}</ul>
-                    <ul>${this.city}</ul>
-                    <ul>${this.district}</ul>
-                   </li>`)
-        }
+            `<ul class="ul_style">
+                    <li class="address_style">${this.country}</li>
+                    <li class="address_style">${this.region}</li>
+                    <li class="address_style">${this.city}</li>
+                    <li class="address_style">${this.regionName}</li>
+                   </ul>`)
+    }
 }
