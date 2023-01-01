@@ -1,0 +1,31 @@
+.card {
+  text-align: center;
+  display: block;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 10px;
+  position: relative;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  max-width: 250px;
+  min-height: 350px;
+  overflow: hidden;
+  margin: 20px 5px;
+  background-color: #e0e0e0;
+}
+
+.name{
+  max-width: 245px;
+}
+.photo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.price{
+  color:red;
+  text-transform: lowercase;
+  font-weight:bold;
+
+}
