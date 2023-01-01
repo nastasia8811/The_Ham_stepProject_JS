@@ -1,0 +1,31 @@
+.mainContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+.isInFavorites{
+  position: absolute;
+  border: #61dafb;
+  border-radius: 15px;
+  background-color: #61dafb;
+  top: 5px;
+  right: 5px;
+}
+.isInFavorites:hover{
+  background-color: gray;
+}
+.orderBtn{
+  padding: 5px 10px;
+  text-transform: uppercase;
+  border: #61dafb;
+  border-radius: 5px;
+  background-color: #61dafb;
+  margin-bottom: 10px;
+}
+
+.orderBtn:hover{
+  background-color: gray;
+}
+
